@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.page-background {
+    -webkit-clip-path: polygon(100% 0, 100% 77%, 50% 100%, 0 78%, 0 0);
+    clip-path: polygon(100% 0, 100% 77%, 50% 100%, 0 78%, 0 0);
+}
+
+
+/* Media query for smaller screens */
+
+@media (max-width: 768px) {
+    .page-background {
+        -webkit-clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+        clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+    }
+}
