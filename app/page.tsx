@@ -1,5 +1,6 @@
 import HeroSection from "../components/herosection"
 import Navbar from "../components/Navbar";
+import Features from "../components/features";
 import "./globals.css";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         </div>
           <HeroSection />
       </div>
+      < Features/>
     </main>
   );
 }

@@ -1,0 +1,360 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./components/features.modules.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.Features-Container {
+    gap: 52px;
+}
+
+.features-heading {
+    color: var(--text, #252b42);
+    font-size: 20px;
+    font-family: Actor;
+}
+
+.features-paragraph {
+    color: var(--second-text, #374754);
+    font-family: Actor;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+}
+
+.Features-Right-Box,
+.Features-Mid-Box,
+.Features-Left-Box {
+    display: flex;
+    width: 255px;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .Features-Main-Container {
+        display: flex;
+        padding: 150px 0px 80px 0px;
+    }
+    .Features-Main-Heading-Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 75%;
+    }
+    .Heading {
+        color: var(--text, #252b42);
+        text-align: center;
+        font-family: Actor;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+    }
+    .Paragraph {
+        width: 70%;
+        color: var(--second-text, #374754);
+        text-align: center;
+        font-family: Actor;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+    }
+    .Features-Container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .Features-Right-Box,
+    .Features-Mid-Box,
+    .Features-Left-Box {
+        display: flex;
+        width: 190px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .features-heading {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .features-paragraph {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .Features-Video {
+        width: 90%;
+        flex-shrink: 0;
+        position: relative;
+        line-height: 100px;
+    }
+    .Video-Player {
+        border-radius: 15px;
+    }
+    Circle {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .play-icon {
+        position: absolute;
+    }
+    .Circle svg {
+        width: 74px;
+        height: 74px;
+        fill: #2091F9;
+    }
+    .play-icon svg {
+        width: 18px;
+        height: 18px;
+        fill: white;
+    }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./components/hero.modules.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+/* Default styles for larger screens */
+
+.herosection-main-container {
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
+.herosection-heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.herosection-heading {
+    color: var(--Light-text, #FFF);
+    text-align: center;
+    font-family: Actor;
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 84px;
+    letter-spacing: 0.2px;
+}
+
+.herosection-paragraph {
+    color: var(--Light-text, #FFF);
+    text-align: center;
+    font-family: Actor;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 142.857% */
+    letter-spacing: 0.2px;
+    padding-top: 20px;
+}
+
+
+/* Media query for smaller screens */
+
+@media (max-width: 768px) {
+    .herosection-main-container {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        /* Full width for smaller screens */
+    }
+    .herosection-heading {
+        /* Adjust font size for smaller screens */
+        color: var(--Light-text, #FFF);
+        text-align: center;
+        font-family: Actor;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 55px;
+        /* 114.583% */
+        letter-spacing: 0.2px;
+        width: 75%;
+    }
+    .herosection-paragraph {
+        /* Adjust line-height for smaller screens */
+        width: 75%;
+        color: var(--Light-text, #FFF);
+        text-align: center;
+        font-family: Actor;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        /* 142.857% */
+        letter-spacing: 0.2px;
+    }
+}
+
+.herosection-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 100px;
+}
+
+.herosection-btn {
+    color: var(--Light-text, #FFF);
+    text-align: center;
+    font-family: Actor;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    border-radius: 35px;
+    background-color: var(--Primary, #2091F9);
+    width: 236px;
+    padding: 16px 0px;
+}
+
+.herosection-toggel-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.herosection-toggel-heading h2 {
+    color: #FFF;
+    text-align: right;
+    font-family: Actor;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: .4s;
+    }
+    input:checked+.slider {
+        background-color: #2196F3;
+    }
+    input:focus+.slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+    input:checked+.slider:before {
+        transform: translateX(26px);
+    }
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    /* .slider {
+        width: 38px;
+        height: 24px;
+    }
+    .slider:before {
+        height: 16px;
+        width: 16px;
+    }
+    input:checked+.slider:before {
+        -webkit-transform: translateX(16px);
+        -ms-transform: translateX(16px);
+        transform: translateX(16px);
+    } */
+    .herosection-btn-container {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 60px;
+    }
+}
