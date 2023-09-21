@@ -10,14 +10,16 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'xs': '340px',
-      // => @media (min-width: 340px) { ... }
+      
+      'xs': {'min':'340px','max':'768px'},
+      // => @media (min-width: 340px}
 
-      'xs2': '480px',
+      'xs2': {'min':'768px','max':'2300px'},
       // => @media (min-width: 480px) { ... }
       ...defaultTheme.screens,
     },
      extend: 
+     
     {
       backgroundImage: {
         "banner-bg": "url('../public/assets/bannerBg.jpeg')",

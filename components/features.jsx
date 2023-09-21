@@ -1,12 +1,11 @@
 'use client'
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import styles from "./features.modules.css";
-// import { useClient } from "next/client";
 
 
  const Features = () => {
-   const [isPlaying, setIsPlaying] = useState(false);
+
+  const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
 
   const handlePlayClick = () => {
@@ -14,44 +13,26 @@ import styles from "./features.modules.css";
       if (isPlaying) {
         videoRef.current.pause();
       } else {
-        videoRef.current.play();
+        videoRef.current.play().then(() => {
+          setIsPlaying(true);
+          document.querySelector(".Circle").style.display = "none";
+        });
       }
-      setIsPlaying(!isPlaying);
     }
   };
 
-  useEffect(() => {
-    const handleClickOutsideVideo = (e) => {
-      // Check if the click target is the clip icon button
-      if (!e.target.closest(".play-icon")) {
-        // If not, pause the video
-        if (isPlaying) {
-          handlePlayClick();
-        }
-      }
-    };
-
-    // Add click event listener to the document
-    document.addEventListener("click", handleClickOutsideVideo);
-
-    return () => {
-      // Remove the event listener when the component unmounts
-      document.removeEventListener("click", handleClickOutsideVideo);
-    };
-  }, [isPlaying]);
-
   return (
-    <div className="Features-Main-Container ]flex flex-col items-center gap-20 self-stretch text-centergap-50 py-80 sm:py-0 sm:flex sm:flex-col sm:items-center sm:w-full  md:gap-50 md:flex md:px-0 md:py-80 md:flex-col md:items-center md:self-stretch">
-      <div className="Features-Main-Heading-Container flex flex-col items-center gap-7 ">
-       <h1 className="text-var(--text, #252b42) text-center font-actor text-4xl font-normal leading-55 tracking-0.2px">
+    <div className="Features-Main-Container xs2:flex xs2:flex-col xs2:items-center xs2:gap-20 xs2:self-stretch xs2:text-centergap-50 xs2:py-40  xs:w-full  xs:gap-20 xs:flex xs:px-0 xs:pt-40 pb-20 xs:flex-col xs:items-center xs:self-stretch ">
+      <div className="Features-Main-Heading-Container xs2:flex xs2:flex-col items-center gap-7 xs:flex xs:flex-col xs:items-center xs:gap-4 xs:w-full">
+       <h1 className="Heading xs2:text-var(--text, #252b42) xs2:text-center xs2:font-actor xs2:text-5xl xs2:font-normal xs2:leading-55 xs2:tracking-0.2px xs2:text-custom-primary xs:text-center xs:font-actor xs:text-4xl xs:font-normal xs:leading-55 xs:tracking-tight ">
   Features
 </h1>
-<p className="text-var(--second-text, #374754) text-center font-actor text-xl font-Light leading-40 tracking-0.2px">
-  Most calendars are designed for teams.<br />Slate is designed for freelancers.
+<p className="Paragraph xs2:text-var(--second-text, #374754)  xs2:w-70 xs2:text-center xs2:font-actor xs2:text-2xl xs2:font-Light xs2:leading-40 xs2:tracking-0.2px xs:w-70 xs:m-auto xs:text-center xs:font-actor xs:text-2xl xs:font-normal xs:leading-7 xs:tracking-tight xs:text-second-text xs:w-60">
+  Most calendars are designed for teams.<br></br>Slate is designed for freelancers.
 </p>
       </div>
-      <div className="Features-Container flex items-start gap-10 text-center order-2 md:order-1 " >
-        <div className="Features-Right-Box  flex flex-col items-center gap-10 w-255">
+      <div className="Features-Container xs2:flex xs2:items-start xs2:gap-10 xs2:w-100  xs2:text-center  xs:text-center xs:flex xs:p-4 xs:flex-col xs:items-start xs:gap-12 xs:order-2 md:order-2 lg:order-1 " >
+        <div className="Features-Left-Box  xs2:flex xs2:flex-col xs2:items-center xs2:gap-5 xs2:w-64 xs2:h-100   xs:flex xs:flex-col xs:items-center xs:gap-5 xs:w-64 xs:h-100">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="61"
@@ -64,15 +45,15 @@ import styles from "./features.modules.css";
               fill="#2091F9"
             />
           </svg>
-          <h2 className="features-heading  font-actor text-20 leading-28 tracking-0.1 ">
+          <h2 className="features-heading  xs2:text-var(--text, #252B42) xs2:text-center xs2:font-actor xs2:text-lg xs2:font-normal xs2:leading-28 xs2:tracking-0.1 xs2:w-44  xs:text-var(--text, #252B42) xs:text-center xs:font-actor xs:text-lg xs:font-normal xs:leading-28 xs:tracking-0.1 xs:w-44">
             OpenType Features Variables Fonts
           </h2>
-          <p className="features-paragraph text-center font-actor text-xs md:text-base  font-light leading-tight tracking-tighter text-second-text ">
+          <p className="features-paragraph xs2:text-var(--second-text, #374754) xs2:font-actor xs2:text-base xs2:leading-25 xs2:tracking-0.2 xs2:w-54 xs:text-var(--second-text, #374754) xs:font-actor xs:text-base xs:leading-25 xs:tracking-0.2 xs:w-54">
             Slate helps you see how many more days you need to work to reach
             your financial goal.
           </p>
         </div>
-        <div className="Features-Mid-Box w-255 flex flex-col items-center gap-10">
+        <div className="Features-Mid-Box  xs2:flex xs2:flex-col xs2:items-center xs2:gap-5 xs2:w-64 xs:flex xs:flex-col xs:items-center xs:gap-5 xs:w-64 xs:h-100 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="57"
@@ -85,13 +66,13 @@ import styles from "./features.modules.css";
               fill="#2091F9"
             />
           </svg>
-          <h2 className="features-heading  font-actor text-20 leading-28 tracking-0.1">Design with real data</h2>
-          <p className="features-paragraph text-center font-actor text-xs md:text-base font-light leading-tight tracking-tighter text-second-text">
+          <h2 className="features-heading xs2:text-var(--text, #252B42) xs2:text-center xs2:font-actor xs2:text-lg xs2:font-normal xs2:leading-28 xs2:tracking-0.1 xs2:w-44  xs:text-var(--text, #252B42) xs:text-center xs:font-actor xs:text-lg xs:font-normal xs:leading-28 xs:tracking-0.1 xs:w-44">Design with real data</h2>
+          <p className="features-paragraph xs2:text-var(--second-text, #374754) xs2:font-actor xs2:text-base xs2:leading-25 xs2:tracking-0.2 xs2:w-54  xs:text-var(--second-text, #374754) xs:font-actor xs:text-base xs:leading-25 xs:tracking-0.2 xs:w-54">
             Slate helps you see how many more days you need to work to reach
             your financial goal.
           </p>
         </div>
-        <div className="Features-Left-Box w-255 flex flex-col items-center gap-10">
+        <div className="Features-Right-Box  xs2:flex xs2:flex-col xs2:items-center xs2:gap-5 xs2:w-64 xs:flex xs:flex-col xs:items-center xs:gap-5 xs:w-64 xs:h-100">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="61"
@@ -104,29 +85,29 @@ import styles from "./features.modules.css";
               fill="#2091F9"
             />
           </svg>
-          <h2 className="features-heading  font-actor text-20 leading-28 tracking-0.1">
+          <h2 className="features-heading  xs2:text-var(--text, #252B42) xs2:text-center xs2:font-actor xs2:text-lg xs2:font-normal xs2:leading-28 xs2:tracking-0.1 xs2:w-44  xs:text-var(--text, #252B42) xs:text-center xs:font-actor xs:text-lg xs:font-normal xs:leading-28 xs:tracking-0.1 xs:w-44">
             Fastest way to take action
           </h2>
-          <p className="features-paragraph text-center font-actor text-xs md:text-base font-light  leading-tight tracking-tighter text-second-text">
+          <p className="features-paragraph xs2:text-var(--second-text, #374754) xs2:font-actor xs2:text-base xs2:leading-25 xs2:tracking-0.2 xs2:w-54 xs:text-var(--second-text, #374754) xs:font-actor xs:text-base xs:leading-25 xs:tracking-0.2 xs:w-54">
             Slate helps you see how many more days you need to work to reach
             your financial goal.
           </p>
         </div>
       </div>
-      <div className="Features-Video relative order-1 md:order-2 w-90% flex-shrink-0" >
+      <div className="Features-Video relative xs:order-1 md:order-1 lg:order-2 xs2:flex-shrink-0 xs:w-11/12 xs:flex-shrink-0 xs:line-height-100" >
         <div className="Circle absolute inset-0 flex items-center justify-center" onClick={handlePlayClick}>
-          <svg
+          <svg className="xs:w-20 xs:h-74 xs:fill-current xs:text-blue-500"
             xmlns="http://www.w3.org/2000/svg"
             width="188"
             height="188"
             viewBox="0 0 188 188"
             fill="#2091F9"
               style={{ display: isPlaying ? 'none' : 'block' }}
-          >
+              >
             <circle cx="93.8293" cy="94" r="93.6985" fill="#2091F9" />
           </svg>
-          <div className="play-icon absolute " >
-            <svg
+          <div className={`play-icon absolute xs:absolute xs:inset-0 xs:flex xs:items-center xs:justify-center Circle${isPlaying ? 'hidden' : ''}`} onClick={handlePlayClick}>
+            <svg className="xs:w-5 xs:h-18 xs:fill-current xs:text-white"
               xmlns="http://www.w3.org/2000/svg"
               width="48"
               height="48"
@@ -153,9 +134,8 @@ import styles from "./features.modules.css";
           </div>
         </div>
 
-        <video className="Video-Player "
-            
-          id="videoPlayer"
+        <video className="Video-Player  xs:rounded-s-2xl"
+    
             src="/assets/features.mp4" 
             width={1177}
             height={658}
