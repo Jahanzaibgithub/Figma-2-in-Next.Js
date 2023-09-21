@@ -9,7 +9,7 @@ const HeroSection = () => {
         The Best Product{'\n'}Starts With Figma
       </h1>
       <p className="herosection-paragraph">
-        Most calendars are designed for teams. Slate is designed  for freelancers
+        Most calendars are designed for teams.Slate is designed  <br></br>for freelancers
       </p>
       
       </div>
@@ -31,8 +31,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
-
-
-
 
