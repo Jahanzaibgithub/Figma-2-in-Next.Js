@@ -3,33 +3,32 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className=" text-black lg:text-white  lg:bg-transparent lg:pt-7 xs:pt-7 md:pt-7  md:items-center md:justify-between lg:h-28  pt-7 ">
-      <div className="lg:max-w-screen-xl lg:h-full lg:mx-auto lg:px-20 lg:flex lg:justify-between xs:h-full   xs:flex md:h-full md:flex  max-w-screen-4xl h-full mx-auto px-4 flex items-center justify-between">
+    <div className=" text-black lg:text-white  lg:bg-transparent lg:pt-7  pt-7  items-center justify-between lg:h-28  ">
+      <div className="lg:max-w-screen-xl lg:h-full lg:mx-auto lg:px-20 lg:flex lg:justify-between xs:h-full   xs:flex md:h-full md:flex  max-w-screen-xl h-full mx-auto px-4 py-4 flex items-center justify-between">
         <div className="lg:gap-0 lg:flex lg:justify-between ">
-          <ul className="navbar-list xs:hidden  md:hidden lg:w-15 lg:h-12 lg:inline-flex lg:text-sm lg:fz-15 lg:lex lg:p-10 lg:items-center lg:gap-5 ">
-          <li className="navbarLi lg:w-13 lg:h-7 lg:text-white lg:text-center lg:font-actor lg:text-base lg:font-normal lg:leading-7 lg:tracking-tighter">
-          
+          <ul className="navbar-list   lg:w-15 lg:h-12 lg:inline-flex lg:text-sm lg:fz-15 lg:p-10 lg:items-center lg:gap-5 hidden  ">
+          <li className="navbarLi lg:w-13 lg:h-7 lg:text-white lg:text-center lg:font-actor lg:text-base lg:font-normal lg:leading-7 lg:tracking-tighter lg:gap-5">
             <a href="#">Home</a>
           </li>
-          <li className="navbarLi lg:w-13 lg:h-7  lg:text-white lg:text-center lg:font-actor lg:text-base lg:font-normal lg:leading-7 lg:tracking-tighter">
+          <li className="navbarLi lg:w-13 lg:h-7  lg:text-white lg:text-center lg:font-actor lg:text-base lg:font-normal lg:leading-7 lg:tracking-tighter lg:gap-5">
             <a href="#">Product</a>
           </li>
-          <li className="navbarLi lg:w-13 lg:h-7  lg:text-white lg:text-center lg:font-actor lg:text-base lg:font-normal lg:leading-7 lg:tracking-tighter">
+          <li className="navbarLi lg:w-13 lg:h-7  lg:text-white lg:text-center lg:font-actor lg:text-base lg:font-normal lg:leading-7 lg:tracking-tighterlg:gap-5 ">
             <a href="#">Pricing</a>
           </li>
-          <li className="navbarLi lg:w-13 lg:h-7  lg:text-white lg:text-center lg:font-actor lg:text-base lg:font-normal lg:leading-7 lg:tracking-tighter">
+          <li className="navbarLi lg:w-13 lg:h-7  lg:text-white lg:text-center lg:font-actor lg:text-base lg:font-normal lg:leading-7 lg:tracking-tighterlg:gap-5 ">
             {" "}
             <a href="#">About</a>
           </li>
-          <li className="navbarLi lg:w-13 lg:h-7  lg:text-white lg:text-center lg:font-actor lg:text-base lg:font-normal lg:leading-7 lg:tracking-tighter">
+          <li className="navbarLi lg:w-13 lg:h-7  lg:text-white lg:text-center lg:font-actor lg:text-base lg:font-normal lg:leading-7 lg:tracking-tighter lg:gap-5">
             <a href="#">Contact</a>
           </li>
         </ul>
-        <div className=" bg-black lg:flex lg:pt-2.5 lg:pr-32 lg:items-start xs:pl-10 md:pl-10">
+        <div className=" bg-black lg:flex lg:pt-2.5  lg:items-start ">
           <Image src="/assets/Rectangle 4.png" alt="" width={186} height={58} />
         </div>
         </div>
-        <div className="xs:hidden  md:hidden lg:inline-flex lg:items-center lg:gap-7  ">
+        <div className="  hidden lg:inline-flex lg:items-center lg:gap-7  ">
           <a href="https://twitter.com/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
