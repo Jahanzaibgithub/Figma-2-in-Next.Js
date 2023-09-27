@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="herosection-toggel-heading">
           <div className="herosection-toggel-btn">
             <label className="switch">
-              <input type="checkbox" checked />
+              <input type="checkbox" />
               <span className="slider round"></span>
             </label>
           </div>

@@ -1,26 +1,30 @@
 'use client'
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, } from "react";
 import Image from "next/image";
 
 
  const Features = () => {
-
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
 
-  const handlePlayClick = () => {
-    if (videoRef.current) {
+const handlePlayClick = (e) => {
+  const val = document.getElementsByClassName('PlayButton');
+  console.log("handlePlayClick---------------------------", val,videoRef)
+    if (val && videoRef) {
       if (isPlaying) {
         videoRef.current.pause();
       } else {
         videoRef.current.play().then(() => {
           setIsPlaying(true);
-          document.querySelector(".Circle").style.display = "none";
+          document.querySelector(".PlayButton").style.display = "none";
         });
       }
     }
+  };const handleVideoEnded = () => {
+    setIsPlaying(false);
   };
-
+ 
+  
   return (
     <div className="Features-Main-Container xs2:flex xs2:flex-col xs2:items-center xs2:gap-20 xs2:self-stretch xs2:text-centergap-50 xs2:py-40  xs:w-full  xs:gap-20 xs:flex xs:px-0 xs:pt-40 pb-20 xs:flex-col xs:items-center xs:self-stretch ">
       <div className="Features-Main-Heading-Container xs2:flex xs2:flex-col items-center gap-7 xs:flex xs:flex-col xs:items-center xs:gap-4 xs:w-full">
@@ -31,7 +35,7 @@ import Image from "next/image";
   Most calendars are designed for teams.<br></br>Slate is designed for freelancers.
 </p>
       </div>
-      <div className="Features-Container xs2:flex xs2:items-start xs2:gap-10 xs2:w-100  xs2:text-center  xs:text-center xs:flex xs:p-4 xs:flex-col xs:items-start xs:gap-12 xs:order-2 md:order-2 lg:order-1 " >
+      <div className="Features-Container lg:flex lg:items-start lg:gap-10 lg:w-100  lg:text-center  xs:text-center xs:flex xs:p-4 xs:flex-col  xs:items-start xs:gap-12 xs:order-2 md:order-2 lg:order-1 " >
         <div className="Features-Left-Box  xs2:flex xs2:flex-col xs2:items-center xs2:gap-5 xs2:w-64 xs2:h-100   xs:flex xs:flex-col xs:items-center xs:gap-5 xs:w-64 xs:h-100">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -95,18 +99,17 @@ import Image from "next/image";
         </div>
       </div>
       <div className="Features-Video relative xs:order-1 md:order-1 lg:order-2 xs2:flex-shrink-0 xs:w-11/12 xs:flex-shrink-0 xs:line-height-100" >
-        <div className="Circle absolute inset-0 flex items-center justify-center" onClick={handlePlayClick}>
+        <div className="PlayButton  z-20 absolute inset-0 flex items-center justify-center"  onClick={handlePlayClick}>
           <svg className="xs:w-20 xs:h-74 xs:fill-current xs:text-blue-500"
             xmlns="http://www.w3.org/2000/svg"
             width="188"
             height="188"
             viewBox="0 0 188 188"
             fill="#2091F9"
-              style={{ display: isPlaying ? 'none' : 'block' }}
               >
             <circle cx="93.8293" cy="94" r="93.6985" fill="#2091F9" />
           </svg>
-          <div className={`play-icon absolute xs:absolute xs:inset-0 xs:flex xs:items-center xs:justify-center Circle${isPlaying ? 'hidden' : ''}`} onClick={handlePlayClick}>
+          <div className="play-icon absolute xs:absolute xs:inset-0 xs:flex xs:items-center xs:justify-center ">
             <svg className="xs:w-5 xs:h-18 xs:fill-current xs:text-white"
               xmlns="http://www.w3.org/2000/svg"
               width="48"
@@ -114,7 +117,7 @@ import Image from "next/image";
               viewBox="0 0 48 48"
               fill="none"
             >
-              <g clip-path="url(#clip0_5025_2238)">
+              <g clipPath="url(#clip0_5025_2238)">
                 <path
                   d="M4.40118 0.59375L43.4422 24.0184L4.40118 47.443V0.59375Z"
                   fill="white"
@@ -134,17 +137,17 @@ import Image from "next/image";
           </div>
         </div>
 
-        <video className="Video-Player  xs:rounded-s-2xl"
+        <video className="Video-Player  rounded-2xl"
     
             src="/assets/features.mp4" 
             width={1177}
             height={658}
-            controls
           poster="/assets/features.jpg" 
-              ref={videoRef}
+          ref={videoRef}
+           controls={isPlaying} 
+           onEnded={handleVideoEnded}
+
           />
-      
-       
       </div>
     </div>
   );
