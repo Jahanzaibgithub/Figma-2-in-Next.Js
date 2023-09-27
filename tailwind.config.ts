@@ -10,8 +10,7 @@ module.exports = {
   ],
   theme: {
     screens: {
-      
-      'xs': {'min':'340px','max':'768px'},
+      'xs': {'min':'100px','max':'768px'},
       // => @media (min-width: 340px}
 
       'xs2': {'min':'768px','max':'2300px'},
