@@ -23,9 +23,12 @@ module.exports = {
       backgroundImage: {
         "banner-bg": "url('../public/assets/bannerBg.jpeg')",
       },
+     
       colors: {
         hoverColor: "#ffaa17",
         darkRed: "#ea0638",
+          Gray4: '#535052',
+           Gray5: '#323031',
       },
     },
   },
