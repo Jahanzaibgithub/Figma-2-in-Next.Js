@@ -1,6 +1,7 @@
 import HeroSection from "../components/herosection"
 import Navbar from "../components/Navbar";
 import Features from "../components/features";
+import MainInformation from "../components/MainInformation/mainInformation";
 import "./globals.css";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
           <HeroSection />
       </div>
       < Features/>
+      < MainInformation />
     </main>
   );
 }
