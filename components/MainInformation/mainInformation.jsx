@@ -22,7 +22,7 @@ const MainInformation = () => {
           Each year, the AKDN reaches 2 million learners across 16 countries.
         </div>
       </div>
-      <div className="MainInformation-Status-Container xs:divide-y xs:divide-slate-400  xs2:divide-x xs2:divide-slate-400 xs2:flex xs2:flex-row xs2:items-center xs2:gap-6 xs2:self-stretch   xs:items-start xs:w-full xs:pt-3 xs:gap-3 xs:self-stretch">
+      <div className="MainInformation-Status-Container  xs:space-y-4 xs:divide-y xs:divide-slate-400  xs2:divide-x xs2:divide-slate-400 xs2:flex xs2:flex-row xs2:items-center xs2:gap-6 xs2:self-stretch   xs:items-start xs:w-full xs:pt-3 xs:gap-3 xs:self-stretch">
         <div className=" StatusContainer-1 xs2:flex xs2:p-4 xs2:flex-col xs2:items-center xs2:gap-3 xs2:flex-1 xs:flex xs:grid-cols-2 xs:items-start xs:gap-4">
           <div className="StatusIcon w-10 h-10 flex-shrink-0">
             <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg">
@@ -112,12 +112,12 @@ const MainInformation = () => {
           </div>
         </div>
       </div>
-      <div className="MainButtonContainer flex pt-14 flex-col items-start gap-2.5 xs:flex xs:pt-5 xs:flex-col xs:items-start xs:gap-2.5 xs:self-stretch">
-        <div className="ToggleButtonContainer  bg-[rgba(8,76,97,0.15)]  flex p-6  justify-center xs2:items-center xs:items-start gap-6">
+      <div className="MainButtonContainer xs2:flex xs2:pt-14 xs2:flex-col xs2:items-start xs2:gap-2.5 xs:flex xs:pt-5 xs:flex-col xs:items-start xs:gap-2.5 xs:justify-center  xs:self-stretch">
+        <div className="ToggleButtonContainer  bg-[rgba(8,76,97,0.15)]  flex p-6  justify-center xs2:items-center xs:items-center gap-6">
           <h3 className="ToggleButtonName text-[#084C61] tracking-[0.48px] font-Gotham text-base  font-normal leading-6  inline-block">
             Overview Document: AKDN Afghanistan
           </h3>
-          <div className="ToggleButton w-4 h-4 flex-shrink-0 inline-block ">
+          <div className="ToggleButton  flex-shrink-0 inline-block  ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"
