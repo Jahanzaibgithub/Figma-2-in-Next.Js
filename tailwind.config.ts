@@ -3,9 +3,9 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   
   content: [
-    "./pages/*/.{js,ts,jsx,tsx,mdx}",
-    "./components/*/.{js,ts,jsx,tsx,mdx}",
-    "./app/*/.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
     
   ],
   theme: {
@@ -29,7 +29,7 @@ module.exports = {
         darkRed: "#ea0638",
           Gray4: '#535052',
            Gray5: '#323031',
-           blue: {
+                blue: {
           'custom': '#084C61', // Define your custom blue color
         },
       },
