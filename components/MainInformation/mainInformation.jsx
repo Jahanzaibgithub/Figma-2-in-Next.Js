@@ -2,13 +2,13 @@ import React from "react";
 
 const MainInformation = () => {
   return (
-    <div className="MainInformation-Container bg-gray-200 xs2:flex xs2:p-12 xs2:flex-col xs2:items-center xs2:gap-3 xs2:self-stretch xs:flex xs:flex-col xs:p-6 xs:gap-3 xs:justify-center xs:items-center  xs:self-stretch">
+    <div className="MainInformation-Container bg-slate-200 xs2:flex xs2:p-12 xs2:flex-col xs2:items-center xs2:gap-3 xs2:self-stretch xs:flex xs:flex-col xs:p-6 xs:gap-3 xs:justify-center xs:items-center  xs:self-stretch">
       <div className="MainInformation-Tittle-Container xs2:flex xs2:flex-col xs2:items-center xs2:pt-0 xs2:pr-12 xs2:pb-12 xs2:pl-12 xs2:gap-3 xs:gap-3 xs2:self-stretch">
         <div className="MainInformation-Tittle self-stretch xs2:text-center">
-          <h1 className="Tittle-1 xs2:text-center xs2:text-Gray4 font-Gotham xs2:text-2xl xs2:font-bold xs2:leading-8 xs2:tracking-[0.72px] xs2:uppercase inline-block xs2:mr-2 xs:mr-2 xs:text-xl xs:font-bold xs:leading-8 xs:tracking-wider xs:uppercase xs:text-Gray4">
+          <h1 className="Tittle-1 xs2:text-center xs2:text-Gray4 font-Gotham xs2:text-2xl xs2:font-bold xs2:leading-8 xs2:tracking-[0.72px] xs2:uppercase inline-block xs2:mr-2 xs:mr-2 xs:text-lg xs:font-bold xs:leading-8 xs:tracking-wider xs:uppercase xs:text-Gray4">
             AKDN |
           </h1>
-          <h1 className="Tittle-2 xs2:text-Gray5 xs2:font-Gotham xs2:text-2xl xs2:font-bold xs2:leading-8 xs2:tracking-[0.72px] xs2:uppercase inline-block xs:text-xl xs:text-Gray5  xs:font-Gotham xs:font-bold xs:leading-8 xs:tracking-wide xs:uppercase">
+          <h1 className="Tittle-2 xs2:text-Gray5 xs2:font-Gotham xs2:text-2xl xs2:font-bold xs2:leading-8 xs2:tracking-[0.72px] xs2:uppercase inline-block xs:text-lg xs:text-Gray5  xs:font-Gotham xs:font-bold xs:leading-8 xs:tracking-wide xs:uppercase">
             Education
           </h1>
         </div>
@@ -25,7 +25,7 @@ const MainInformation = () => {
       <div className="MainInformation-Status-Container  xs:space-y-4 xs:divide-y xs:divide-slate-400  xs2:divide-x xs2:divide-slate-400 xs2:flex xs2:flex-row xs2:items-center xs2:gap-6 xs2:self-stretch   xs:items-start xs:w-full xs:pt-3 xs:gap-3 xs:self-stretch">
         <div className=" StatusContainer-1 xs2:flex xs2:p-4 xs2:flex-col xs2:items-center xs2:gap-3 xs2:flex-1 xs:flex xs:grid-cols-2 xs:items-start xs:gap-4">
           <div className="StatusIcon w-10 h-10 flex-shrink-0">
-            <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg">
+            <svg class="xs2:w-9 xs2:h-9 xs:w-10 xs:h-10" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M25.875 24.6548L18 29.0844L10.125 24.6548V19.9746L7.875 18.7246V25.9706L18 31.6659L28.125 25.9706V18.7246L25.875 19.9746V24.6548Z"
                 fill="#084C61"
@@ -45,9 +45,9 @@ const MainInformation = () => {
             </p>
           </div>
         </div>
-        <div className="StatusContainer-2 xs2:flex xs2:p-4 xs2:flex-col xs2:items-center xs2:gap-3 xs2:flex-1 xs:flex xs:grid-cols-2 xs:items-start xs:gap-4">
+        <div className="StatusContainer-2 xs2:flex xs2:p-4 xs2:flex-col xs2:items-center xs2:gap-3 xs2:pl-12 xs2:flex-1 xs:flex xs:grid-cols-2 xs:items-start xs:gap-4 xs:pt-4">
           <div className="StatusIcon ">
-            <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg">
+            <svg class="xs2:w-9 xs2:h-9 xs:w-10 xs:h-10" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M25.875 24.6548L18 29.0844L10.125 24.6548V19.9746L7.875 18.7246V25.9706L18 31.6659L28.125 25.9706V18.7246L25.875 19.9746V24.6548Z"
                 fill="#084C61"
@@ -67,9 +67,9 @@ const MainInformation = () => {
             </p>
           </div>
         </div>
-        <div className="StatusContainer-3 xs2:flex xs2:p-4 xs2:flex-col xs2:items-center xs2:gap-3 xs2:flex-1 xs:flex xs:grid-cols-2 xs:items-start xs:gap-4">
+        <div className="StatusContainer-3 xs2:flex xs2:p-4 xs2:flex-col xs2:items-center xs2:gap-3 xs2:pl-12 xs2:flex-1 xs:flex xs:grid-cols-2 xs:items-start xs:gap-4 xs:pt-4">
           <div className="StatusIcon">
-             <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg">
+             <svg class="xs2:w-9 xs2:h-9 xs:w-10 xs:h-10" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M25.875 24.6548L18 29.0844L10.125 24.6548V19.9746L7.875 18.7246V25.9706L18 31.6659L28.125 25.9706V18.7246L25.875 19.9746V24.6548Z"
                 fill="#084C61"
@@ -89,9 +89,9 @@ const MainInformation = () => {
             </p>
           </div>
         </div>
-        <div className="StatusContainer-4 xs2:flex xs2:p-4 xs2:flex-col xs2:items-center xs2:gap-3 xs2:flex-1 xs:flex xs:grid-cols-2 xs:items-start xs:gap-4">
+        <div className="StatusContainer-4 xs2:flex xs2:p-4 xs2:flex-col xs2:items-center xs2:gap-3 xs2:flex-1 xs:flex xs:grid-cols-2 xs:items-start xs:gap-4 xs:pt-4">
           <div className="StatusIcon">
-            <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg">
+            <svg class="xs2:w-9 xs2:h-9 xs:w-10 xs:h-10" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M25.875 24.6548L18 29.0844L10.125 24.6548V19.9746L7.875 18.7246V25.9706L18 31.6659L28.125 25.9706V18.7246L25.875 19.9746V24.6548Z"
                 fill="#084C61"
@@ -113,11 +113,11 @@ const MainInformation = () => {
         </div>
       </div>
       <div className="MainButtonContainer xs2:flex xs2:pt-14 xs2:flex-col xs2:items-start xs2:gap-2.5 xs:flex xs:pt-5 xs:flex-col xs:items-start xs:gap-2.5 xs:justify-center  xs:self-stretch">
-        <div className="ToggleButtonContainer  bg-[rgba(8,76,97,0.15)]  flex p-6  justify-center xs2:items-center xs:items-center gap-6">
-          <h3 className="ToggleButtonName text-[#084C61] tracking-[0.48px] font-Gotham text-base  font-normal leading-6  inline-block">
+        <div className="ToggleButtonContainer bg-[rgba(8,76,97,0.15)]  flex p-6  justify-center xs2:items-center xs:items-center gap-6">
+          <a className="ToggleButtonName text-[#084C61] tracking-[0.48px] font-Gotham text-base font-normal leading-6 inline-block" href="#">
             Overview Document: AKDN Afghanistan
-          </h3>
-          <div className="ToggleButton  flex-shrink-0 inline-block  ">
+          </a>
+          <a className="ToggleButton  flex-shrink-0 inline-block" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"
@@ -140,7 +140,7 @@ const MainInformation = () => {
                 stroke-linejoin="round"
               />
             </svg>
-          </div>
+          </a>
         </div>
       </div>
     </div>

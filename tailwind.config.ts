@@ -20,6 +20,10 @@ module.exports = {
      extend: 
      
     {
+      textColor: {
+        'second-text': 'var(--second-text, #374754)',
+         'custom-text-color': 'var(--text, #252B42)',
+      },
       backgroundImage: {
         "banner-bg": "url('../public/assets/bannerBg.jpeg')",
       },
