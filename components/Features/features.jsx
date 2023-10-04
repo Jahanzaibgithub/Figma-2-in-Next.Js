@@ -26,17 +26,17 @@ const handlePlayClick = (e) => {
  
   
   return (
-    <div className="Features-Main-Container xs2:flex xs2:flex-col xs2:items-center xs2:gap-20 xs2:self-stretch xs2:text-centergap-50 xs2:py-40  xs:w-full  xs:gap-20 xs:flex xs:px-0 xs:pt-40 pb-20 xs:flex-col xs:items-center xs:self-stretch ">
-      <div className="Features-Main-Heading-Container xs2:flex xs2:flex-col items-center gap-7 xs:flex xs:flex-col xs:items-center xs:gap-4 xs:w-full">
+    <div className="Features-Main-Container xs2:flex xs2:flex-col xs2:items-center xs2:gap-20 xs2:self-stretch xs2:text-center gap-50 xs2:py-40  xs:gap-20 xs:flex xs:px-0 xs:pt-40 pb-20 xs:flex-col xs:items-center xs:self-stretch ">
+      <div className="Features-Main-Heading-Container xs2:flex xs2:flex-col items-center gap-7 xs:flex xs:flex-col xs:items-center xs:gap-4 ">
        <h1 className="Heading xs2:text-var(--text, #252b42) xs2:text-center xs2:font-actor xs2:text-5xl xs2:font-normal xs2:leading-55 xs2:tracking-0.2px xs2:text-custom-primary xs:text-center xs:font-actor xs:text-4xl xs:font-normal xs:leading-55 xs:tracking-tight ">
   Features
 </h1>
-<p className="Paragraph xs2:text-var(--second-text, #374754)  xs2:w-70 xs2:text-center xs2:font-actor xs2:text-2xl xs2:font-Light xs2:leading-40 xs2:tracking-0.2px xs:w-70 xs:m-auto xs:text-center xs:font-actor xs:text-2xl xs:font-normal xs:leading-7 xs:tracking-tight xs:text-second-text xs:w-60">
+<p className="Paragraph xs2:text-var(--second-text, #374754) xs2:text-center xs2:font-actor xs2:text-2xl xs2:font-Light xs2:leading-40 xs2:tracking-0.2px xs:m-auto xs:text-center xs:font-actor xs:text-2xl xs:font-normal xs:leading-7 xs:tracking-tight xs:text-second-text xs:w-8/12 ">
   Most calendars are designed for teams.<br></br>Slate is designed for freelancers.
 </p>
       </div>
-      <div className="Features-Container lg:flex lg:items-start lg:gap-10 lg:w-100  lg:text-center  xs:text-center xs:flex xs:p-4 xs:flex-col  xs:items-start xs:gap-12 xs:order-2 md:order-2 lg:order-1 " >
-        <div className="Features-Left-Box  xs2:flex xs2:flex-col xs2:items-center xs2:gap-5 xs2:w-64 xs2:h-100   xs:flex xs:flex-col xs:items-center xs:gap-5 xs:w-64 xs:h-100">
+      <div className="Features-Container lg:flex lg:flex-row lg:items-start lg:gap-14 lg:w-100  lg:text-center  xs:text-center xs:flex xs:p-4 xs:flex-col  xs:items-start xs:gap-12 md:text-center md:flex md:p-4 md:flex-col  md:items-start md:gap-12 xs:order-2 md:order-2 lg:order-1 " >
+        <div className="Features-Left-Box  lg:flex lg:flex-col lg:items-center lg:gap-5 lg:w-64  xs:flex xs:flex-col xs:items-center xs:gap-5 xs:w-64  md:flex md:flex-col md:items-center md:gap-5 md:w-64 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="61"
@@ -49,15 +49,15 @@ const handlePlayClick = (e) => {
               fill="#2091F9"
             />
           </svg>
-          <h2 className="features-heading  xs2:text-var(--text, #252B42) xs2:text-center xs2:font-actor xs2:text-lg xs2:font-normal xs2:leading-28 xs2:tracking-0.1 xs2:w-44  xs:text-var(--text, #252B42) xs:text-center xs:font-actor xs:text-lg xs:font-normal xs:leading-28 xs:tracking-0.1 xs:w-44">
+          <h2 className="features-heading text-custom-text-color lg:text-center lg:font-actor lg:text-xl lg:font-normal lg:leading-7 lg:tracking-[0.1px] xs:text-center xs:font-actor xs:text-xl xs:font-normal xs:leading-7 xs:tracking-[0.1]  md:text-xl md:font-normal md:leading-7 md:tracking-[0.1] ">
             OpenType Features Variables Fonts
           </h2>
-          <p className="features-paragraph xs2:text-var(--second-text, #374754) xs2:font-actor xs2:text-base xs2:leading-25 xs2:tracking-0.2 xs2:w-54 xs:text-var(--second-text, #374754) xs:font-actor xs:text-base xs:leading-25 xs:tracking-0.2 xs:w-54">
+          <p className="features-paragraph text-second-text lg:font-actor lg:text-lg lg:leading-6 lg:tracking-[0.2px] xs:font-actor xs:text-lg xs:leading-6 xs:tracking-[0.2px] md:font-actor md:text-lg md:leading-6 md:tracking-[0.2px] ">
             Slate helps you see how many more days you need to work to reach
             your financial goal.
           </p>
         </div>
-        <div className="Features-Mid-Box  xs2:flex xs2:flex-col xs2:items-center xs2:gap-5 xs2:w-64 xs:flex xs:flex-col xs:items-center xs:gap-5 xs:w-64 xs:h-100 ">
+        <div className="Features-Mid-Box lg:flex lg:flex-col lg:items-center lg:gap-5 lg:w-64 lg:h-100 xs:flex xs:flex-col xs:items-center xs:gap-5 xs:w-64  md:flex md:flex-col md:items-center md:gap-5 md:w-64">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="57"
@@ -70,13 +70,13 @@ const handlePlayClick = (e) => {
               fill="#2091F9"
             />
           </svg>
-          <h2 className="features-heading xs2:text-var(--text, #252B42) xs2:text-center xs2:font-actor xs2:text-lg xs2:font-normal xs2:leading-28 xs2:tracking-0.1 xs2:w-44  xs:text-var(--text, #252B42) xs:text-center xs:font-actor xs:text-lg xs:font-normal xs:leading-28 xs:tracking-0.1 xs:w-44">Design with real data</h2>
-          <p className="features-paragraph xs2:text-var(--second-text, #374754) xs2:font-actor xs2:text-base xs2:leading-25 xs2:tracking-0.2 xs2:w-54  xs:text-var(--second-text, #374754) xs:font-actor xs:text-base xs:leading-25 xs:tracking-0.2 xs:w-54">
+          <h2 className="features-heading text-custom-text-color lg:text-center lg:font-actor lg:text-lg lg:font-normal lg:leading-7 lg:tracking-[0.1px] xs:text-center xs:font-actor xs:text-xl xs:font-normal xs:leading-7 xs:tracking-[0.1] md:text-xl md:font-normal md:leading-7 md:tracking-[0.1]">Design with real data</h2>
+          <p className="features-paragraph text-second-text lg:font-actor lg:text-lg lg:leading-6 lg:tracking-[0.2px] xs:font-actor xs:text-lg xs:leading-6 xs:tracking-[0.2px] md:font-actor md:text-lg md:leading-6 md:tracking-[0.2px] ">
             Slate helps you see how many more days you need to work to reach
             your financial goal.
           </p>
         </div>
-        <div className="Features-Right-Box  xs2:flex xs2:flex-col xs2:items-center xs2:gap-5 xs2:w-64 xs:flex xs:flex-col xs:items-center xs:gap-5 xs:w-64 xs:h-100">
+        <div className="Features-Right-Box lg:flex lg:flex-col lg:items-center lg:gap-5 lg:w-64 lg:h-100 xs:flex xs:flex-col xs:items-center xs:gap-5 xs:w-64  md:flex md:flex-col md:items-center md:gap-5 md:w-64">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="61"
@@ -89,31 +89,27 @@ const handlePlayClick = (e) => {
               fill="#2091F9"
             />
           </svg>
-          <h2 className="features-heading  xs2:text-var(--text, #252B42) xs2:text-center xs2:font-actor xs2:text-lg xs2:font-normal xs2:leading-28 xs2:tracking-0.1 xs2:w-44  xs:text-var(--text, #252B42) xs:text-center xs:font-actor xs:text-lg xs:font-normal xs:leading-28 xs:tracking-0.1 xs:w-44">
+          <h2 className="features-heading text-custom-text-color lg:text-center lg:font-actor lg:text-xl lg:font-normal lg:leading-7 lg:tracking-[0.1px] xs:text-center xs:font-actor xs:text-xl xs:font-normal xs:leading-7 xs:tracking-[0.1] md:text-xl md:font-normal md:leading-7 md:tracking-[0.1]">
             Fastest way to take action
           </h2>
-          <p className="features-paragraph xs2:text-var(--second-text, #374754) xs2:font-actor xs2:text-base xs2:leading-25 xs2:tracking-0.2 xs2:w-54 xs:text-var(--second-text, #374754) xs:font-actor xs:text-base xs:leading-25 xs:tracking-0.2 xs:w-54">
+          <p className="features-paragraph text-second-text lg:font-actor lg:text-lg lg:leading-6 lg:tracking-[0.2px] xs:font-actor xs:text-lg xs:leading-6 xs:tracking-[0.2px] md:font-actor md:text-lg md:leading-6 md:tracking-[0.2px]">
             Slate helps you see how many more days you need to work to reach
             your financial goal.
           </p>
         </div>
       </div>
-      <div className="Features-Video relative xs:order-1 md:order-1 lg:order-2 xs2:flex-shrink-0 xs:w-11/12 xs:flex-shrink-0 xs:line-height-100" >
+      <div className="Features-Video relative xs:order-1 md:order-1 lg:order-2 xs2:flex-shrink-0 xs:flex-shrink-0 xs:line-height-100 cursor-pointer" >
         <div className="PlayButton  z-20 absolute inset-0 flex items-center justify-center"  onClick={handlePlayClick}>
-          <svg className="xs:w-20 xs:h-74 xs:fill-current xs:text-blue-500"
+          <svg className="lg:w-48 lg:h-48 lg:fill-current lg:text-blue-500 xs:w-20 xs:h-16 xs:fill-current xs:text-blue-500 md:w-32 md:h-28 md:fill-current md:text-blue-500"
             xmlns="http://www.w3.org/2000/svg"
-            width="188"
-            height="188"
             viewBox="0 0 188 188"
             fill="#2091F9"
               >
             <circle cx="93.8293" cy="94" r="93.6985" fill="#2091F9" />
           </svg>
           <div className="play-icon absolute xs:absolute xs:inset-0 xs:flex xs:items-center xs:justify-center ">
-            <svg className="xs:w-5 xs:h-18 xs:fill-current xs:text-white"
+            <svg className="lg:w-12 lg:h-12 lg:fill-current lg:text-white xs:w-5 xs:h-4 xs:fill-current xs:text-white md:w-8 md:h-7 md:fill-current md:text-white"
               xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
               viewBox="0 0 48 48"
               fill="none"
             >
@@ -136,18 +132,15 @@ const handlePlayClick = (e) => {
             </svg>
           </div>
         </div>
-
-        <video className="Video-Player  rounded-2xl"
-    
+       <div  className="Video-Container flex justify-center items-center ">
+      <video  className="Video-Player xl:w-9/12 lg:w-11/12 xs:w-9/12 md:w-9/12  rounded-2xl" 
             src="/assets/features.mp4" 
-            width={1177}
-            height={658}
           poster="/assets/features.jpg" 
           ref={videoRef}
            controls={isPlaying} 
            onEnded={handleVideoEnded}
-
           />
+          </div>
       </div>
     </div>
   );
