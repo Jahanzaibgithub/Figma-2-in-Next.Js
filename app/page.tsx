@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Features from "../components/Features/features";
 import MainInformation from "../components/MainInformation/mainInformation";
 import Agency from "../components/ Agency/agency";
+import InfoBlock from "../components/Info-Block/infoblock";
 import "./globals.css";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       < Features/>
       < MainInformation />
       <Agency />
+      <InfoBlock />
     </main>
   );
 }
