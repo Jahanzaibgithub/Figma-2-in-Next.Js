@@ -8,15 +8,16 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     
   ],
-  theme: {
+    theme: {
     screens: {
       'xs': {'min':'100px','max':'768px'},
-      // => @media (min-width: 340px}
+      
 
       'xs2': {'min':'768px','max':'2300px'},
-      // => @media (min-width: 480px) { ... }
+      
       ...defaultTheme.screens,
     },
+
      extend: 
      
     {
