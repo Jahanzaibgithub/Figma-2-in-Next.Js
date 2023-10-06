@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className=" text-black lg:text-white  bg-transparent lg:pt-7  pt-7  items-center justify-between lg:h-28  ">
-      <div className="lg:max-w-screen-xl lg:h-full lg:mx-auto lg:px-20 lg:flex lg:justify-between  md:h-full md:flex  max-w-screen-xl h-full mx-auto px-4 py-4 flex items-center justify-between">
+    <div className=" text-black lg:text-white bg-transparent pt-7 items-center justify-between lg:h-28">
+      <div className="lg:max-w-screen-xl lg:h-full lg:mx-auto lg:px-20 lg:flex lg:justify-between  max-w-screen-xl h-full mx-auto px-4 py-4 flex items-center justify-between">
         <div className="lg:gap-0 lg:flex lg:justify-between ">
           <ul className="navbar-list lg:inline-flex lg:text-sm lg:fz-15 lg:p-10 lg:items-center lg:gap-10 hidden  ">
           <li className="navbarLi lg:text-white lg:text-center lg:font-actor lg:text-base lg:font-normal lg:leading-7 lg:tracking-tighter ">
@@ -24,7 +24,7 @@ const Navbar = () => {
             <a className="TagButton p-1" href="#">Contact</a>
           </li>
         </ul>
-        <div className=" lg:flex lg:pt-5  lg:items-start ">
+        <div className=" lg:flex lg:pt-5 lg:items-start ">
           <Image src="/assets/Rectangle 4.png" alt="" width={186} height={58} />
         </div>
         </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
             </svg>
           </a>
         </div>
-        <div className=" inline-flex  lg:hidden">
+        <div className=" inline-flex even:lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
