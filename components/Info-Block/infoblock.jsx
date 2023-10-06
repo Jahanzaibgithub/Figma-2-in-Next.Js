@@ -22,7 +22,7 @@ const InfoBlock = () => {
       </div>
       <div className="InfoBlockContainer flex flex-col items-start gap-11 self-stretch">
         <div className="InfoBlock1 flex flex-col items-start self-stretch gap-2 md:flex-row md:gap-12 ">
-          <h2 className="InFoBlockHeading text-Gray5 font-Gotham uppercase text-base font-bold leading-6 self-stretch xl:whitespace-nowrap md:font-normal md:w-1/4">
+          <h2 className="InFoBlockHeading text-Gray5 font-Gotham uppercase text-base font-bold leading-6 self-stretch xl:whitespace-nowrap md:font-normal md:w-2/6">
             Early Childhood Development
           </h2>
           <div className="InFoBlockParagraphAndLink md:w-3/4">
@@ -106,7 +106,7 @@ const InfoBlock = () => {
         </div>
 
         <div className="InfoBlock2 flex flex-col items-start self-stretch gap-2 md:flex-row md:gap-12 ">
-          <h2 className="InFoBlockHeading text-Gray5 font-Gotham uppercase text-base font-bold leading-6 self-stretch whitespace-nowrap md:font-normal md:w-1/4">
+          <h2 className="InFoBlockHeading text-Gray5 font-Gotham uppercase text-base font-bold leading-6 self-stretch whitespace-nowrap md:font-normal md:w-2/6">
             {" "}
             Primary & Secondary
           </h2>
@@ -194,7 +194,7 @@ const InfoBlock = () => {
         </div>
 
         <div className="InfoBlock3 flex flex-col items-start self-stretch gap-2 md:flex-row md:gap-12  ">
-          <h2 className="InFoBlockHeading text-Gray5 font-Gotham uppercase text-base font-bold leading-6 self-stretch whitespace-nowrap md:font-normal md:w-1/4 ">
+          <h2 className="InFoBlockHeading text-Gray5 font-Gotham uppercase text-base font-bold leading-6 self-stretch whitespace-nowrap md:font-normal md:w-2/6 ">
             Higher Education
           </h2>
           <div className="InFoBlockParagraphAndLink md:w-3/4">
@@ -281,7 +281,7 @@ const InfoBlock = () => {
         </div>
 
         <div className="InfoBlock4 flex flex-col items-start self-stretch gap-2 md:flex-row md:gap-12  ">
-          <h2 className="InFoBlockHeading text-Gray5 font-Gotham uppercase text-base font-bold leading-6 self-stretch whitespace-nowrap md:font-normal md:w-1/4 ">
+          <h2 className="InFoBlockHeading text-Gray5 font-Gotham uppercase text-base font-bold leading-6 self-stretch  md:font-normal md:w-2/6 ">
             {" "}
             Continuing Education
           </h2>

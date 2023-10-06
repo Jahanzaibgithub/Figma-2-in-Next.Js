@@ -9,14 +9,6 @@ module.exports = {
     
   ],
     theme: {
-    screens: {
-      'xs': {'min':'100px','max':'768px'},
-      
-
-      'xs2': {'min':'768px','max':'2300px'},
-      
-      ...defaultTheme.screens,
-    },
 
      extend: 
      
