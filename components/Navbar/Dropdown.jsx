@@ -14,9 +14,17 @@ function DropDown() {
       setDropdownOpen(false);
     }
   };
+  const baseContainerClass = "NavigationContainer text-white lg:hidden w-full divide-y-2";
+ 
+  const containerClasses = `${baseContainerClass} ${
+    isDropdownOpen ? "bg-primary" : ""
+  }`;
+
 
   return (
-    <div className="NavigationContainer bg-blue-500 divide-y-2  ">
+     <div className={containerClasses}>
+      <div className={baseContainerClass}>
+    <div className="NavigationContainer text-white lg:hidden w-full divide-y-2 ">
       <div className="MainHeader flex justify-between items-center self-stretch pt-10 pb-5">
         <div className="LogoImage flex items-start ml-5">
       <Image src="/assets/Rectangle 4.png" alt="" width={186} height={58} />
@@ -37,20 +45,20 @@ function DropDown() {
         </div>
       </div>
       {isDropdownOpen && (
-        <div className="Icons  mt-2 items-start h-96 pt-5 mr-5 ml-5 pl-7 ">
-          <a href="#" className="block font-semibold text-xl text-white pt-5 ">
+        <div className="Icons  mt-2 items-start h-96 gap-5 ml-6 mr-6 ">
+          <a href="#" className="block font-medium text-lg text-white pt-7 ">
             Home
           </a>
-          <a href="#" className="block font-semibold text-xl text-white pt-7">
+          <a href="#" className="block font-medium text-lg text-white pt-7">
             Product
           </a>
-          <a href="#" className="block font-semibold text-xl text-white pt-7">
+          <a href="#" className="block font-medium text-lg text-white pt-7">
             Pricing
           </a>
-          <a href="#" className="block  font-semibold text-xl text-white pt-7">
+          <a href="#" className="block font-medium text-lg text-white pt-7">
             About
           </a>
-          <a href="#" className="block font-semibold text-xl text-white pt-7">
+          <a href="#" className="block font-medium text-l text-white pt-7">
             Contact
           </a>
           <div className="SocialMedia flex flex-row justify-center items-center gap-5 pt-10">
@@ -94,6 +102,8 @@ function DropDown() {
           </div>
         </div>
       )}
+      </div>
+    </div>
     </div>
   );
 }

@@ -33,18 +33,14 @@ const InfoBlock = () => {
             </p>
             <div className="SeeMoreLinkContainer">
               {isTextVisibleArray[0] ? null : ( // Text is visible, so we don't render the SVG and title
-                <div className="SeeMoreLink1 flex items-center gap-2 ">
-                  <a
-                    className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] "
-                    href="#"
-                  >
+                <div
+                  className="SeeMoreLink1 flex items-center gap-2 "
+                  onClick={() => toggleTextVisibility(0)}
+                >
+                  <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                     <h2>See More</h2>
-                  </a>
-                  <a
-                    className="SeeMoreLinkArrow"
-                    href="#"
-                    onClick={() => toggleTextVisibility(0)}
-                  >
+                  </div>
+                  <div className="SeeMoreLinkArrow">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -60,28 +56,24 @@ const InfoBlock = () => {
                         stroke-linejoin="round"
                       />
                     </svg>
-                  </a>
+                  </div>
                 </div>
               )}
               {isTextVisibleArray[0] && (
-                <div className="SeeMoreLink2 flex  flex-col  gap-2">
+                <div className="SeeLessLink2 flex flex-col gap-2 ">
                   <p className="Paragraph  text-Gray5 text-lg font-Gotham font-normal leading-7 tracking-wider self-stretch md:text-xl ">
                     Globally, the AKDN’s activities in early childhood
                     development provide 750,000 children aged pre-natal-8 with
                     quality early learning opportunities, annually.
                   </p>
-                  <div className="flex fex-row ">
-                    <a
-                      className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] "
-                      href="#"
-                    >
+                  <div
+                    className="flex fex-row gap-2"
+                    onClick={() => toggleTextVisibility(0)}
+                  >
+                    <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                       <h2>See Less</h2>
-                    </a>
-                    <a
-                      className="SeeMoreLinkArrow"
-                      href="#"
-                      onClick={() => toggleTextVisibility(0)}
-                    >
+                    </div>
+                    <div className="SeeMoreLinkArrow">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -97,7 +89,7 @@ const InfoBlock = () => {
                           strokeLinejoin="round"
                         />
                       </svg>
-                    </a>
+                    </div>
                   </div>
                 </div>
               )}
@@ -120,18 +112,14 @@ const InfoBlock = () => {
             </p>
             <div className="SeeMoreLinkContainer">
               {isTextVisibleArray[1] ? null : ( // Text is visible, so we don't render the SVG and title
-                <div className="SeeMoreLink1 flex items-center gap-2 ">
-                  <a
-                    className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] "
-                    href="#"
-                  >
+                <div
+                  className="SeeMoreLink1 flex items-center gap-2 "
+                  onClick={() => toggleTextVisibility(1)}
+                >
+                  <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                     <h2>See More</h2>
-                  </a>
-                  <a
-                    className="SeeMoreLinkArrow"
-                    href="#"
-                    onClick={() => toggleTextVisibility(1)}
-                  >
+                  </div>
+                  <div className="SeeMoreLinkArrow">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -147,29 +135,25 @@ const InfoBlock = () => {
                         stroke-linejoin="round"
                       />
                     </svg>
-                  </a>
+                  </div>
                 </div>
               )}
               {isTextVisibleArray[1] && (
-                <div className="SeeMoreLink2 flex  flex-col  gap-2">
+                <div className="SeeLessLink2 flex flex-col gap-2">
                   <p className="Paragraph  text-Gray5 text-lg font-Gotham font-normal leading-7 tracking-wider self-stretch md:text-xl ">
                     Globally, the AKDN’s activities in early childhood
                     development provide 750,000 children aged pre-natal-8 with
                     quality early learning opportunities, annually.
                   </p>
 
-                  <div className="flex fex-row ">
-                    <a
-                      className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] "
-                      href="#"
-                    >
+                  <div
+                    className="flex fex-row gap-2"
+                    onClick={() => toggleTextVisibility(1)}
+                  >
+                    <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                       <h2>See Less</h2>
-                    </a>
-                    <a
-                      className="SeeMoreLinkArrow"
-                      href="#"
-                      onClick={() => toggleTextVisibility(1)}
-                    >
+                    </div>
+                    <div className="SeeMoreLinkArrow">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -185,7 +169,7 @@ const InfoBlock = () => {
                           strokeLinejoin="round"
                         />
                       </svg>
-                    </a>
+                    </div>
                   </div>
                 </div>
               )}
@@ -207,18 +191,14 @@ const InfoBlock = () => {
             </p>
             <div className="SeeMoreLinkContainer">
               {isTextVisibleArray[2] ? null : ( // Text is visible, so we don't render the SVG and title
-                <div className="SeeMoreLink1 flex items-center gap-2 ">
-                  <a
-                    className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] "
-                    href="#"
-                  >
+                <div
+                  className="SeeMoreLink1 flex items-center gap-2"
+                  onClick={() => toggleTextVisibility(2)}
+                >
+                  <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                     <h2>See More</h2>
-                  </a>
-                  <a
-                    className="SeeMoreLinkArrow"
-                    href="#"
-                    onClick={() => toggleTextVisibility(2)}
-                  >
+                  </div>
+                  <div className="SeeMoreLinkArrow">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -234,29 +214,25 @@ const InfoBlock = () => {
                         stroke-linejoin="round"
                       />
                     </svg>
-                  </a>
+                  </div>
                 </div>
               )}
               {isTextVisibleArray[2] && (
-                <div className="SeeMoreLink2 flex  flex-col  gap-2">
+                <div className="SeeLessLink2 flex  flex-col  gap-2">
                   <p className="Paragraph  text-Gray5 text-lg font-Gotham font-normal leading-7 tracking-wider self-stretch md:text-xl ">
                     Globally, the AKDN’s activities in early childhood
                     development provide 750,000 children aged pre-natal-8 with
                     quality early learning opportunities, annually.
                   </p>
 
-                  <div className="flex fex-row ">
-                    <a
-                      className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] "
-                      href="#"
-                    >
+                  <div
+                    className="flex fex-row gap-2"
+                    onClick={() => toggleTextVisibility(2)}
+                  >
+                    <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                       <h2>See Less</h2>
-                    </a>
-                    <a
-                      className="SeeMoreLinkArrow"
-                      href="#"
-                      onClick={() => toggleTextVisibility(2)}
-                    >
+                    </div>
+                    <div className="SeeMoreLinkArrow">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -272,7 +248,7 @@ const InfoBlock = () => {
                           strokeLinejoin="round"
                         />
                       </svg>
-                    </a>
+                    </div>
                   </div>
                 </div>
               )}
@@ -295,18 +271,14 @@ const InfoBlock = () => {
             </p>
             <div className="SeeMoreLinkContainer">
               {isTextVisibleArray[3] ? null : ( // Text is visible, so we don't render the SVG and title
-                <div className="SeeMoreLink1 flex items-center gap-2 ">
-                  <a
-                    className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] "
-                    href="#"
-                  >
+                <div
+                  className="SeeMoreLink1 flex items-center gap-2 "
+                  onClick={() => toggleTextVisibility(3)}
+                >
+                  <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                     <h2>See More</h2>
-                  </a>
-                  <a
-                    className="SeeMoreLinkArrow"
-                    href="#"
-                    onClick={() => toggleTextVisibility(3)}
-                  >
+                  </div>
+                  <div className="SeeMoreLinkArrow">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -322,11 +294,11 @@ const InfoBlock = () => {
                         stroke-linejoin="round"
                       />
                     </svg>
-                  </a>
+                  </div>
                 </div>
               )}
               {isTextVisibleArray[3] && (
-                <div className="SeeMoreLink2 flex  flex-col  gap-2">
+                <div className="SeeLessLink2 flex  flex-col  gap-2">
                   <p className="Paragraph  text-Gray5 text-lg font-Gotham font-normal leading-7 tracking-wider self-stretch md:text-xl ">
                     The AKDN views continuing education as a key driver to
                     advancing the professional and vocational skills of any
@@ -336,18 +308,14 @@ const InfoBlock = () => {
                     courses.
                   </p>
 
-                  <div className="flex fex-row ">
-                    <a
-                      className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] "
-                      href="#"
-                    >
+                  <div
+                    className="flex fex-row gap-2"
+                    onClick={() => toggleTextVisibility(3)}
+                  >
+                    <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                       <h2>See Less</h2>
-                    </a>
-                    <a
-                      className="SeeMoreLinkArrow"
-                      href="#"
-                      onClick={() => toggleTextVisibility(3)}
-                    >
+                    </div>
+                    <div className="SeeMoreLinkArrow">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -363,7 +331,7 @@ const InfoBlock = () => {
                           strokeLinejoin="round"
                         />
                       </svg>
-                    </a>
+                    </div>
                   </div>
                 </div>
               )}

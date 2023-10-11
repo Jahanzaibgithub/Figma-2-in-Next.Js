@@ -2,7 +2,7 @@ import React from "react";
 
 const MainInformation = () => {
   return (
-    <div className="MainInformation-Container bg-slate-200 lex flex-col p-6 gap-3 justify-center items-center self-stretch md:p-12 ">
+    <div className="MainInformation-Container bg-blue-50 flex flex-col p-6 gap-5 justify-center items-center self-stretch md:p-12 md:gap-3">
       <div className="MainInformation-Tittle-Container md:flex gap-3 md:flex-col md:items-center md:pt-0 md:pr-12 md:pb-12 md:pl-12 md:self-stretch">
         <div className="MainInformation-Tittle self-stretch md:text-center">
           <h1 className="Tittle-1  text-Gray4 font-Gotham inline-block  mr-2 text-lg font-bold leading-8 tracking-wider uppercase md:text-2xl  md:text-center md:tracking-[0.72px]">
@@ -22,7 +22,7 @@ const MainInformation = () => {
           Each year, the AKDN reaches 2 million learners across 16 countries.
         </div>
       </div>
-      <div className="MainInformation-Status-Container divide-y space-y-4 divide-slate-400 md:divide-y-0 md:space-y-0  items-start w-full pt-3 gap-3 self-stretch md:divide-x md:divide-slate-400 md:flex md:flex-row md:items-center md:gap-6">
+      <div className="MainInformation-Status-Container divide-y space-y-4 divide-gray-300 md:divide-y-0 md:space-y-0  items-start w-full pt-3 gap-3 self-stretch md:divide-x md:divide-gray-300 md:flex md:flex-row md:items-center md:gap-6">
         <div className=" StatusContainer-1 md:flex md:p-4 md:flex-col md:items-center md:gap-3 md:flex-1 flex grid-cols-2 items-start gap-4">
           <div className="StatusIcon w-10 h-10 flex-shrink-0">
             <svg class="md:w-9 md:h-9 w-10 h-10" xmlns="http://www.w3.org/2000/svg">
