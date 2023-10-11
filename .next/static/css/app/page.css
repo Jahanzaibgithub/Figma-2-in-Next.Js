@@ -3,69 +3,13 @@
   \***********************************************************************************************************************************************************************************************************************************************************************************/
 /* Default styles for larger screens */
 
-.herosection-main-container {
-    height: 800px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: center;
-}
-
-.herosection-heading-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.herosection-heading {
-    color: var(--Light-text, #FFF);
-    text-align: center;
-    font-family: Actor;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 74px;
-    letter-spacing: 0.2px;
-}
-
-.herosection-paragraph {
-    color: var(--Light-text, #FFF);
-    text-align: center;
-    font-family: Actor;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
-    /* 142.857% */
-    letter-spacing: 0.2px;
-    padding-top: 20px;
-}
-
 
 /* Media query for smaller screens */
 
 @media (max-width: 768px) {
-    .herosection-main-container {
-        align-items: center;
-        text-align: center;
-        /* Full width for smaller screens */
-    }
-    .herosection-heading {
-        /* Adjust font size for smaller screens */
-        color: var(--Light-text, #FFF);
-        text-align: center;
-        font-family: Actor;
-        font-size: 38px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 55px;
-        /* 114.583% */
-        letter-spacing: 0.2px;
-        width: 75%;
-    }
     .herosection-paragraph {
         /* Adjust line-height for smaller screens */
-        width: 75%;
+        width: 80%;
         color: var(--Light-text, #FFF);
         text-align: center;
         font-family: Actor;

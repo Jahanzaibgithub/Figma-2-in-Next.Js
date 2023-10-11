@@ -1,10 +1,10 @@
 
-import React  from "react";
+import React from "react";
 import Image from "next/image";
 const Navbar = () => {
 
   return (
-    <div className=" text-black  pt-7 lg:items-center lg:justify-between lg:h-28">
+    <div className="  lg:w-full lg:bg-black lg:opacity-80 lg:text-white lg:pt-7 lg:items-center lg:justify-between lg:h-28">
       <div className="lg:max-w-screen-xl lg:h-full lg:mx-auto lg:px-20 lg:flex lg:justify-between  ">
         <div className="lg:gap-0 lg:flex lg:justify-between  ">
           <ul className="navbar-list lg:inline-flex lg:text-sm  lg:p-10 lg:items-center lg:gap-5 xl:gap-10 hidden  ">
@@ -35,17 +35,11 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <div className=" lg:flex flex-row items-center justify-center lg:pt-2 lg:items-start">
-            <div className="LogoImage hidden lg:flex lg:flex-col lg:items-start">
-              {" "}
-              <Image
-                src="/assets/Rectangle 4.png"
-                alt=""
-                width={186}
-                height={58}
-              />{" "}
-            </div>
-          </div>
+            <div className="MainHeader hidden lg:flex lg:justify-between lg:items-center lg:self-stretch lg:p-4 Lg:pb-5">
+        <div className="LogoImage items-start ">
+      <Image src="/assets/Rectangle 4.png" alt="" width={186} height={58} />
+        </div>
+      </div>
         </div>
         <div className="  hidden lg:inline-flex lg:items-center lg:gap-7  ">
           <a className="w-8 h-8 sm:w-10 sm:h-10" href="https://twitter.com/">
