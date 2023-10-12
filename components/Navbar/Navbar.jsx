@@ -5,7 +5,7 @@ const Navbar = () => {
 
   return (
     <div className="  lg:w-full lg:bg-black lg:opacity-80 lg:text-white lg:pt-7 lg:items-center lg:justify-between lg:h-28">
-      <div className="lg:max-w-screen-xl lg:h-full lg:mx-auto lg:px-20 lg:flex lg:justify-between  ">
+      <div className="lg:max-w-screen-xl  lg:mx-auto lg:px-20 lg:flex lg:justify-between  ">
         <div className="lg:gap-0 lg:flex lg:justify-between  ">
           <ul className="navbar-list lg:inline-flex lg:text-sm  lg:p-10 lg:items-center lg:gap-5 xl:gap-10 hidden  ">
             <li className="navbarLi lg:text-white lg:text-center lg:font-actor lg:text-base lg:font-normal lg:leading-7 lg:tracking-tighter ">
@@ -35,13 +35,13 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-            <div className="MainHeader hidden lg:flex lg:justify-between lg:items-center lg:self-stretch lg:p-4 Lg:pb-5">
-        <div className="LogoImage items-start ">
+            <div className="MainHeader hidden lg:flex lg:justify-between lg:items-center lg:self-stretch lg:p-5 Lg:pb-5">
+        <div className="LogoImage items-center justify-center">
       <Image src="/assets/Rectangle 4.png" alt="" width={186} height={58} />
         </div>
       </div>
         </div>
-        <div className="  hidden lg:inline-flex lg:items-center lg:gap-7  ">
+        <div className="  hidden lg:inline-flex lg:items-center lg:gap-7 lg:pt-2 ">
           <a className="w-8 h-8 sm:w-10 sm:h-10" href="https://twitter.com/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
