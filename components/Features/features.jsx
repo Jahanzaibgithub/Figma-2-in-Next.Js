@@ -28,7 +28,7 @@ const handlePlayClick = (e) => {
   return (
     <div className="Features-Main-Container flex flex-col items-center gap-20 self-stretch px-0 pt-40 pb-20  md:text-center gap-50 md:py-40 ">
       <div className="Features-Main-Heading-Container flex flex-col items-center gap-7   ">
-       <h1 className="Heading text-var(--text, #252b42) font-actor md:text-5xl font-normal leading-13 md:tracking-[0.2px] md:text-custom-primary text-center text-4xl tracking-tight ">
+       <h1 className="Heading text-custom-text-color  font-actor md:text-5xl font-normal leading-13 md:tracking-[0.2px] md:text-custom-primary text-center text-4xl tracking-tight ">
   Features
 </h1>
 <p className="Paragraph text-second-text m-auto text-center font-actor text-2xl font-normal leading-7 tracking-tight w-7/12 md:font-actor md:text-2xl md:font-Light md:leading-10 md:tracking-[0.2px] md:w-8/12 ">
