@@ -119,23 +119,7 @@ const InfoBlock = () => {
                   <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                     <h2>See More</h2>
                   </div>
-                  <div className="SeeMoreLinkArrow">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M6 9L12 15L18 9"
-                        stroke="#084C61"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </div>
+                 
                 </div>
               )}
               {isTextVisibleArray[1] && (
