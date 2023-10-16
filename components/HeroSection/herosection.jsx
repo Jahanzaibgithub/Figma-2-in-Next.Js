@@ -1,7 +1,37 @@
-import React from "react";
+"use client";
+import React, {useEffect} from "react";
 import styles from "./hero.modules.css";
 
 const HeroSection = () => {
+ useEffect(() => {
+    const checkbox = document.querySelector('input[type="checkbox"]');
+    const elementsToChange = document.querySelectorAll('.herosection-toggel-btn, .slider');
+
+    checkbox.addEventListener('change', function() {
+      if (this.checked) {
+        elementsToChange.forEach(element => {
+          element.setAttribute('dir', 'rtl');
+        });
+      } else {
+        elementsToChange.forEach(element => {
+          element.removeAttribute('dir');
+        });
+      }
+    });
+    return () => {
+      checkbox.removeEventListener('change', function() {
+        if (this.checked) {
+          elementsToChange.forEach(element => {
+            element.setAttribute('dir', 'rtl');
+          });
+        } else {
+          elementsToChange.forEach(element => {
+            element.removeAttribute('dir');
+          });
+        }
+      });
+    }
+  }, []);
   return (
   <div className="herosectionMainContainer h-[800px] w-full flex flex-col justify-center items-center  bg-black bg-opacity-80 text-white text-center gap-14 lg:gap-10">
       <div className="herosectionHeadingContainer flex flex-col items-center gap-2.5 pt-20">
