@@ -14,7 +14,7 @@ const InfoBlock = () => {
     setIsTextVisibleArray(updatedArray);
   };
   return (
-    <div className="InfoBlockMainContainer bg-white md:flex md:p-12 md:flex-col md:items-start md:gap-6 p-6 flex flex-col items-start gap-6 self-stretch">
+    <div className="InfoBlockMainContainer bg-white md:flex md:p-12 md:flex-col md:items-start md:gap-6 p-6 flex flex-col items-start gap-6 self-stretch" dir="rtl">
       <div className="InfoBlockTittle md:flex md:flex-col md:justify-center md:self-stretch ">
         <h1 className="Heading text-Gray5 font-Gotham uppercase leading-8 text-lg font-semibold tracking-[0.54px] md:text-2xl md:font-bold md:tracking-wide">
           Our Work
@@ -70,10 +70,10 @@ const InfoBlock = () => {
                     className="flex fex-row gap-2"
                     onClick={() => toggleTextVisibility(0)}
                   >
-                    <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
+                    <div className="SeeLessLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                       <h2>See Less</h2>
                     </div>
-                    <div className="SeeMoreLinkArrow">
+                    <div className="SeeLessLinkArrow">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -119,7 +119,23 @@ const InfoBlock = () => {
                   <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                     <h2>See More</h2>
                   </div>
-                 
+                    <div className="SeeMoreLinkArrow">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M6 9L12 15L18 9"
+                        stroke="#084C61"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
                 </div>
               )}
               {isTextVisibleArray[1] && (
@@ -134,10 +150,10 @@ const InfoBlock = () => {
                     className="flex fex-row gap-2"
                     onClick={() => toggleTextVisibility(1)}
                   >
-                    <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
+                    <div className="SeeLessLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                       <h2>See Less</h2>
                     </div>
-                    <div className="SeeMoreLinkArrow">
+                    <div className="SeeLessLinkArrow">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -182,7 +198,7 @@ const InfoBlock = () => {
                   <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                     <h2>See More</h2>
                   </div>
-                  <div className="SeeMoreLinkArrow">
+                    <div className="SeeMoreLinkArrow">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -213,10 +229,10 @@ const InfoBlock = () => {
                     className="flex fex-row gap-2"
                     onClick={() => toggleTextVisibility(2)}
                   >
-                    <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
+                    <div className="SeeLessLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                       <h2>See Less</h2>
                     </div>
-                    <div className="SeeMoreLinkArrow">
+                    <div className="SeeLessLinkArrow">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -296,10 +312,10 @@ const InfoBlock = () => {
                     className="flex fex-row gap-2"
                     onClick={() => toggleTextVisibility(3)}
                   >
-                    <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
+                    <div className="SeeLessLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                       <h2>See Less</h2>
                     </div>
-                    <div className="SeeMoreLinkArrow">
+                    <div className="SeeLessLinkArrow">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
