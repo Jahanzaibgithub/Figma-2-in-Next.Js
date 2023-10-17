@@ -1,8 +1,9 @@
+
 import React from "react";
 
 const Partners = () => {
   return (
-    <div className="PartnersContainer flex py-12 px-5 flex-col items-center gap-20 self-stretch lg:py-20 lg:px-0 lg:flex-col lg:items-center">
+    <div className="PartnersContainer flex py-12 px-5 flex-col items-center gap-20 self-stretch lg:py-20 lg:px-0 lg:flex-col lg:items-center " >
       <div className="PartnersMainHeading flex flex-col items-center gap-7">
         <h1 class="text-custom-text-color  text-center font-[actor] text-5xl font-normal leading-[55px] tracking-normal">
           Partners
@@ -12,7 +13,7 @@ const Partners = () => {
           freelancers
         </p>
       </div>
-      <div className="PartnersSocialContainer flex flex-col p-4 items-center gap-8 lg:gap-0 lg:p-0 lg:flex lg:flex-wrap lg:flex-row lg:justify-center lg:items-center lg:max-w-4xl xl:max-w-6xl">
+      <div className="PartnersSocialContainer flex flex-col p-4 items-center gap-8 lg:gap-0 lg:p-0 sm:flex sm:flex-wrap sm:flex-row sm:justify-center sm:items-center sm:w-11/12 lg:max-w-4xl xl:max-w-6xl">
         <div className="PartnersSocial1 flex py-6 px-10 flex-col items-center gap-4 border border-solid border-gray-300 bg-var-light-background bg-white w-[273px] h-[151px] lg:w-[213px] lg:h-[131px] xl:w-[273px] xl:h-[163px] lg:py-8">
           <h1 clasName="text-second-text font-[actor] text-base font-normal leading-6 tracking-normal">
             Client Name
@@ -74,15 +75,15 @@ const Partners = () => {
             Client Name
           </h1>
           <div className="SocialImage ">
-            <img src="/assets/Amazon.png" alt="" className="lg:w-36" />
+            <img src="/assets/Amazon.png" alt="" className="lg:w-52" />
           </div>
         </div>
       </div>
-      <div className="PartnersButton flex w-60 py-4 flex-col items-center rounded-full bg-var-Primary bg-blue-500">
-        <h1 className="text-white font-[actor] text-xl font-normal leading-7 tracking-tighter">
+      <a className="PartnersButton flex w-60 py-4 flex-col items-center rounded-full bg-var-Primary bg-blue-500"  href="#" >
+        <button className="text-white font-[actor] text-xl font-normal leading-7 tracking-tighter">
           Try For Free
-        </h1>
-      </div>
+        </button>
+      </a>
     </div>
   );
 };
