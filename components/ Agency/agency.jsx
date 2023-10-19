@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image";
 
-const Agency = () => {
+const Agency = ({isRTL}) => {
   return (
     <div className="AgencyMainContainer bg-white inline-flex p-6 flex-col w-full gap-2.5 md:p-12">
       <div className="AgencyMainHeader md:flex md:items-center md:gap-2 flex items-center gap-3 self-stretch pt-6 ">
@@ -17,6 +17,7 @@ const Agency = () => {
           <a className="Tittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] lg:hidden" href="#">
             See More
           </a>
+          {isRTL ? (
           <a className="Button"href="#">
             {" "}
             <svg
@@ -34,7 +35,29 @@ const Agency = () => {
                 stroke-linejoin="round"
               />
             </svg>
+
           </a>
+   ) : (
+     <a className="Button"href="#">
+           
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+>
+  <path
+    d="M15 18L9 12L15 6"
+    stroke="#084C61"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+          </a>
+          )}
         </div>
       </div>
       <div className="AgencyList lg:flex lg:flex-wrap lg:flex-shrink-0 lg:pt-10  pb-5">

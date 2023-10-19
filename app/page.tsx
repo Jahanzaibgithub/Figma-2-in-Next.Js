@@ -1,6 +1,5 @@
-  "use client";
+"use client";
 import React, { useState } from "react";
-
 import HeroSection from "../components/HeroSection/herosection";
 import Navbar from "../components/Navbar/Navbar";
 import Features from "../components/Features/features";
@@ -10,26 +9,23 @@ import Agency from "../components/ Agency/agency";
 import InfoBlock from "../components/Info-Block/infoblock";
 import DropDown from "../components/Navbar/Dropdown";
 import PartnershipProjects from "../components/PartnershipProjects/PartnershipProject";
+
 import "./globals.css";
 
 export default function Home() {
-
-  // Initialize the toggle state
   const [isRTL, setIsRTL] = useState(false);
 
-  // Function to toggle RTL
-  const toggleRTL = () => {
+  const toggleDirection = () => {
     setIsRTL(!isRTL);
   };
-
   return (
-    <main className={`${isRTL ? "rtl" : ""}`}dir={isRTL ? "rtl" : "ltr"}>
+    <main  dir={`${isRTL ? 'rtl' : 'ltr'}`}>
       <div className="page-background w-full bg-banner-bg bg-center relative">
-        <Navbar />
+        <Navbar isRTL={!isRTL}/>
         <div className="w-full absolute z-10">
           <DropDown  />
         </div>
-        <HeroSection />
+        <HeroSection toggleDirection={toggleDirection} />
       </div>
       <Features />
       <Partners />
@@ -37,6 +33,7 @@ export default function Home() {
       <Agency />
       <InfoBlock />
       < PartnershipProjects/>
+     
     </main>
   );
 }

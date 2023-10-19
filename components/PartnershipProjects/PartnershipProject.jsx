@@ -3,247 +3,131 @@ import React, { useState } from "react";
 
 const PartnershipProject = () => {
   const [isTextVisibleArray, setIsTextVisibleArray] = useState([false]);
-  const [isArrowClicked, setIsLeftArrowClicked] = useState(false); 
+  const [slideIndex, setSlideIndex] = useState(0);
 
-   const toggleTextVisibility = (index) => {
-     const updatedArray = [...isTextVisibleArray];
-     updatedArray[index] = !updatedArray[index];
-     setIsTextVisibleArray(updatedArray);
+  const toggleTextVisibility = (index) => {
+    const updatedArray = [...isTextVisibleArray];
+    updatedArray[index] = !updatedArray[index];
+    setIsTextVisibleArray(updatedArray);
+  };
+
+  const toggleContainerOrder = () => {
+    setSlideIndex(slideIndex === 0 ? 1 : 0);
+  };
+
+  const getCarouselStyle = () => {
+    return {
+      transform: `translateX(-${slideIndex * 5}%)`,
+      transition: "transform 0.5s ease-in-out",
     };
-        const toggleContainerOrder = () => {
-        setIsLeftArrowClicked(!isArrowClicked);
-      };
+  };
 
   return (
-    <div className="MainPartnershipContainer pt-10 lg:m-20 ">
-      <div className="PartnershipHeading flex flex-col justify-center items-center ">
+    <div className="MainPartnershipContainer pt-10 lg:m-20">
+      <div className="PartnershipHeading flex flex-col justify-center items-center">
         <h1 className="text-red-600 font-[open-sans] text-xl lg:text-[28px] font-bold leading-normal p-5 whitespace-nowrap">
           Our Partnership Projects
         </h1>
-        <div className="border lg:w-3/12 lg:border-b lg:border-slate-800  w-2/12 border-b border-red-600"></div>
+        <div className="border lg:w-3/12 lg:border-b lg:border-slate-800 w-2/12 border-b border-red-600"></div>
       </div>
-      <div className="PartnershipContainer flex flex-col lg:flex-row lg:justify-center lg:items-center pt-5 gap-10 ">
+      <div className="PartnershipContainer flex flex-col lg:flex-row lg:justify-center lg:items-center pt-5 gap-10">
         <div className="LeftArrow hidden lg:block cursor-pointer" onClick={toggleContainerOrder}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
             <rect width="40" height="40" fill="#D12D2D" />
-            <path
-              d="M18.6678 10.6665L9.33447 19.9998L18.6678 29.3332"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M9.33447 20H30.6678"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+            <path d="M18.6678 10.6665L9.33447 19.9998L18.6678 29.3332" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M9.33447 20H30.6678" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </div>
-            {isArrowClicked ? (  
-       < div className="Block1 flex flex-col m-5 lg:m-0 lg:flex-row justify-center gap-20">
-        <div className="PartnershipContainer1 w-4/6 xl:w-2/5 2xl:w-4/12">
-
-          <h1 class=" text-black font-[open-sans] text-xl lg:text-[28px] font-bold leading-normal">
-            The Tanzania Cancer Care Project (TCCP)
-          </h1>
-          <p class="text-black font-[open-sans] text-base font-normal">
-            The Tanzania Comprehensive Cancer Care Project (TCCP) is a €13.3
-            million private-public four-year evidence-based project funded by
-            Agence Française de Développement (AFD) and Aga Khan Foundation
-            (AKF). It aims to strengthen and expand the quality, access, and
-            capacity of cancer care services across the cancer continuum in Dar
-            es Salaam and Mwanza regions of Tanzania.
-          </p>
-          <p class="text-gray-600 font-open-sans text-base font-normal leading-[149%]">
-            The project is a joint initiative led by the Aga Khan Health
-            Services Tanzania (AKHST) together with the Aga Khan Foundation
-            Tanzania (AKFT),
-          </p>
-          <div className="SeeMoreLinkContainer">
-            {isTextVisibleArray[0] ? null : ( // Text is visible, so we don't render the SVG and title
-              <div
-                className="SeeMoreLinkArrow flex justify-center"
-                onClick={() => toggleTextVisibility(0)}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M6 9L12 15L18 9"
-                    stroke="#084C61"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            )}
-            {isTextVisibleArray[0] && (
-              <div className="SeeLessLink2 flex flex-col items-center gap-2 ">
-                <p className="Paragraph text-gray-600 font-open-sans text-base font-normal">
-                  The project is a joint initiative led by the Aga Khan Health
-                  Services Tanzania (AKHST) together with the Aga Khan
-                  Foundation Tanzania (AKFT),
+              <div className="SlideContainer" style={getCarouselStyle()}>
+        <div className={`Slide Block${slideIndex + 1} flex flex-col m-5 lg:m-0 lg:flex-row justify-center gap-20`}>
+          {slideIndex === 0 ? (
+            <div className="Block1 flex flex-col m-5 lg:m-0 lg:flex-row justify-center gap-20">
+              <div className="PartnershipContainer1 w-4/6 xl:w-2/5 2xl:w-4/12">
+                <h1 className="text-black font-[open-sans] text-xl lg:text-[28px] font-bold leading-normal">
+                  The Tanzania Cancer Care Project (TCCP)
+                </h1>
+                <p className="text-black font-[open-sans] text-base font-normal">
+                  The Tanzania Comprehensive Cancer Care Project (TCCP) is a €13.3 million private-public four-year evidence-based project funded by Agence Française de Développement (AFD) and Aga Khan Foundation (AKF). It aims to strengthen and expand the quality, access, and capacity of cancer care services across the cancer continuum in Dar es Salaam and Mwanza regions of Tanzania.
                 </p>
-                <div
-                  className="SeeMoreLinkArrow"
-                  onClick={() => toggleTextVisibility(0)}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M6 15L12 9L18 15"
-                      stroke="#084C61"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                <p className="text-gray-600 font-open-sans text-base font-normal leading-[149%]">
+                  The project is a joint initiative led by the Aga Khan Health Services Tanzania (AKHST) together with the Aga Khan Foundation Tanzania (AKFT).
+                </p>
+                <div className="SeeMoreLinkContainer">
+                  {isTextVisibleArray[0] ? null : (
+                    <div className="SeeMoreLinkArrow flex justify-center" onClick={() => toggleTextVisibility(0)}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9L12 15L18 9" stroke="#084C61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  )}
+                  {isTextVisibleArray[0] && (
+                    <div className="SeeLessLink2 flex flex-col items-center gap-2">
+                      <p className="Paragraph text-gray-600 font-open-sans text-base font-normal">
+                        The project is a joint initiative led by the Aga Khan Health Services Tanzania (AKHST) together with the Aga Khan Foundation Tanzania (AKFT).
+                      </p>
+                      <div className="SeeMoreLinkArrow" onClick={() => toggleTextVisibility(0)}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M6 15L12 9L18 15" stroke="#084C61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
-            )}
-          </div>
-        </div>
-        <div className="PartnershipContainer2 ">
-          <img src="/assets/Partnership.png" alt="" class="w-full lg:h-80" />
-        </div>
-        </div>
-            ): (  
-           < div className="Block2 flex flex-col m-5 lg:m-0 lg:flex-row justify-center gap-20">
-        <div className="PartnershipContainer1 w-4/6 xl:w-2/5 2xl:w-4/12">
-
-          <h1 class=" text-black font-[open-sans] text-xl lg:text-[28px] font-bold leading-normal">
-            Early Childhood Development
-          </h1>
-          <p class="text-black font-[open-sans] text-base font-normal">
-            The Tanzania Comprehensive Cancer Care Project (TCCP) is a €13.3
-            million private-public four-year evidence-based project funded by
-            Agence Française de Développement (AFD) and Aga Khan Foundation
-            (AKF). It aims to strengthen and expand the quality, access, and
-            capacity of cancer care services across the cancer continuum in Dar
-            es Salaam and Mwanza regions of Tanzania.
-          </p>
-          <p class="text-gray-600 font-open-sans text-base font-normal">
-            The project is a joint initiative led by the Aga Khan Health
-            Services Tanzania (AKHST) together with the Aga Khan Foundation
-            Tanzania (AKFT),
-          </p>
-          <div className="SeeMoreLinkContainer">
-            {isTextVisibleArray[0] ? null : ( // Text is visible, so we don't render the SVG and title
-              <div
-                className="SeeMoreLinkArrow flex justify-center"
-                onClick={() => toggleTextVisibility(0)}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M6 9L12 15L18 9"
-                    stroke="#084C61"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+              <div className="PartnershipContainer2" style={{ direction: "rtl" }}>
+                <img src="/assets/Partnership.png" alt="" className="w-full lg:h-80" />
               </div>
-            )}
-            {isTextVisibleArray[0] && (
-              <div className="SeeLessLink2 flex flex-col items-center gap-2 ">
-                <p className="Paragraph text-gray-600 font-open-sans text-base font-normal ">
-                  The project is a joint initiative led by the Aga Khan Health
-                  Services Tanzania (AKHST) together with the Aga Khan
-                  Foundation Tanzania (AKFT),
+            </div>
+          ) : (
+            <div className="Block2 flex flex-col m-5 lg:m-0 lg:flex-row justify-center gap-20">
+              <div className="PartnershipContainer1 w-4/6 xl:w-2/5 2xl:w-4/12">
+                <h1 className="text-black font-[open-sans] text-xl lg:text-[28px] font-bold leading-normal">
+                  Early Childhood Development
+                </h1>
+                <p className="text-black font-[open-sans] text-base font-normal">
+                  The Tanzania Comprehensive Cancer Care Project (TCCP) is a €13.3 million private-public four-year evidence-based project funded by Agence Française de Développement (AFD) and Aga Khan Foundation (AKF). It aims to strengthen and expand the quality, access, and capacity of cancer care services across the cancer continuum in Dar es Salaam and Mwanza regions of Tanzania.
                 </p>
-                <div
-                  className="SeeMoreLinkArrow"
-                  onClick={() => toggleTextVisibility(0)}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M6 15L12 9L18 15"
-                      stroke="#084C61"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                <p className="text-gray-600 font-open-sans text-base font-normal">
+                  The project is a joint initiative led by the Aga Khan Health Services Tanzania (AKHST) together with the Aga Khan Foundation Tanzania (AKFT).
+                </p>
+                <div className="SeeMoreLinkContainer">
+                  {isTextVisibleArray[0] ? null : (
+                    <div className="SeeMoreLinkArrow flex justify-center" onClick={() => toggleTextVisibility(0)}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9L12 15L18 9" stroke="#084C61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  )}
+                  {isTextVisibleArray[0] && (
+                    <div className="SeeLessLink2 flex flex-col items-center gap-2">
+                      <p className="Paragraph text-gray-600 font-open-sans text-base font-normal">
+                        The project is a joint initiative led by the Aga Khan Health Services Tanzania (AKHST) together with the Aga Khan Foundation Tanzania (AKFT).
+                      </p>
+                      <div className="SeeMoreLinkArrow" onClick={() => toggleTextVisibility(0)}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M6 15L12 9L18 15" stroke="#084C61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
-            )}
+              <div className="PartnershipContainer2">
+                <img src="/assets/partnership2.jpg" alt="" className="lg:w-[420px] lg:h-80" />
+              </div>
+            </div>
+          )}
           </div>
         </div>
-        <div className="PartnershipContainer2 ">
-          <img src="/assets/partnership2.jpg" alt="" class="lg:w-[420px] lg:h-80" />
-        </div>
-        </div>
-       
-             )}
-        <div className="RightArrow hidden lg:block cursor-pointer" onClick={toggleContainerOrder}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-          >
-            <rect
-              width="40"
-              height="40"
-              transform="matrix(-1 0 0 1 40 0)"
-              fill="#D12D2D"
-            />
-            <path
-              d="M21.3322 10.6665L30.6655 19.9998L21.3322 29.3332"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M30.6655 20H9.33219"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+        <div className="RightArrow hidden lg:block cursor-pointer" onClick={toggleContainerOrder} style={{ direction: "LTR" }}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <rect width="40" height="40" transform="matrix(-1 0 0 1 40 0)" fill="#D12D2D" />
+            <path d="M21.3322 10.6665L30.6655 19.9998L21.3322 29.3332" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M30.6655 20H9.33219" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </div>
         <div className="DotCarousel lg:hidden flex justify-center cursor-pointer" onClick={toggleContainerOrder}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="8"
-            viewBox="0 0 30 8"
-            fill="none"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8" fill="none">
             <circle cx="2.79881" cy="4.09922" r="2.61814" fill="#C4C4C4" />
             <circle cx="15.8898" cy="4.09926" r="3.49086" fill="black" />
             <circle cx="27.2348" cy="4.09922" r="2.61814" fill="#C4C4C4" />
@@ -253,4 +137,6 @@ const PartnershipProject = () => {
     </div>
   );
 };
+
 export default PartnershipProject;
+
