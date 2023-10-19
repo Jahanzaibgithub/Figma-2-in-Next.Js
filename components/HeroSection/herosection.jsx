@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "./hero.modules.css";
 
-const HeroSection = () => {
+const HeroSection = (props) => {
   // Initialize the toggle state
   const [isRTL, setIsRTL] = useState(false);
 
@@ -29,13 +29,24 @@ const HeroSection = () => {
           Show/Hide Partners
         </button>
         <div className="herosection-toggel-heading flex items-center gap-2">
-          <div className={`HerosectionToggelBtn text-white ${isRTL ? "text-left" : ""}`}>
+          <div className={`HerosectionToggelBtn text-white ${isRTL ? "text-end" : ""}`}>
             <label className="switch">
-              <input type="checkbox" onClick={toggleRTL} />
+              <input type="checkbox" onClick={props.toggleDirection} />
               <span className="slider round"></span>
             </label>
           </div>
-          <h2 className={`text-white ${isRTL ? "text-left" : ""} font-[actor] text-xl font-normal leading-6`}>
+          <h2 className={`text-white ${isRTL ? "text-start" : ""} font-[actor] text-xl font-normal leading-6`}>
+            RTL
+          </h2>
+        </div>
+        <div className="herosection-toggel-heading flex items-center gap-2">
+          <div className="HerosectionToggelBtn text-white">
+            <label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+            </label>
+          </div>
+          <h2 className="text-white font-[actor] text-xl font-normal leading-6">
             Show Both
           </h2>
         </div>

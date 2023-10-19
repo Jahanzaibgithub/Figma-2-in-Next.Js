@@ -1,6 +1,8 @@
+
 import React from "react";
 
-const MainInformation = () => {
+const MainInformation =({ isRTL }) => {
+  
   return (
     <div className="MainInformation-Container bg-blue-50 flex flex-col p-6 gap-5 justify-center items-center self-stretch md:p-12 md:gap-3">
       <div className="MainInformation-Tittle-Container md:flex gap-3 md:flex-col md:items-center md:pt-0 md:pr-12 md:pb-12 md:pl-12 md:self-stretch">
@@ -113,34 +115,62 @@ const MainInformation = () => {
         </div>
       </div>
     <div className="MainButtonContainer flex flex-col pt-5 items-start gap-2.5 justify-center self-stretch md:pt-14 md:items-center ">
-        <div className="ToggleButtonContainer bg-[rgba(8,76,97,0.15)]  flex p-6 justify-center items-center gap-6 md:items-center">
-          <a className="ToggleButtonName text-[#084C61] tracking-[0.48px] font-Gotham text-base font-normal leading-6 inline-block" href="#">
+        <div className="ArrowButtonContainer bg-[rgba(8,76,97,0.15)]  flex p-6 justify-center items-center gap-6 md:items-center">
+          <a className="ArrowButtonName text-[#084C61] tracking-[0.48px] font-Gotham text-base font-normal leading-6 inline-block" href="#">
             Overview Document: AKDN Afghanistan
           </a>
-          <a className="ToggleButton  flex-shrink-0 inline-block" href="#">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="21"
-              height="22"
-              viewBox="0 0 21 22"
-              fill="none"
-            >
-              <path
-                d="M1.1665 11H19.8332"
-                stroke="#084C61"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M10.5 1.6665L19.8333 10.9998L10.5 20.3332"
-                stroke="#084C61"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
+         {isRTL ? (
+        <a className="RightArrowButton flex-shrink-0 inline-block" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="21"
+            height="22"
+            viewBox="0 0 21 22"
+            fill="none"
+          >
+            <path
+              d="M1.1665 11H19.8332"
+              stroke="#084C61"
+              stroke-width={2}
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10.5 1.6665L19.8333 10.9998L10.5 20.3332"
+              stroke="#084C61"
+              stroke-width={2}
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      ) : (
+        <a className="LeftArrowButton flex-shrink-0 inline-block" href="#">
+          
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="21"
+            height="22"
+            viewBox="0 0 21 22"
+            fill="none"
+          >
+            <path
+              d="M19.8332 11H1.1665"
+              stroke="#084C61"
+              stroke-width={2}
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10.4999 1.6665L1.1666 10.9998L10.4999 20.3332"
+              stroke="#084C61"
+              stroke-width={2}
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      )}
         </div>
       </div>
     </div>
