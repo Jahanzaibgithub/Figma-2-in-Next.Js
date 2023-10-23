@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-function DropDown() {
+function DropDown({ isRTL }) {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
