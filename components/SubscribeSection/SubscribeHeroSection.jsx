@@ -16,12 +16,25 @@ const SubscribeHeroSection = ({ isRTL }) => {
        </button>
      </div>
       </div>
-      
-      <div className="Image flex justify-center md:absolute md:z-10" >
-      <div className=" md:pl-[350px] lg:pl-[400px] xl:pl-[550px]">
-            <img src="/assets/SubscribeHeroSection.png" alt="" class={`h-96 md:w-[400px] md:h-[490px] lg:w-[450px] lg:h-[590px] xl:w-[600px] xl:h-[590px] ${isRTL ? "float-left" : "float-right"}`}/>
-          </div>
-     </div>
+       {isRTL ? ( 
+  <div className="Image rtl:flex rtl:justify-center rtl:items-center rtl:md:absolute rtl:md:z-10">
+  <div className="rtl:md:pr-[350px] rtl:lg:pr-[400px] rtl:xl:pr-[550px]">
+    <img
+      src="/assets/SubscribeHeroSection.png"
+      alt=""
+      className="rtl:h-96 rtl:md:w-[400px] rtlm:d:h-[490px] rtl:lg:w-[450px] rtl:lg:h-[590px] rtl:xl:w-[600px] rtl:xl:h-[590px]"
+    />
+  </div>
+</div>
+
+       ):(
+  
+   <div className="Image flex justify-center md:absolute md:z-10">
+  <div className="md:pl-[350px] lg:pl-[400px] xl:pl-[550px]">
+    <img src="/assets/SubscribeHeroSection.png" alt="" className="h-96 md:w-[400px] md:h-[490px] lg:w-[450px] lg:h-[590px] xl:w-[600px] xl:h-[590px] " />
+  </div>
+</div>
+       )}
     </div>
   );
 };
