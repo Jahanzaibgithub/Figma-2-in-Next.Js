@@ -24,20 +24,20 @@ export default function Home() {
     <main  dir={`${isRTL ? 'rtl' : 'ltr'}`}>
       
       <div className="page-background w-full bg-banner-bg bg-center relative">
-        <Navbar />
+        <Navbar isRTL={isRTL}/>
         <div className="w-full absolute z-10">
-          <DropDown  />
+          <DropDown isRTL={isRTL} />
         </div>
         <HeroSection toggleDirection={toggleDirection} />
       </div>
-      <Features />
-      <Partners />
-       <SubscribeSection />
-       <SubscribeHeroSection />
-      <MainInformation />
-      <Agency />
-      <InfoBlock />
-      < PartnershipProjects />
+      <Features  isRTL={isRTL}/>
+      <Partners  isRTL={isRTL} />
+       <SubscribeSection  isRTL={isRTL}/>
+       <SubscribeHeroSection  isRTL={isRTL}/>
+      <MainInformation  isRTL={isRTL} />
+      <Agency  isRTL={isRTL} />
+      <InfoBlock   isRTL={isRTL}/>
+      < PartnershipProjects  isRTL={isRTL}/>
     </main>
   );
 }

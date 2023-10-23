@@ -1,7 +1,7 @@
 
 import React from "react";
 
-const Partners = () => {
+const Partners = ({ isRTL }) => {
   return (
     <div className="PartnersContainer flex py-12 px-5 flex-col items-center gap-20 self-stretch lg:py-20 lg:px-0 lg:flex-col lg:items-center " >
       <div className="PartnersMainHeading flex flex-col items-center gap-7">

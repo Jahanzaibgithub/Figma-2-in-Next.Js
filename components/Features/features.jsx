@@ -3,7 +3,7 @@ import React, { useState, useRef, } from "react";
 import Image from "next/image";
 
 
- const Features = () => {
+ const Features = ({ isRTL }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
 
