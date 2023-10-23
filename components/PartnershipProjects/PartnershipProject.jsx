@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-const PartnershipProject = () => {
+const PartnershipProject = ({ isRTL }) => {
   const [isTextVisibleArray, setIsTextVisibleArray] = useState([false]);
   const [slideIndex, setSlideIndex] = useState(0);
 
@@ -32,11 +32,20 @@ const PartnershipProject = () => {
       </div>
       <div className="PartnershipContainer flex flex-col lg:flex-row lg:justify-center lg:items-center pt-5 gap-10">
         <div className="LeftArrow hidden lg:block cursor-pointer" onClick={toggleContainerOrder}>
+           {isRTL ? (
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <rect width="40" height="40" transform="matrix(-1 0 0 1 40 0)" fill="#D12D2D" />
+            <path d="M21.3322 10.6665L30.6655 19.9998L21.3322 29.3332" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M30.6655 20H9.33219" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          
+           ):(
+           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
             <rect width="40" height="40" fill="#D12D2D" />
             <path d="M18.6678 10.6665L9.33447 19.9998L18.6678 29.3332" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M9.33447 20H30.6678" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
+           )}
         </div>
               <div className="SlideContainer" style={getCarouselStyle()}>
         <div className={`Slide Block${slideIndex + 1} flex flex-col m-5 lg:m-0 lg:flex-row justify-center gap-20`}>
@@ -120,11 +129,20 @@ const PartnershipProject = () => {
           </div>
         </div>
         <div className="RightArrow hidden lg:block cursor-pointer" onClick={toggleContainerOrder} style={{ direction: "LTR" }}>
+           {isRTL ? (
+           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <rect width="40" height="40" fill="#D12D2D" />
+            <path d="M18.6678 10.6665L9.33447 19.9998L18.6678 29.3332" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M9.33447 20H30.6678" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+           ):(
+          
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
             <rect width="40" height="40" transform="matrix(-1 0 0 1 40 0)" fill="#D12D2D" />
             <path d="M21.3322 10.6665L30.6655 19.9998L21.3322 29.3332" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M30.6655 20H9.33219" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
+           )}
         </div>
         <div className="DotCarousel lg:hidden flex justify-center cursor-pointer" onClick={toggleContainerOrder}>
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8" fill="none">

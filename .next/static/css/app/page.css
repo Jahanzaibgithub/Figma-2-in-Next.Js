@@ -833,6 +833,12 @@ video {
 .order-2 {
   order: 2;
 }
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
 .m-5 {
   margin: 1.25rem;
 }
@@ -1434,9 +1440,6 @@ video {
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.ease-out {
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 [dir="rtl"] .text-start {
   text-align: right;

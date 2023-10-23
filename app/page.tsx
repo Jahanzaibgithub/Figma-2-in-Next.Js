@@ -30,14 +30,14 @@ export default function Home() {
         </div>
         <HeroSection toggleDirection={toggleDirection} />
       </div>
-      <Features />
-      <Partners />
-       <SubscribeSection />
-       <SubscribeHeroSection/>
-      <MainInformation />
-      <Agency />
-      <InfoBlock />
-      < PartnershipProjects/>
+      <Features  isRTL={isRTL}/>
+      <Partners  isRTL={isRTL} />
+       <SubscribeSection  isRTL={isRTL}/>
+       <SubscribeHeroSection  isRTL={isRTL}/>
+      <MainInformation  isRTL={isRTL} />
+      <Agency  isRTL={isRTL} />
+      <InfoBlock   isRTL={isRTL}/>
+      < PartnershipProjects  isRTL={isRTL}/>
    
      
      
