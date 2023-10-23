@@ -9,6 +9,8 @@ import Agency from "../components/ Agency/agency";
 import InfoBlock from "../components/Info-Block/infoblock";
 import DropDown from "../components/Navbar/Dropdown";
 import PartnershipProjects from "../components/PartnershipProjects/PartnershipProject";
+import SubscribeSection from "../components/SubscribeSection/SubscribeSection";
+import SubscribeHeroSection from "../components/SubscribeSection/SubscribeHeroSection";
 
 import "./globals.css";
 
@@ -20,6 +22,7 @@ export default function Home() {
   };
   return (
     <main  dir={`${isRTL ? 'rtl' : 'ltr'}`}>
+      
       <div className="page-background w-full bg-banner-bg bg-center relative">
         <Navbar isRTL={!isRTL}/>
         <div className="w-full absolute z-10">
@@ -29,10 +32,14 @@ export default function Home() {
       </div>
       <Features />
       <Partners />
+       <SubscribeSection />
+       <SubscribeHeroSection/>
       <MainInformation />
       <Agency />
       <InfoBlock />
       < PartnershipProjects/>
+   
+     
      
     </main>
   );

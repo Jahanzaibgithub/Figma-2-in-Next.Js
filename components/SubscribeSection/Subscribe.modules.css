@@ -1,0 +1,20 @@
+.SubscribeContainer {
+    border-radius: 20px 129px 20px 20px;
+    /* opacity: 0.2;
+    background: var(--light-color, #DFD7F9); */
+}
+
+.SubscribeButton {
+    border-radius: 10px;
+    background: var(--gradient, linear-gradient(180deg, #FF946D 0%, #FF7D68 100%));
+}
+
+.Heading {
+    color: var(--TEXT-CLR, #5E6282);
+    font-family: Poppins;
+}
+
+.Input {
+    border-radius: 10px;
+    background: var(--white, red);
+}
