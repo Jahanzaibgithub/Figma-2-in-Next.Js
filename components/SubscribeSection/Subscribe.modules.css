@@ -1,7 +1,16 @@
-.SubscribeContainer {
+.Background {
     border-radius: 20px 129px 20px 20px;
-    /* opacity: 0.2;
-    background: var(--light-color, #DFD7F9); */
+    opacity: 0.2;
+    background: var(--light-color, #DFD7F9);
+}
+
+#inputField::placeholder {
+    color: var(--TEXT-COLOR, #39425D);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .SubscribeButton {
