@@ -3,9 +3,10 @@ import "./Subscribe.modules.css";
 
 const SubscribeSection = ({ isRTL }) => {
   return (
-    <div className="SubscribeMainContainer inline-flex pt-20 pr-20 pb-28 pl-2 items-center">
-      <div className="SubscribeContainer ">
-        <div className="SvgIcon  flex justify-end">
+    <div className="SubscribeMainContainer flex flex-col pt-20 pr-20 pb-28 pl-2 items-center ">
+  <div className="Background h-[820px] xs:h-[620px] md:h-96 w-full xl:max-w-7xl "></div>
+      <div className="SubscribeContainer absolute z-10">
+        <div className="SvgIcon flex justify-end">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="70"
@@ -46,16 +47,16 @@ const SubscribeSection = ({ isRTL }) => {
           </svg>
         
         </div>
-        <div className="Heading  flex justify-center items-center text-center ">
-          <h1 class="text-center text-[33px] font-semibold leading-[54px]  sm:w-7/12">
+        <div className="Heading  flex justify-center text-center ">
+          <h1 class="text-center text-[22px] sm:text-[33px] font-semibold leading-[54px]  w-7/12 ">
             Subscribe to get information, latest news, and other interesting
             offers about WindTravel
           </h1>
         </div>
         <div className="InputAndButton flex md:flex-row flex-col justify-center items-center">
          
-            <div className="p-4 relative flex-shrink-0 rounded-10 sm:w-[421px]">
-              <div className="relative">
+            <div className="Border p-4 flex-shrink-0 rounded-[10px] sm:w-[421px]">
+              <div className="relative ">
                 <input 
                   type="text"
                   id="inputField"
@@ -63,6 +64,7 @@ const SubscribeSection = ({ isRTL }) => {
                   className="w-full pl-10 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200 placeholder-gray-400   h-16"
                   placeholder="Your email"
                 />
+                <div className="Svg ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -85,6 +87,7 @@ const SubscribeSection = ({ isRTL }) => {
                     stroke="#39425D"
                   />
                 </svg>
+                </div>
               </div>
           </div>
           <button class="SubscribeButton w-44 h-16 flex-shrink-0 rounded-lg " >
@@ -93,8 +96,8 @@ const SubscribeSection = ({ isRTL }) => {
             </h1>
           </button>
         </div>
-      </div>
-    </div>
+        </div>
+        </div>
   );
 };
 
