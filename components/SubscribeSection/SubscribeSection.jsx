@@ -1,7 +1,7 @@
 import React from "react";
 import "./Subscribe.modules.css";
 
-const SubscribeSection = () => {
+const SubscribeSection = ({ isRTL }) => {
   return (
     <div className="SubscribeMainContainer inline-flex pt-20 pr-20 pb-28 pl-2 items-center">
       <div className="SubscribeContainer ">

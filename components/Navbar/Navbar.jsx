@@ -1,7 +1,7 @@
 
 import React from "react";
 import Image from "next/image";
-const Navbar = () => {
+const Navbar = ({ isRTL }) => {
 
   return (
     <div className="  lg:w-full lg:bg-black lg:opacity-80 lg:text-white lg:pt-7 lg:items-center lg:justify-between lg:h-28">
