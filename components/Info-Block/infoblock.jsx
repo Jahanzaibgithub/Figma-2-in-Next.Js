@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-const InfoBlock = () => {
+const InfoBlock = ({ isRTL }) => {
   const [isTextVisibleArray, setIsTextVisibleArray] = useState([
     false,
     false,
