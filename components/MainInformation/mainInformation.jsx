@@ -121,31 +121,6 @@ const MainInformation =({ isRTL }) => {
           </a>
          {isRTL ? (
         <a className="RightArrowButton flex-shrink-0 inline-block" href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="21"
-            height="22"
-            viewBox="0 0 21 22"
-            fill="none"
-          >
-            <path
-              d="M1.1665 11H19.8332"
-              stroke="#084C61"
-              stroke-width={2}
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M10.5 1.6665L19.8333 10.9998L10.5 20.3332"
-              stroke="#084C61"
-              stroke-width={2}
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </a>
-      ) : (
-        <a className="LeftArrowButton flex-shrink-0 inline-block" href="#">
           
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -163,6 +138,31 @@ const MainInformation =({ isRTL }) => {
             />
             <path
               d="M10.4999 1.6665L1.1666 10.9998L10.4999 20.3332"
+              stroke="#084C61"
+              stroke-width={2}
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      ) : (
+        <a className="LeftArrowButton flex-shrink-0 inline-block" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="21"
+            height="22"
+            viewBox="0 0 21 22"
+            fill="none"
+          >
+            <path
+              d="M1.1665 11H19.8332"
+              stroke="#084C61"
+              stroke-width={2}
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10.5 1.6665L19.8333 10.9998L10.5 20.3332"
               stroke="#084C61"
               stroke-width={2}
               stroke-linecap="round"
