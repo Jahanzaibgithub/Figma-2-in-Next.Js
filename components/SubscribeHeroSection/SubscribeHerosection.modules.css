@@ -1,0 +1,45 @@
+.HeroSectionMainContainer {
+    background: linear-gradient(102deg, #744775 32.64%, #753876 68.99%);
+    height: 620px;
+}
+
+@media (max-width: 768px) {
+    .HeroSectionMainContainer {
+        border-radius: 0;
+        background: #744775;
+        height: auto;
+    }
+}
+
+.Heading {
+    font-size: 64px;
+    line-height: normal;
+}
+
+.Paragraph {
+    line-height: normal;
+}
+
+.Button1 {
+    background: #D099D1;
+}
+
+.Button2 {
+    border-radius: 10px;
+    border: 2px solid #FEBCFF;
+    width: 150px;
+    height: 45px;
+}
+
+.Button2Heading {
+    color: #F1EDF1;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+/* .Image {
+    margin-left: 500px;
+    margin-bottom: 210px;
+} */

@@ -3,9 +3,20 @@ import "./Subscribe.modules.css";
 
 const SubscribeSection = ({ isRTL }) => {
   return (
-    <div className="SubscribeMainContainer flex flex-col pt-20 pr-20 pb-28 pl-2 items-center ">
-  <div className="Background h-[820px] xs:h-[620px] md:h-96 w-full xl:max-w-7xl "></div>
-      <div className="SubscribeContainer absolute z-10">
+    <div className="SubscribeMainContainer relative flex flex-col pt-20 pr-20 pb-28 pl-2 items-center">
+  <div className="Background  h-[820px] xs:h-[620px] md:h-96 w-full xl:max-w-6xl ">
+     <div className="GroupDesiContainer flex flex-row justify-between">
+      <div className="GroupDesign1 flex justify-end items-end  mt-24 rtl:right">
+      <img src="/assets/Group 41.png" alt="" className=""/>
+    </div>
+    
+     <div className="GroupDesign2 flex justify-start items-start mb-28">
+      <img src="/assets/Group 42.png" alt="" className=""/>
+     </div>
+     </div>
+  </div>
+  
+      <div className="SubscribeContainer absolute z-30">
         <div className="SvgIcon flex justify-end">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,30 +59,29 @@ const SubscribeSection = ({ isRTL }) => {
         
         </div>
         <div className="Heading  flex justify-center text-center ">
-          <h1 class="text-center text-[22px] sm:text-[33px] font-semibold leading-[54px]  w-7/12 ">
+          <h1 class="text-center text-[22px] sm:text-[33px] font-semibold leading-[54px]  w-9/12 ">
             Subscribe to get information, latest news, and other interesting
             offers about WindTravel
           </h1>
         </div>
-        <div className="InputAndButton flex md:flex-row flex-col justify-center items-center">
-         
-            <div className="Border p-4 flex-shrink-0 rounded-[10px] sm:w-[421px]">
-              <div className="relative ">
+        <div className="InputAndButton flex md:flex-row flex-col justify-center items-center gap-5 pt-20">
+            <div className="BorderContainer p-4 ">
+              <div className="Border relative ">
                 <input 
                   type="text"
                   id="inputField"
                   name="inputField"
-                  className="w-full pl-10 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-200 placeholder-gray-400   h-16"
+                  className="w-full pl-10 py-2    h-8"
                   placeholder="Your email"
                 />
-                <div className="Svg ">
+                <div className="Svg rtl:mr-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
                   height="18"
                   viewBox="0 0 21 18"
                   fill="none"
-                  className="absolute top-1/2 left-3 transform -translate-y-1/2 h-5 w-5 text-gray-400"
+                  className="absolute top-1/2 left-3 transform -translate-y-1/2 h-5 w-5 text-gray-400 " 
                 >
                   <path
                     d="M4 6L9.4 10.05C9.75556 10.3167 10.2444 10.3167 10.6 10.05L16 6"
@@ -97,7 +107,10 @@ const SubscribeSection = ({ isRTL }) => {
           </button>
         </div>
         </div>
-        </div>
+      
+</div>
+
+       
   );
 };
 

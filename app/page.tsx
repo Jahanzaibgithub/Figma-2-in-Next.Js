@@ -10,7 +10,7 @@ import InfoBlock from "../components/Info-Block/infoblock";
 import DropDown from "../components/Navbar/Dropdown";
 import PartnershipProjects from "../components/PartnershipProjects/PartnershipProject";
 import SubscribeSection from "../components/SubscribeSection/SubscribeSection";
-import SubscribeHeroSection from "../components/SubscribeSection/SubscribeHeroSection";
+import SubscribeHeroSection from "../components/SubscribeHeroSection/SubscribeHeroSection";
 
 import "./globals.css";
 
