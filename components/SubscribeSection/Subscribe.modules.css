@@ -1,5 +1,9 @@
+.rtl-text {
+    direction: rtl;
+}
+
 .Background {
-    border-radius: 20px 129px 20px 20px;
+    border-radius: 129px 20px 20px 20px;
     opacity: 0.2;
     background: var(--light-color, #DFD7F9);
 }
@@ -23,7 +27,9 @@
     font-family: Poppins;
 }
 
-.Input {
+.BorderContainer {
     border-radius: 10px;
-    background: var(--white, red);
+    background: var(--white, #FFF);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 391px;
 }
