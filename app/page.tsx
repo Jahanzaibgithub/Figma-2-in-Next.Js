@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main  dir={`${isRTL ? 'rtl' : 'ltr'}`}>
       
-      <div className="page-background w-full bg-banner-bg bg-center relative">
+      <div className="page-background bg-banner-bg bg-center relative">
         <Navbar isRTL={isRTL}/>
         <div className="w-full absolute z-10">
           <DropDown isRTL={isRTL} />
