@@ -42,10 +42,10 @@ const HeroSection = (props) => {
         </div>
         <div className="herosectionToggelHeading flex items-center gap-2">
           <div className="HerosectionToggelBtn2 text-white">
-            <label className="switch">
-              <input type="checkbox" />
-              <span className="slider round"></span>
-            </label>
+          <label className="switch rtl:left rtl:bg-primary rtl:rounded-3xl"  >
+              <input type="checkbox rtl:left rtl:bg-primary" />
+              <span className="slider round rtl:left rtl:bg-primary"></span>
+            </label> 
           </div>
           <h2 className="text-white font-[actor] text-xl font-normal leading-6">
             Show Both

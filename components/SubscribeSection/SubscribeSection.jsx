@@ -3,21 +3,27 @@ import "./Subscribe.modules.css";
 
 const SubscribeSection = ({ isRTL }) => {
   return (
-    <div className="SubscribeMainContainer relative flex flex-col pt-20 pr-20 pb-28 pl-2 items-center">
-  <div className="Background  h-[820px] xs:h-[620px] md:h-96 w-full xl:max-w-6xl ">
+    <div className="SubscribeSectionMainContainer sm:pt-20 sm:pr-20 sm:pb-28 sm:pl-2 ">
+ <div className="SubscribeSectionContainer sm:pt-5 sm:pr-10 sm:pl-10 sm:pb-8 flex  flex-col justify-center items-center">
+  <div className="SubscribeSection1 h-[580px] sm:h-[590px] lg:h-[465px] w-38 sm:w-[580px] lg:w-[840px] 2xl:w-[1100px] rounded-tl-[129px] rounded-tr-[20px] rounded-br-[20px] rounded-bl-[20px] rtl:rounded-tl-[20px] rtl:rounded-tr-[129px] rtl:rounded-br-[20px] rtl:rounded-bl-[20px]">
      <div className="GroupDesiContainer flex flex-row justify-between">
-      <div className="GroupDesign1 flex justify-end items-end  mt-24 rtl:right">
-      <img src="/assets/Group 41.png" alt="" className=""/>
+      <div className="GroupDesign1 rtl:hidden flex justify-end items-end mt-52 xs:mt-36 sm:pt-40 lg:mt-7 ">
+      <img src="/assets/Group 41.png" alt="" className="pt-52 xs:pt-40 sm:pt-2 lg:pt-0"/>
     </div>
-    
-     <div className="GroupDesign2 flex justify-start items-start mb-28">
+     <div className="GroupDesign1 ltr:hidden flex justify-end items-end mt-52 xs:pt-36 sm:pt-40 lg:mt-7">
+      <img src="/assets/Group 41 (1).png" alt="" className="pt-52 xs:pt40 sm:pt-2 lg:pt-0"/>
+    </div>
+     <div className="GroupDesign2 rtl:hidden flex justify-start items-start mb-28">
       <img src="/assets/Group 42.png" alt="" className=""/>
+     </div>
+       <div className="GroupDesign2 ltr:hidden flex justify-start items-start mb-28">
+      <img src="/assets/Group 42 (1).png" alt="" className=""/>
      </div>
      </div>
   </div>
-  
-      <div className="SubscribeContainer absolute z-30">
-        <div className="SvgIcon flex justify-end">
+      <div className="SubscribeSection2  w-80 sm:w-[744px] lg:w-[1020px] 2xl:w-[1280px] pt-10 pb-10 sm:pt-32">
+        <div className="Block1">
+        <div className="SvgIcon flex justify-end mr-10 rtl:ml-10 pb-10 rtl:pb-14 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="70"
@@ -35,7 +41,7 @@ const SubscribeSection = ({ isRTL }) => {
               fill="white"
             />
             <path
-              d="M36.2232 33.4515C36.5043 33.9385 36.3379 34.5616 35.8503 34.8431L25.2636 40.9553L24.9789 39.9434L24.2449 39.1909L34.8316 33.0787C35.3192 32.7973 35.9421 32.9646 36.2232 33.4515Z"
+               d="M36.2232 33.4515C36.5043 33.9385 36.3379 34.5616 35.8503 34.8431L25.2636 40.9553L24.9789 39.9434L24.2449 39.1909L34.8316 33.0787C35.3192 32.7973 35.9421 32.9646 36.2232 33.4515Z"
               fill="black"
             />
             <path
@@ -59,29 +65,29 @@ const SubscribeSection = ({ isRTL }) => {
         
         </div>
         <div className="Heading  flex justify-center text-center ">
-          <h1 class="text-center text-[22px] sm:text-[33px] font-semibold leading-[54px]  w-9/12 ">
+          <h1 class="text-center text-[26px] lg:text-[33px] font-semibold leading-[54px]  w-8/12 ">
             Subscribe to get information, latest news, and other interesting
             offers about WindTravel
           </h1>
         </div>
-        <div className="InputAndButton flex md:flex-row flex-col justify-center items-center gap-5 pt-20">
-            <div className="BorderContainer p-4 ">
-              <div className="Border relative ">
+        <div className="InputAndButton flex lg:flex-row flex-col justify-center items-center gap-5 pt-20">
+            <div className="BorderContainer p-4 rtl:p-4 rtl:flex rtl:flex-row">
+              <div className="Border rtl:relative ">
                 <input 
                   type="text"
                   id="inputField"
                   name="inputField"
-                  className="w-full pl-10 py-2    h-8"
+                  className=" ltr:pl-10 ltr:py-2 h-8"
                   placeholder="Your email"
                 />
-                <div className="Svg rtl:mr-4">
+                <div className="Svg ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
                   height="18"
                   viewBox="0 0 21 18"
                   fill="none"
-                  className="absolute top-1/2 left-3 transform -translate-y-1/2 h-5 w-5 text-gray-400 " 
+                  className="absolute top-1/2 left-5 transform -translate-y-1/2 h-5 w-5 text-gray-400 rtl:left-28" 
                 >
                   <path
                     d="M4 6L9.4 10.05C9.75556 10.3167 10.2444 10.3167 10.6 10.05L16 6"
@@ -107,7 +113,15 @@ const SubscribeSection = ({ isRTL }) => {
           </button>
         </div>
         </div>
-      
+       <div className="Block2 rtl:hidden hidden sm:flex sm:justify-end sm:items-end ">
+  <img src="/assets/Group 43.jpg" alt="" className="" />
+</div>
+<div className="Block2 ltr:hidden hidden sm:flex sm:justify-end sm:items-end ">
+  <img src="/assets/Group 43 (1).jpg" alt="" className="" />
+</div>
+
+        </div>
+      </div>
 </div>
 
        

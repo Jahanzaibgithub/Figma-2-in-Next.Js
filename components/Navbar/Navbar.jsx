@@ -4,10 +4,10 @@ import Image from "next/image";
 const Navbar = ({ isRTL }) => {
 
   return (
-    <div className="  lg:w-full lg:bg-black lg:opacity-80 lg:text-white lg:pt-7 lg:items-center lg:justify-between lg:h-28">
-      <div className="lg:max-w-screen-xl  lg:mx-auto lg:px-20 lg:flex lg:justify-between  ">
+    <div className=" lg:bg-black lg:opacity-80 lg:text-white lg:pt-7 lg:items-center lg:justify-between lg:h-28">
+      <div className=" w-full lg:max-w-screen-xl  lg:mx-auto lg:px-20 lg:flex lg:justify-between  ">
         <div className="lg:gap-0 lg:flex lg:justify-between  ">
-          <ul className="navbar-list lg:inline-flex lg:text-sm  lg:p-10 lg:items-center lg:gap-5 xl:gap-10 hidden  ">
+          <ul className="navbar-list lg:inline-flex lg:text-sm  lg:p-10 lg:items-center lg:gap-5 xl:gap-10 hidden">
             <li className="navbarLi lg:text-white lg:text-center lg:font-actor lg:text-base lg:font-normal lg:leading-7 lg:tracking-tighter ">
               <a className="TagButton p-1" href="#">
                 Home

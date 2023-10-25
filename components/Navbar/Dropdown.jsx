@@ -24,7 +24,7 @@ function DropDown({ isRTL }) {
   return (
      <div className={containerClasses}>
       <div className={baseContainerClass}>
-    <div className="NavigationContainer text-white lg:hidden w-full divide-y-2 ">
+    <div className="NavigationContainer text-white lg:hidden  divide-y-2">
       <div className="MainHeader flex justify-between items-center self-stretch pt-10 pb-5">
         <div className="LogoImage flex items-start ml-5">
       <Image src="/assets/Rectangle 4.png" alt="" width={186} height={58} />
