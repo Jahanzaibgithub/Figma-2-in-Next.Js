@@ -21,7 +21,7 @@ const SubscribeHeroSection = ({ isRTL }) => {
   <div className="Image rtl:flex rtl:justify-center rtl:items-center rtl:md:absolute rtl:md:z-10">
   <div className="rtl:md:pr-[335px] rtl:lg:pr-[300px] rtl:xl:pr-[500px]">
     <img
-      src="/assets/SubscribeHeroSection.png"
+      src="/assets/SubscribeHeroSection (1).png"
       alt=""
       className="rtl:h-96 rtl:md:w-[300px] rtl:md:h-[350px] rtl:lg:w-[350px] rtl:lg:h-[490px] rtl:xl:w-[500px] rtl:xl:h-[490px]"
     />
