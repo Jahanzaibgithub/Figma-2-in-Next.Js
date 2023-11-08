@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '~swiper/css';
+@import '~swiper/css/navigation';
+@import '~swiper/css/pagination';
+@import '~swiper/css/scrollbar';
 .page-background {
     -webkit-clip-path: polygon(100% 0, 100% 77%, 50% 100%, 0 78%, 0 0);
     clip-path: polygon(100% 0, 100% 77%, 50% 100%, 0 78%, 0 0);

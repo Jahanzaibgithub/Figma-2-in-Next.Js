@@ -37,8 +37,8 @@ export default function Home() {
       <MainInformation  isRTL={isRTL} />
       <Agency  isRTL={isRTL} />
       <InfoBlock   isRTL={isRTL}/>
-      < PartnershipProjects  isRTL={isRTL}/>
-    
+      < PartnershipProjects  isRTL={true}/>
+    < PartnershipProjects  isRTL={false}/> 
     </main>
   );
 }
