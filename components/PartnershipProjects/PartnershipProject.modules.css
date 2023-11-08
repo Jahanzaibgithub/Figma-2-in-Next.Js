@@ -1,4 +1,4 @@
-#slider {
+/* #slider {
     margin: 0 auto;
     width: 900px;
     max-width: 100%;
@@ -15,7 +15,7 @@
 }
 
 #slides {
-    /* border: 3px solid #ccc; */
+    
     background: #fff;
     position: relative;
     z-index: 1;
@@ -124,4 +124,40 @@
         line-height: 0;
         height: 1024px;
     }
+} */
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.box {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaeaea;
+}
+
+.small-container {
+    max-width: 890px;
+    margin: 0 auto;
+}
+
+.container-box {
+    position: relative;
+}
+
+.container-box .arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.container-box .arrow.arrow-left {
+    left: 0;
+}
+
+.container-box .arrow.arrow-right {
+    right: 0;
 }
