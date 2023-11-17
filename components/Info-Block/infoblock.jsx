@@ -32,15 +32,15 @@ const InfoBlock = ({ isRTL }) => {
               learning opportunities, annually.{" "}
             </p>
             <div className="SeeMoreLinkContainer">
-              {isTextVisibleArray[0] ? null : ( 
+              {isTextVisibleArray[0] ? null : ( // Text is visible, so we don't render the SVG and title
                 <div
-                  className="SeeMoreLink1 flex items-center gap-2  cursor-pointer"
+                  className="SeeMoreLink1 flex items-center gap-2 cursor-pointer "
                   onClick={() => toggleTextVisibility(0)}
                 >
-                  <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px]">
+                  <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                     <h2>See More</h2>
                   </div>
-                  <div className="SeeMoreLinkArrow ">
+                  <div className="SeeMoreLinkArrow">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -70,7 +70,7 @@ const InfoBlock = ({ isRTL }) => {
                     className="flex fex-row gap-2 cursor-pointer"
                     onClick={() => toggleTextVisibility(0)}
                   >
-                    <div className="SeeLessLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px]">
+                    <div className="SeeLessLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
                       <h2>See Less</h2>
                     </div>
                     <div className="SeeLessLinkArrow">
@@ -226,7 +226,7 @@ const InfoBlock = ({ isRTL }) => {
                   </p>
 
                   <div
-                    className="flex fex-row gap-2 cursor-pointer"
+                    className="flex fex-row gap-2 cursor-pointer" 
                     onClick={() => toggleTextVisibility(2)}
                   >
                     <div className="SeeLessLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
@@ -272,7 +272,7 @@ const InfoBlock = ({ isRTL }) => {
             <div className="SeeMoreLinkContainer">
               {isTextVisibleArray[3] ? null : ( // Text is visible, so we don't render the SVG and title
                 <div
-                  className="SeeMoreLink1 flex items-center gap-2 cursor-pointer "
+                  className="SeeMoreLink1 flex items-center gap-2 cursor-pointer"
                   onClick={() => toggleTextVisibility(3)}
                 >
                   <div className="SeeMoreLinkTittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] ">
