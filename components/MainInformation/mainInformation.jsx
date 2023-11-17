@@ -1,10 +1,11 @@
 
 import React from "react";
+import style from "./MainInformation.modules.css";
 
 const MainInformation =({ isRTL }) => {
   
   return (
-    <div className="MainInformation-Container bg-blue-50 flex flex-col p-6 gap-5 justify-center items-center self-stretch md:p-12 md:gap-3">
+    <div className="MainInformation-Container flex flex-col p-6 gap-5 justify-center items-center self-stretch md:p-12 md:gap-3">
       <div className="MainInformation-Tittle-Container md:flex gap-3 md:flex-col md:items-center md:pt-0 md:pr-12 md:pb-12 md:pl-12 md:self-stretch">
         <div className="MainInformation-Tittle self-stretch md:text-center">
           <h1 className="Tittle-1  text-Gray4 font-Gotham inline-block  mr-2 text-lg font-bold leading-8 tracking-wider uppercase md:text-2xl  md:text-center md:tracking-[0.72px]">

@@ -1,0 +1,90 @@
+.FooterMainContainer {
+    background: var(--Gray-5, #323031);
+}
+
+.FooterHeaderLogo1 {
+    gap: 6.933px;
+}
+
+.FooterHeaderBlockBorderCenter {
+    background: #979797;
+    margin: 20px;
+    height: 1px;
+}
+
+.FooterLogoBorder2 {
+    background: #979797;
+    width: 0.3px;
+    height: 28px;
+}
+
+.FooterHeaderSignUpButton {
+    border: 0.5px solid var(--White, #FFF);
+    width: 123px;
+}
+
+.FooterHeaderContactUsButton {
+    border: 0.5px solid var(--White, #FFF);
+    width: 123px;
+}
+
+.FooterHeaderBlockBorderBottom {
+    background: #979797;
+    height: 1px;
+}
+
+.FooterFeaturesBlock1 {
+    gap: 10px;
+}
+
+.FooterFeaturesBlock1List {
+    line-height: 18px;
+    letter-spacing: 0.24px;
+}
+
+.FooterFeaturesBlock2 {
+    gap: 10px;
+}
+
+.FooterFeaturesBlock2List {
+    line-height: 18px;
+    letter-spacing: 0.24px;
+}
+
+.FooterFeaturesBlock3 {
+    gap: 10px;
+}
+
+.FooterFeaturesBlock3List {
+    line-height: 18px;
+    letter-spacing: 0.24px;
+}
+
+.FooterFeaturesBlock4 {
+    gap: 10px;
+}
+
+.FooterFeaturesBlock4List {
+    line-height: 18px;
+    letter-spacing: 0.24px;
+}
+
+.FooterFeaturesBlock5 {
+    gap: 10px;
+}
+
+.FooterFeaturesBlock5List {
+    line-height: 18px;
+    letter-spacing: 0.24px;
+}
+
+.FooterFeaturesBlock5Border {
+    background: #535052;
+    width: 1px;
+    height: 20px;
+}
+
+.FooterFeaturesBlockBorderBottom {
+    background: #979797;
+    height: 1px;
+}
