@@ -87,6 +87,8 @@ const PartnershipProject = ({ isRTL }) => {
           navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
            pagination={{
        clickable: true,
+      //  el: `swiper-pagination swiper-container-testClass`,
+      //  bulletClass: `swiper-pagination-bullet `
     }}
           dir={isRTL ? "rtl" : "ltr"}
           onSwiper={(swiper) => console.log(swiper)}
@@ -95,11 +97,11 @@ const PartnershipProject = ({ isRTL }) => {
           <SwiperSlide className="">
             {" "}
             <div className="slide slide_1 flex flex-col lg:m-0 lg:flex-row justify-center items-center text-start gap-10">
-              <div className="PartnershipContainer1  lg:w-3/5  xl:w-2/5">
+              <div className="PartnershipContainer1  lg:w-3/5  xl:w-2/5 ">
                 <h1 className="text-black font-[open-sans] text-xl lg:text-[28px] font-bold leading-normal">
                   Early Childhood Development
                 </h1>
-                <p className="text-black font-[open-sans] text-base font-normal">
+                <p className="text-black font-[open-sans] text-base font-normal pt-2">
                   The Tanzania Comprehensive Cancer Care Project (TCCP) is a
                   €13.3 million private-public four-year evidence-based project
                   funded by Agence Française de Développement (AFD) and Aga Khan
@@ -108,12 +110,12 @@ const PartnershipProject = ({ isRTL }) => {
                   the cancer continuum in Dar es Salaam and Mwanza regions of
                   Tanzania.
                 </p>
-                <p className="text-gray-600 font-open-sans text-base font-normal">
+                <p className="text-gray-600 font-open-sans text-base font-normal pt-2">
                   The project is a joint initiative led by the Aga Khan Health
                   Services Tanzania (AKHST) together with the Aga Khan
                   Foundation Tanzania (AKFT).
                 </p>
-                <div className="SeeMoreLinkContainer">
+                <div className="SeeMoreLinkContainer pt-2">
                   {isTextVisibleArray[0] ? null : (
                     <div
                       className="SeeMoreLinkArrow flex justify-center"
@@ -168,11 +170,11 @@ const PartnershipProject = ({ isRTL }) => {
           <SwiperSlide className="">
             {" "}
             <div className="slide slide_2 flex flex-col lg:m-0 lg:flex-row justify-center items-center text-start gap-10">
-              <div className="PartnershipContainer1 lg:w-3/5 xl:w-2/5 ">
+              <div className="PartnershipContainer1  lg:w-3/5  xl:w-2/5 ">
                 <h1 className="text-black font-[open-sans] text-xl lg:text-[28px] font-bold leading-normal">
                   The Tanzania Cancer Care Project (TCCP)
                 </h1>
-                <p className="text-black font-[open-sans] text-base font-normal">
+                <p className="text-black font-[open-sans] text-base font-normal pt-2">
                   The Tanzania Comprehensive Cancer Care Project (TCCP) is a
                   €13.3 million private-public four-year evidence-based project
                   funded by Agence Française de Développement (AFD) and Aga Khan
@@ -181,12 +183,12 @@ const PartnershipProject = ({ isRTL }) => {
                   the cancer continuum in Dar es Salaam and Mwanza regions of
                   Tanzania.
                 </p>
-                <p className="text-gray-600 font-open-sans text-base font-normal">
+                <p className="text-gray-600 font-open-sans text-base font-normal pt-2">
                   The project is a joint initiative led by the Aga Khan Health
                   Services Tanzania (AKHST) together with the Aga Khan
                   Foundation Tanzania (AKFT).
                 </p>
-                <div className="SeeMoreLinkContainer">
+                <div className="SeeMoreLinkContainer pt-2">
                   {isTextVisibleArray[0] ? null : (
                     <div
                       className="SeeMoreLinkArrow flex justify-center"
@@ -240,11 +242,11 @@ const PartnershipProject = ({ isRTL }) => {
           <SwiperSlide className="">
             {" "}
             <div className="slide slide_3 flex flex-col lg:m-0 lg:flex-row justify-center items-center text-start gap-10">
-              <div className="PartnershipContainer1 lg:w-3/5  xl:w-2/5 ">
+              <div className="PartnershipContainer1 lg:w-3/5  xl:w-2/5">
                 <h1 className="text-black font-[open-sans] text-xl lg:text-[28px] font-bold leading-normal">
                   Early Childhood Development
                 </h1>
-                <p className="text-black font-[open-sans] text-base font-normal">
+                <p className="text-black font-[open-sans] text-base font-normal pt-2">
                   The Tanzania Comprehensive Cancer Care Project (TCCP) is a
                   €13.3 million private-public four-year evidence-based project
                   funded by Agence Française de Développement (AFD) and Aga Khan
@@ -253,12 +255,12 @@ const PartnershipProject = ({ isRTL }) => {
                   the cancer continuum in Dar es Salaam and Mwanza regions of
                   Tanzania.
                 </p>
-                <p className="text-gray-600 font-open-sans text-base font-normal">
+                <p className="text-gray-600 font-open-sans text-base font-normal pt-2">
                   The project is a joint initiative led by the Aga Khan Health
                   Services Tanzania (AKHST) together with the Aga Khan
                   Foundation Tanzania (AKFT).
                 </p>
-                <div className="SeeMoreLinkContainer">
+                <div className="SeeMoreLinkContainer pt-2">
                   {isTextVisibleArray[0] ? null : (
                     <div
                       className="SeeMoreLinkArrow flex justify-center"
@@ -312,11 +314,11 @@ const PartnershipProject = ({ isRTL }) => {
           <SwiperSlide className="">
             {" "}
             <div className="slide slide_4 flex flex-col lg:m-0 lg:flex-row justify-center items-center text-start gap-10">
-              <div className="PartnershipContainer1 lg:w-3/5  xl:w-2/5 ">
+            <div className="PartnershipContainer1 lg:w-3/5 xl:w-2/5">
                 <h1 className="text-black font-[open-sans] text-xl lg:text-[28px] font-bold leading-normal">
                   The Tanzania Cancer Care Project (TCCP)
                 </h1>
-                <p className="text-black font-[open-sans] text-base font-normal">
+              <p className="text-black font-[open-sans] text-base font-normal pt-2">
                   The Tanzania Comprehensive Cancer Care Project (TCCP) is a
                   €13.3 million private-public four-year evidence-based project
                   funded by Agence Française de Développement (AFD) and Aga Khan
@@ -324,13 +326,13 @@ const PartnershipProject = ({ isRTL }) => {
                   quality, access, and capacity of cancer care services across
                   the cancer continuum in Dar es Salaam and Mwanza regions of
                   Tanzania.
-                </p>
-                <p className="text-gray-600 font-open-sans text-base font-normal">
+                </p> 
+               <p className="text-gray-600 font-open-sans text-base font-normal pt-2">
                   The project is a joint initiative led by the Aga Khan Health
                   Services Tanzania (AKHST) together with the Aga Khan
                   Foundation Tanzania (AKFT).
                 </p>
-                <div className="SeeMoreLinkContainer">
+                <div className="SeeMoreLinkContainer pt-2">
                   {isTextVisibleArray[0] ? null : (
                     <div
                       className="SeeMoreLinkArrow flex justify-center"
@@ -371,6 +373,7 @@ const PartnershipProject = ({ isRTL }) => {
                     </div>
                   )}
                 </div>
+                
               </div>
               <div className="PartnershipContainer2">
                 <img

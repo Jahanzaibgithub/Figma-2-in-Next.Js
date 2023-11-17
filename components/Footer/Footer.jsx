@@ -108,7 +108,7 @@ export const Footer = ({ isRTL }) => {
           </div>
           <div
             className="FooterHeaderSignUpContainer flex flex-col justify-center items-center  text-start lg:items-start"  href="#"
-            href="#"
+           
           >
             <h1 className="FooterHeaderSignUpHeading1 font-[Gotham] text-sm font-normal  text-white leading-5">
               Subscribe to our newsletter

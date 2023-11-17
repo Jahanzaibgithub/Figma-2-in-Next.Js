@@ -13,6 +13,7 @@ import SubscribeSection from "../components/SubscribeSection/SubscribeSection";
 import SubscribeHeroSection from "../components/SubscribeHeroSection/SubscribeHeroSection";
 import Footer from "../components/Footer/Footer";
 
+
 import "./globals.css";
 
 export default function Home() {
