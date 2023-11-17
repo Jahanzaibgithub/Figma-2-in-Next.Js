@@ -87,8 +87,6 @@ const PartnershipProject = ({ isRTL }) => {
           navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
            pagination={{
        clickable: true,
-      //  el: `swiper-pagination swiper-container-testClass`,
-      //  bulletClass: `swiper-pagination-bullet `
     }}
           dir={isRTL ? "rtl" : "ltr"}
           onSwiper={(swiper) => console.log(swiper)}
@@ -97,7 +95,7 @@ const PartnershipProject = ({ isRTL }) => {
           <SwiperSlide className="">
             {" "}
             <div className="slide slide_1 flex flex-col lg:m-0 lg:flex-row justify-center items-center text-start gap-10">
-              <div className="PartnershipContainer1  lg:w-3/5  xl:w-2/5 lg:h-80 mt-[-20px]">
+              <div className="PartnershipContainer1  lg:w-3/5  xl:w-2/5">
                 <h1 className="text-black font-[open-sans] text-xl lg:text-[28px] font-bold leading-normal">
                   Early Childhood Development
                 </h1>
@@ -170,7 +168,7 @@ const PartnershipProject = ({ isRTL }) => {
           <SwiperSlide className="">
             {" "}
             <div className="slide slide_2 flex flex-col lg:m-0 lg:flex-row justify-center items-center text-start gap-10">
-              <div className="PartnershipContainer1  lg:w-3/5  xl:w-2/5  lg:h-80 mt-[-20px]">
+              <div className="PartnershipContainer1 lg:w-3/5 xl:w-2/5 ">
                 <h1 className="text-black font-[open-sans] text-xl lg:text-[28px] font-bold leading-normal">
                   The Tanzania Cancer Care Project (TCCP)
                 </h1>
@@ -242,7 +240,7 @@ const PartnershipProject = ({ isRTL }) => {
           <SwiperSlide className="">
             {" "}
             <div className="slide slide_3 flex flex-col lg:m-0 lg:flex-row justify-center items-center text-start gap-10">
-              <div className="PartnershipContainer1 lg:w-3/5  xl:w-2/5 lg:h-80 mt-[-20px]">
+              <div className="PartnershipContainer1 lg:w-3/5  xl:w-2/5 ">
                 <h1 className="text-black font-[open-sans] text-xl lg:text-[28px] font-bold leading-normal">
                   Early Childhood Development
                 </h1>
@@ -314,7 +312,7 @@ const PartnershipProject = ({ isRTL }) => {
           <SwiperSlide className="">
             {" "}
             <div className="slide slide_4 flex flex-col lg:m-0 lg:flex-row justify-center items-center text-start gap-10">
-              <div className="PartnershipContainer1 lg:w-3/5  xl:w-2/5 lg:h-80 mt-[-20px] ">
+              <div className="PartnershipContainer1 lg:w-3/5  xl:w-2/5 ">
                 <h1 className="text-black font-[open-sans] text-xl lg:text-[28px] font-bold leading-normal">
                   The Tanzania Cancer Care Project (TCCP)
                 </h1>

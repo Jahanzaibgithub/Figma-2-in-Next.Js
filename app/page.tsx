@@ -11,6 +11,7 @@ import DropDown from "../components/Navbar/Dropdown";
 import PartnershipProjects from "../components/PartnershipProjects/PartnershipProject";
 import SubscribeSection from "../components/SubscribeSection/SubscribeSection";
 import SubscribeHeroSection from "../components/SubscribeHeroSection/SubscribeHeroSection";
+import Footer from "../components/Footer/Footer";
 
 import "./globals.css";
 
@@ -39,6 +40,7 @@ export default function Home() {
       <InfoBlock   isRTL={isRTL}/>
       < PartnershipProjects  isRTL={true}/>
     < PartnershipProjects  isRTL={false}/> 
+     <Footer   isRTL={isRTL}/>
     </main>
   );
 }
