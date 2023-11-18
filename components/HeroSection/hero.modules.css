@@ -1,75 +1,40 @@
-/* .herosection-paragraph {
-        width: 80%;
-        color: var(--Light-text, #FFF);
-        text-align: center;
-        font-family: Actor;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 32px;
-        letter-spacing: 0.2px;
-    } 
+.herosectionMainContainer {
+    height: 800px;
+    width: 100%;
+    font-family: Actor;
 }
 
+.herosectionHeading {
+    font-size: 74px;
+    line-height: 84px;
+    letter-spacing: 0.2px;
+}
 
- .herosection-btn-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding-top: 100px;
-} 
-
+.herosectionParagraph {
+    width: 80%;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+}
 
 .herosection-btn {
-    color: var(--Light-text, #FFF);
-    text-align: center;
-    font-family: Actor;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
     letter-spacing: 0.2px;
-    border-radius: 35px;
-    background-color: var(--Primary, #2091F9);
-    width: 236px;
-    padding: 16px 0px;
-} 
-
-
-.herosection-toggel-heading {
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
 
-.herosection-toggel-heading h2 {
-    color: #FFF;
-    text-align: right;
-    font-family: Actor;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-
-.switch {
+.HerosectionToggelBtn1 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 48px;
+    height: 24px;
 }
 
-
-.switch input {
+.HerosectionToggelBtn1 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-
- .slider {
+.HerosectionToggelBtn1 .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -77,168 +42,98 @@
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    -webkit-transition: .4s;
     transition: .4s;
 }
 
-.slider:before {
+.HerosectionToggelBtn1 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 16px;
+    width: 16px;
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-} */
-
-
-/* input:checked+.slider {
-    background-color: var(--Primary, #2091f9);
-}
- */
-
-
-/* 
-input:focus+.slider {
-    box-shadow: 0 0 1px var(--Primary, #2091F9);
-} */
-
-
-/* input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-} */
-
-
-/* .slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-} 
-
-
-    .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-    }
-    .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-    .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-    input:checked+.slider {
-        background-color: #2196F3;
-    }
-    input:focus+.slider {
-        box-shadow: 0 0 1px #2196F3;
-    }
-    input:checked+.slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-    }
-    .slider.round {
-        border-radius: 34px;
-    }
-    .slider.round:before {
-        border-radius: 50%;
-    }
-    .herosection-btn-container {
-        display: flex;
-        padding: 20px;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding-top: 60px;
-    }*/
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
     transition: .4s;
 }
 
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked+.slider {
+.HerosectionToggelBtn1 input:checked+.slider {
     background-color: #2196F3;
 }
 
-input:focus+.slider {
+.HerosectionToggelBtn1 input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
+.HerosectionToggelBtn1 input:checked+.slider:before {
     transform: translateX(26px);
 }
 
-
-/* Rounded sliders */
-
-.slider.round {
+.HerosectionToggelBtn1 .slider.round {
     border-radius: 34px;
 }
 
-.slider.round:before {
+.HerosectionToggelBtn1 .slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* modules.css */
+
+.HerosectionToggelBtn2 .switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+}
+
+.HerosectionToggelBtn2 .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.HerosectionToggelBtn2 .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.HerosectionToggelBtn2 .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 8px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.HerosectionToggelBtn2 input:checked+.slider {
+    background-color: #2196F3;
+}
+
+.HerosectionToggelBtn2 input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.HerosectionToggelBtn2 input:checked+.slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+.HerosectionToggelBtn2 .slider.round {
+    border-radius: 34px;
+}
+
+.HerosectionToggelBtn2 .slider.round:before {
     border-radius: 50%;
 }

@@ -1,20 +1,21 @@
 import React from "react"
 import Image from "next/image";
+import "./Agency.modules.css";
 
 const Agency = ({isRTL}) => {
   return (
-    <div className="AgencyMainContainer bg-white inline-flex p-6 flex-col w-full gap-2.5 md:p-12">
+    <div className="AgencyMainContainer font-[Gotham] bg-white inline-flex p-6 flex-col w-full gap-2.5 md:p-12">
       <div className="AgencyMainHeader md:flex md:items-center md:gap-2 flex items-center gap-3 self-stretch pt-6 ">
-        <div className="HeadingContainer flex flex-col items-start flex-1  ">
-          <h1 className="Heading whitespace-nowrap text-Gray5 font-Gotham text-lg leading-8 tracking-[0.54px] md:text-2xl md:not-italic font-bold uppercase md:leading-9">
+        <div className="AgencyHeadingContainer flex flex-col items-start flex-1  ">
+          <h1 className="AgencyHeading whitespace-nowrap  text-lg leading-8   md:not-italic md:text-2xl font-bold uppercase md:leading-9">
             OUR AGENCIES
           </h1>{" "}
         </div>
         <div className="HoWeWork flex justify-end items-end gap-2  ">
-          <a className="Tittle whitespace-nowrap lg:text-blue-custom lg:font-Gotham lg:text-base lg:font-medium lg:leading-6 lg:tracking-[0.48px] hidden lg:block" href="#">
+          <a className="Tittle whitespace-nowrap lg:text-blue-custom  lg:text-base lg:font-medium lg:leading-6 lg:tracking-[0.48px] hidden lg:block" href="#">
             How We Work
           </a>
-          <a className="Tittle whitespace-nowrap text-blue-custom font-Gotham text-base font-medium leading-6 tracking-[0.48px] lg:hidden" href="#">
+          <a className="Tittle whitespace-nowrap text-blue-custom text-base font-medium leading-6 tracking-[0.48px] lg:hidden" href="#">
             See More
           </a>
           {isRTL ? (
