@@ -1,6 +1,5 @@
 .SubscribeHeroSectionMainContainer {
     background: linear-gradient(102deg, #744775 32.64%, #753876 68.99%);
-    height: 620px;
 }
 
 @media (max-width: 768px) {

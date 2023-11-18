@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useRef, } from "react";
 import Image from "next/image";
+import "./features.modules.css";
 
 
  const Features = ({ isRTL }) => {
@@ -26,16 +27,16 @@ const handlePlayClick = (e) => {
  
   
   return (
-    <div className="Features-Main-Container flex flex-col items-center gap-20 self-stretch px-0 pt-40 pb-20  md:text-center gap-50 md:py-40 ">
-      <div className="Features-Main-Heading-Container flex flex-col items-center gap-7   ">
-       <h1 className="Heading text-custom-text-color  font-actor md:text-5xl font-normal leading-13 md:tracking-[0.2px] md:text-custom-primary text-center text-4xl tracking-tight ">
+    <div className="FeaturesMainContainer flex flex-col items-center gap-20 self-stretch px-0 pt-40 pb-20  md:text-center gap-50 md:py-40 ">
+      <div className="FeaturesMainHeaderContainer flex flex-col items-center gap-7   ">
+       <h1 className="FeaturesHeading  font-normal leading-13 text-center ">
   Features
 </h1>
-<p className="Paragraph text-second-text m-auto text-center font-actor text-2xl font-normal leading-7 tracking-tight w-7/12 md:font-actor md:text-2xl md:font-Light md:leading-10 md:tracking-[0.2px] md:w-8/12 ">
+<p className="FeaturesParagraph text-second-text text-center font-actor text-2xl font-normal leading-7 mx-20 md:mx-40 lg:mx-80 xl:mx-96 md:font-actor md:text-2xl md:font-Light md:leading-10  ">
   Most calendars are designed for teams.Slate is designed for freelancers.
 </p>
       </div>
-      <div className="Features-Container flex flex-col p-4 items-start gap-12 text-center lg:flex lg:flex-row  lg:gap-14 order-2 lg:order-1 " >
+      <div className="FeaturesContainer flex flex-col p-4 items-start gap-12 text-center lg:flex lg:flex-row  lg:gap-14 order-2 lg:order-1 " >
         <div className="FeaturesBox1 flex flex-col w-64 items-center gap-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -134,11 +135,12 @@ const handlePlayClick = (e) => {
         </div>
        <div  className="Video-Container flex justify-center items-center ">
       <video  className="Video-Player w-9/12  rounded-2xl" 
-            src="/assets/features.mp4" 
+            src="/assets/features.mp4 " 
           poster="/assets/features.jpg" 
           ref={videoRef}
            controls={isPlaying} 
            onEnded={handleVideoEnded}
+            
           />
           </div>
       </div>

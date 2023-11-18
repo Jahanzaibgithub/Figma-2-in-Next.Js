@@ -71,23 +71,15 @@ const SubscribeSection = ({ isRTL }) => {
           </h1>
         </div>
         <div className="InputAndButton flex lg:flex-row flex-col justify-center items-center gap-5 pt-20">
-            <div className="BorderContainer p-4 rtl:p-4 rtl:flex rtl:flex-row">
-              <div className="Border rtl:relative ">
-                <input 
-                  type="text"
-                  id="inputField"
-                  name="inputField"
-                  className=" ltr:pl-10 ltr:py-2 h-8"
-                  placeholder="Your email"
-                />
-                <div className="Svg ">
+            <div className="BorderContainer flex flex-row justify-start items-center text-center gap-4 py-5 px-12">
+                <span className=" ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
                   height="18"
                   viewBox="0 0 21 18"
                   fill="none"
-                  className="absolute top-1/2 left-5 transform -translate-y-1/2 h-5 w-5 text-gray-400 rtl:left-28" 
+                  className=" " 
                 >
                   <path
                     d="M4 6L9.4 10.05C9.75556 10.3167 10.2444 10.3167 10.6 10.05L16 6"
@@ -103,8 +95,16 @@ const SubscribeSection = ({ isRTL }) => {
                     stroke="#39425D"
                   />
                 </svg>
-                </div>
-              </div>
+                </span>
+               <span className=""> <input 
+                  type="text"
+                  id="inputField"
+                  name="inputField"
+                  className="  "
+                  placeholder="Your email"
+                /></span>
+               
+             
           </div>
           <button class="SubscribeButton w-44 h-16 flex-shrink-0 rounded-lg " >
             <h1 className="text-white text-center font-[open-sans] text-[17px] font-semibold">

@@ -1,203 +1,43 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./components/HeroSection/hero.modules.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************/
-/* .herosection-paragraph {
-        width: 80%;
-        color: var(--Light-text, #FFF);
-        text-align: center;
-        font-family: Actor;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 32px;
-        letter-spacing: 0.2px;
-    } 
+.herosectionMainContainer {
+    height: 800px;
+    width: 100%;
+    font-family: Actor;
 }
 
+.herosectionHeading {
+    font-size: 74px;
+    line-height: 84px;
+    letter-spacing: 0.2px;
+}
 
- .herosection-btn-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding-top: 100px;
-} 
-
+.herosectionParagraph {
+    width: 80%;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+}
 
 .herosection-btn {
-    color: var(--Light-text, #FFF);
-    text-align: center;
-    font-family: Actor;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
     letter-spacing: 0.2px;
-    border-radius: 35px;
-    background-color: var(--Primary, #2091F9);
-    width: 236px;
-    padding: 16px 0px;
-} 
-
-
-.herosection-toggel-heading {
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
 
-.herosection-toggel-heading h2 {
-    color: #FFF;
-    text-align: right;
-    font-family: Actor;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-
-.switch {
+.HerosectionToggelBtn1 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 48px;
+    height: 24px;
 }
 
-
-.switch input {
+.HerosectionToggelBtn1 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-
- .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-} */
-
-
-/* input:checked+.slider {
-    background-color: var(--Primary, #2091f9);
-}
- */
-
-
-/* 
-input:focus+.slider {
-    box-shadow: 0 0 1px var(--Primary, #2091F9);
-} */
-
-
-/* input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-} */
-
-
-/* .slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-} 
-
-
-    .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-    }
-    .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-    .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-    input:checked+.slider {
-        background-color: #2196F3;
-    }
-    input:focus+.slider {
-        box-shadow: 0 0 1px #2196F3;
-    }
-    input:checked+.slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-    }
-    .slider.round {
-        border-radius: 34px;
-    }
-    .slider.round:before {
-        border-radius: 50%;
-    }
-    .herosection-btn-container {
-        display: flex;
-        padding: 20px;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding-top: 60px;
-    }*/
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
+.HerosectionToggelBtn1 .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -208,54 +48,223 @@ input:focus+.slider {
     transition: .4s;
 }
 
-.slider:before {
+.HerosectionToggelBtn1 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 16px;
+    width: 16px;
     left: 4px;
     bottom: 4px;
     background-color: white;
     transition: .4s;
 }
 
-input:checked+.slider {
+.HerosectionToggelBtn1 input:checked+.slider {
     background-color: #2196F3;
 }
 
-input:focus+.slider {
+.HerosectionToggelBtn1 input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked+.slider:before {
+.HerosectionToggelBtn1 input:checked+.slider:before {
     transform: translateX(26px);
 }
 
-
-/* Rounded sliders */
-
-.slider.round {
+.HerosectionToggelBtn1 .slider.round {
     border-radius: 34px;
 }
 
-.slider.round:before {
+.HerosectionToggelBtn1 .slider.round:before {
     border-radius: 50%;
 }
+
+
+/* modules.css */
+
+.HerosectionToggelBtn2 .switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+}
+
+.HerosectionToggelBtn2 .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.HerosectionToggelBtn2 .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.HerosectionToggelBtn2 .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 8px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+.HerosectionToggelBtn2 input:checked+.slider {
+    background-color: #2196F3;
+}
+
+.HerosectionToggelBtn2 input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.HerosectionToggelBtn2 input:checked+.slider:before {
+    transform: translateX(16px);
+}
+
+.HerosectionToggelBtn2 .slider.round {
+    border-radius: 34px;
+}
+
+.HerosectionToggelBtn2 .slider.round:before {
+    border-radius: 50%;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./components/Features/features.modules.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+ .FeaturesMainContainer {
+     font-family: Actor;
+ }
+ 
+ .FeaturesHeading {
+     color: var(--text, #252B42);
+     font-size: 48px;
+     line-height: 55px;
+     letter-spacing: 0.2px;
+ }
+ 
+ .FeaturesParagraph {
+     color: var(--second-text, #374754);
+     font-size: 28px;
+     letter-spacing: 0.2px;
+ }
+ /*  
+ 
+ .Features-Right-Box,
+ .Features-Mid-Box,
+ .Features-Left-Box {
+     display: flex;
+     width: 255px;
+     align-items: center;
+     gap: 10px;
+ }
+ 
+ @media screen and (max-width: 768px) {
+     .Features-Main-Container {
+         display: flex;
+         padding: 150px 0px 80px 0px;
+     }
+     .Features-Main-Heading-Container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 20px;
+         width: 75%;
+     }
+     .Heading {
+         color: var(--text, #252b42);
+         text-align: center;
+         font-family: Actor;
+         font-size: 36px;
+         font-style: normal;
+         font-weight: 400;
+         letter-spacing: 0.2px;
+     }
+     .Paragraph {
+         width: 70%;
+         color: var(--second-text, #374754);
+         text-align: center;
+         font-family: Actor;
+         font-size: 16px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 30px;
+         letter-spacing: 0.2px;
+     }
+     .Features-Container {
+         flex-direction: column;
+         gap: 40px;
+     }
+     .Features-Right-Box,
+     .Features-Mid-Box,
+     .Features-Left-Box {
+         display: flex;
+         width: 190px;
+         flex-direction: column;
+         align-items: center;
+         gap: 10px;
+     }
+     .features-heading {
+         font-size: 18px;
+         line-height: 24px;
+     }
+     .features-paragraph {
+         font-size: 16px;
+         line-height: 22px;
+     }
+     .Features-Video {
+         flex-shrink: 0;
+         width: 90%;
+         flex-shrink: 0;
+         position: relative;
+         line-height: 100px;
+     }
+     .Video-Player {
+         border-radius: 15px;
+     }
+     Circle {
+         position: absolute;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+     .play-icon {
+         position: absolute;
+     }
+     .Circle svg {
+         width: 74px;
+         height: 74px;
+         fill: #2091F9;
+     }
+     .play-icon svg {
+         width: 18px;
+         height: 18px;
+         fill: white;
+     }
+ } */
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./components/MainInformation/MainInformation.modules.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************/
 .MainInformation-Container {
-    background: #E6EDEF;
+    /* background: #E6EDEF; */
+    background: var(--Light-Blue, rgba(8, 76, 97, 0.05));
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./components/ Agency/Agency.modules.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.AgencyHeading {
+    color: var(--Gray-5, #323031);
 }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./components/PartnershipProjects/PartnershipProject.modules.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************/
- @media (min-width: 1024px) {
-     .PartnershipContainer1 {
-         height: 340px;
-     }
- }
- 
  .Border {
      background: #686868;
      width: 250px;
@@ -281,12 +290,12 @@ input:checked+.slider:before {
  }
  
  .swiper-pagination {
-     margin-bottom: -30px!important;
+     margin-bottom: -35px!important;
  }
  
  .swiper-button-next:after,
  .swiper-button-prev:after {
-     font-size: 35px;
+     font-size: 30px;
  }
  
  .swiper-button-next.swiper-button-disabled,
@@ -313,6 +322,11 @@ input:checked+.slider:before {
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./components/SubscribeSection/Subscribe.modules.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************/
+.SubscribeHeroSectionMainContainer {
+    border-radius: 48px 48px 300px 48px;
+    background: linear-gradient(102deg, #744775 32.64%, #753876 68.99%);
+}
+
 .SubscribeSection1 {
     opacity: 0.2;
     background: var(--light-color, #DFD7F9);
@@ -362,7 +376,6 @@ input:checked+.slider:before {
     border-radius: 10px;
     background: var(--white, #FFF);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    width: 391px;
 }
 
 @media (max-width: 640px) {
@@ -377,7 +390,6 @@ input:checked+.slider:before {
   \**************************************************************************************************************************************************************************************************************************************************************************************************************/
 .SubscribeHeroSectionMainContainer {
     background: linear-gradient(102deg, #744775 32.64%, #753876 68.99%);
-    height: 620px;
 }
 
 @media (max-width: 768px) {
@@ -1583,12 +1595,6 @@ video {
 .inset-0 {
   inset: 0px;
 }
-.left-5 {
-  left: 1.25rem;
-}
-.top-1\/2 {
-  top: 50%;
-}
 .z-10 {
   z-index: 10;
 }
@@ -1610,8 +1616,9 @@ video {
 .m-5 {
   margin: 1.25rem;
 }
-.m-auto {
-  margin: auto;
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 .mb-10 {
   margin-bottom: 2.5rem;
@@ -1658,6 +1665,33 @@ video {
 .mt-52 {
   margin-top: 13rem;
 }
+.mr-20 {
+  margin-right: 5rem;
+}
+.mr-40 {
+  margin-right: 10rem;
+}
+.mr-48 {
+  margin-right: 12rem;
+}
+.mr-64 {
+  margin-right: 16rem;
+}
+.mr-96 {
+  margin-right: 24rem;
+}
+.mr-80 {
+  margin-right: 20rem;
+}
+.mb-96 {
+  margin-bottom: 24rem;
+}
+.ml-80 {
+  margin-left: 20rem;
+}
+.mb-20 {
+  margin-bottom: 5rem;
+}
 .block {
   display: block;
 }
@@ -1691,9 +1725,6 @@ video {
 .h-40 {
   height: 10rem;
 }
-.h-5 {
-  height: 1.25rem;
-}
 .h-8 {
   height: 2rem;
 }
@@ -1706,11 +1737,23 @@ video {
 .h-\[580px\] {
   height: 580px;
 }
-.h-\[800px\] {
-  height: 800px;
-}
 .h-auto {
   height: auto;
+}
+.h-\[80\%\] {
+  height: 80%;
+}
+.h-\[70\%\] {
+  height: 70%;
+}
+.h-\[90\%\] {
+  height: 90%;
+}
+.h-\[95\%\] {
+  height: 95%;
+}
+.h-\[1024px\] {
+  height: 1024px;
 }
 .w-1\/5 {
   width: 20%;
@@ -1751,9 +1794,6 @@ video {
 .w-64 {
   width: 16rem;
 }
-.w-7\/12 {
-  width: 58.333333%;
-}
 .w-8 {
   width: 2rem;
 }
@@ -1775,6 +1815,12 @@ video {
 .w-full {
   width: 100%;
 }
+.w-\[70\%\] {
+  width: 70%;
+}
+.w-\[80\%\] {
+  width: 80%;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1783,10 +1829,6 @@ video {
 }
 .shrink-0 {
   flex-shrink: 0;
-}
-.-translate-y-1\/2 {
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1992,6 +2034,9 @@ video {
 .p-6 {
   padding: 1.5rem;
 }
+.p-10 {
+  padding: 2.5rem;
+}
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -1999,6 +2044,14 @@ video {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 .px-5 {
   padding-left: 1.25rem;
@@ -2012,9 +2065,25 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .pb-10 {
   padding-bottom: 2.5rem;
@@ -2070,6 +2139,54 @@ video {
 .pt-9 {
   padding-top: 2.25rem;
 }
+.pl-4 {
+  padding-left: 1rem;
+}
+.pl-5 {
+  padding-left: 1.25rem;
+}
+.pr-40 {
+  padding-right: 10rem;
+}
+.pr-64 {
+  padding-right: 16rem;
+}
+.pr-72 {
+  padding-right: 18rem;
+}
+.pr-80 {
+  padding-right: 20rem;
+}
+.pr-96 {
+  padding-right: 24rem;
+}
+.pt-32 {
+  padding-top: 8rem;
+}
+.pl-16 {
+  padding-left: 4rem;
+}
+.pl-10 {
+  padding-left: 2.5rem;
+}
+.pl-96 {
+  padding-left: 24rem;
+}
+.pb-40 {
+  padding-bottom: 10rem;
+}
+.pb-96 {
+  padding-bottom: 24rem;
+}
+.pt-0 {
+  padding-top: 0px;
+}
+.pl-72 {
+  padding-left: 18rem;
+}
+.pb-80 {
+  padding-bottom: 20rem;
+}
 .text-left {
   text-align: left;
 }
@@ -2078,6 +2195,9 @@ video {
 }
 .text-start {
   text-align: start;
+}
+.font-\[Actor\] {
+  font-family: Actor;
 }
 .font-\[Gotham\] {
   font-family: Gotham;
@@ -2108,10 +2228,6 @@ video {
 }
 .text-6xl {
   font-size: 3.75rem;
-  line-height: 1;
-}
-.text-7xl {
-  font-size: 4.5rem;
   line-height: 1;
 }
 .text-\[17px\] {
@@ -2185,9 +2301,6 @@ video {
 .leading-\[54px\] {
   line-height: 54px;
 }
-.leading-\[55px\] {
-  line-height: 55px;
-}
 .leading-normal {
   line-height: 1.5;
 }
@@ -2245,10 +2358,6 @@ video {
 .text-custom-text-color {
   color: var(--text, #252B42);
 }
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -2298,23 +2407,6 @@ video {
   display: none;
 }
 
-:is([dir="ltr"] .ltr\:py-2) {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-:is([dir="ltr"] .ltr\:pl-10) {
-  padding-left: 2.5rem;
-}
-
-:is([dir="rtl"] .rtl\:relative) {
-  position: relative;
-}
-
-:is([dir="rtl"] .rtl\:left-28) {
-  left: 7rem;
-}
-
 :is([dir="rtl"] .rtl\:ml-10) {
   margin-left: 2.5rem;
 }
@@ -2333,10 +2425,6 @@ video {
 
 :is([dir="rtl"] .rtl\:h-96) {
   height: 24rem;
-}
-
-:is([dir="rtl"] .rtl\:flex-row) {
-  flex-direction: row;
 }
 
 :is([dir="rtl"] .rtl\:items-center) {
@@ -2387,16 +2475,20 @@ video {
   background-color: var(--Primary, #2091F9);
 }
 
-:is([dir="rtl"] .rtl\:p-4) {
-  padding: 1rem;
-}
-
 :is([dir="rtl"] .rtl\:p-6) {
   padding: 1.5rem;
 }
 
 :is([dir="rtl"] .rtl\:pb-14) {
   padding-bottom: 3.5rem;
+}
+
+:is([dir="rtl"] .rtl\:pr-10) {
+  padding-right: 2.5rem;
+}
+
+:is([dir="rtl"] .rtl\:pl-96) {
+  padding-left: 24rem;
 }
 
 @media (min-width: 320px) {
@@ -2419,10 +2511,6 @@ video {
 
   .xs\:pt-40 {
     padding-top: 10rem;
-  }
-
-  .xs\:leading-\[55px\] {
-    line-height: 55px;
   }
 }
 
@@ -2543,8 +2631,21 @@ video {
     position: absolute;
   }
 
+  .md\:relative {
+    position: relative;
+  }
+
   .md\:z-10 {
     z-index: 10;
+  }
+
+  .md\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .md\:mr-80 {
+    margin-right: 20rem;
   }
 
   .md\:flex {
@@ -2569,6 +2670,14 @@ video {
 
   .md\:h-\[620px\] {
     height: 620px;
+  }
+
+  .md\:h-\[720px\] {
+    height: 720px;
+  }
+
+  .md\:h-\[760px\] {
+    height: 760px;
   }
 
   .md\:w-2\/6 {
@@ -2709,6 +2818,11 @@ video {
     padding-bottom: 10rem;
   }
 
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:pb-12 {
     padding-bottom: 3rem;
   }
@@ -2737,6 +2851,10 @@ video {
     padding-top: 3.5rem;
   }
 
+  .md\:pr-96 {
+    padding-right: 24rem;
+  }
+
   .md\:text-center {
     text-align: center;
   }
@@ -2748,11 +2866,6 @@ video {
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .md\:text-base {
@@ -2787,10 +2900,6 @@ video {
 
   .md\:leading-9 {
     line-height: 2.25rem;
-  }
-
-  .md\:tracking-\[0\.2px\] {
-    letter-spacing: 0.2px;
   }
 
   .md\:tracking-\[0\.48px\] {
@@ -2839,8 +2948,20 @@ video {
     width: 300px;
   }
 
+  :is([dir="rtl"] .rtl\:md\:justify-end) {
+    justify-content: flex-end;
+  }
+
   :is([dir="rtl"] .rtl\:md\:pr-\[335px\]) {
     padding-right: 335px;
+  }
+
+  :is([dir="rtl"] .md\:rtl\:pl-96) {
+    padding-left: 24rem;
+  }
+
+  :is([dir="rtl"] .md\:rtl\:pr-96) {
+    padding-right: 24rem;
   }
 }
 
@@ -2860,6 +2981,11 @@ video {
 
   .lg\:m-20 {
     margin: 5rem;
+  }
+
+  .lg\:mx-80 {
+    margin-left: 20rem;
+    margin-right: 20rem;
   }
 
   .lg\:mx-auto {
@@ -2953,6 +3079,14 @@ video {
 
   .lg\:h-\[490px\] {
     height: 490px;
+  }
+
+  .lg\:h-\[690px\] {
+    height: 690px;
+  }
+
+  .lg\:h-\[620px\] {
+    height: 620px;
   }
 
   .lg\:w-1\/5 {
@@ -3318,6 +3452,14 @@ video {
     height: 490px;
   }
 
+  :is([dir="rtl"] .rtl\:lg\:h-\[590px\]) {
+    height: 590px;
+  }
+
+  :is([dir="rtl"] .rtl\:lg\:h-\[690px\]) {
+    height: 690px;
+  }
+
   :is([dir="rtl"] .rtl\:lg\:w-\[350px\]) {
     width: 350px;
   }
@@ -3332,6 +3474,11 @@ video {
 }
 
 @media (min-width: 1280px) {
+
+  .xl\:mx-96 {
+    margin-left: 24rem;
+    margin-right: 24rem;
+  }
 
   .xl\:mr-10 {
     margin-right: 2.5rem;
