@@ -16,7 +16,7 @@ const InfoBlock = ({ isRTL }) => {
   return (
     <div className="InfoBlockMainContainer bg-white md:flex md:p-12 md:flex-col md:items-start md:gap-6 p-6 flex flex-col items-start gap-6 self-stretch" >
       <div className="InfoBlockTittle md:flex md:flex-col md:justify-center md:self-stretch ">
-        <h1 className="Heading text-Gray5 font-Gotham uppercase leading-8 text-lg font-semibold tracking-[0.54px] md:text-2xl md:font-bold md:tracking-wide">
+        <h1 className="InfoBlockHeading text-Gray5 font-Gotham uppercase leading-8 text-lg font-semibold tracking-[0.54px] md:text-2xl md:font-bold md:tracking-wide">
           Our Work
         </h1>
       </div>

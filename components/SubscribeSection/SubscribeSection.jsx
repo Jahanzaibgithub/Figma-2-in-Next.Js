@@ -5,13 +5,13 @@ const SubscribeSection = ({ isRTL }) => {
   return (
     <div className="SubscribeSectionMainContainer sm:pt-20 sm:pr-20 sm:pb-28 sm:pl-2 ">
  <div className="SubscribeSectionContainer sm:pt-5 sm:pr-10 sm:pl-10 sm:pb-8 flex  flex-col justify-center items-center">
-  <div className="SubscribeSection1 h-[580px] sm:h-[590px] lg:h-[465px] w-38 sm:w-[580px] lg:w-[840px] 2xl:w-[1100px] rounded-tl-[129px] rounded-tr-[20px] rounded-br-[20px] rounded-bl-[20px] rtl:rounded-tl-[20px] rtl:rounded-tr-[129px] rtl:rounded-br-[20px] rtl:rounded-bl-[20px]">
+  <div className="SubscribeSection1 h-[680px] sm:h-[650px] lg:h-[465px] w-38 sm:w-[580px] lg:w-[840px] 2xl:w-[1100px] rounded-tl-[129px] rounded-tr-[20px] rounded-br-[20px] rounded-bl-[20px] rtl:rounded-tl-[20px] rtl:rounded-tr-[129px] rtl:rounded-br-[20px] rtl:rounded-bl-[20px]">
      <div className="GroupDesiContainer flex flex-row justify-between">
       <div className="GroupDesign1 rtl:hidden flex justify-end items-end mt-52 xs:mt-36 sm:pt-40 lg:mt-7 ">
-      <img src="/assets/Group 41.png" alt="" className="pt-52 xs:pt-40 sm:pt-2 lg:pt-0"/>
+      <img src="/assets/Group 41.png" alt="" className=" xs:pt-64 sm:pt-16 lg:pt-0"/>
     </div>
      <div className="GroupDesign1 ltr:hidden flex justify-end items-end mt-52 xs:pt-36 sm:pt-40 lg:mt-7">
-      <img src="/assets/Group 41 (1).png" alt="" className="pt-52 xs:pt40 sm:pt-2 lg:pt-0"/>
+      <img src="/assets/Group 41 (1).png" alt="" className=" xs:pt-12 sm:pt-0 lg:pt-0"/>
     </div>
      <div className="GroupDesign2 rtl:hidden flex justify-start items-start mb-28">
       <img src="/assets/Group 42.png" alt="" className=""/>
@@ -21,9 +21,9 @@ const SubscribeSection = ({ isRTL }) => {
      </div>
      </div>
   </div>
-      <div className="SubscribeSection2  w-80 sm:w-[744px] lg:w-[1020px] 2xl:w-[1280px] pt-10 pb-10 sm:pt-32">
+      <div className="SubscribeSection2  xs:w-80 sm:w-[744px] lg:w-[1020px] 2xl:w-[1280px] pt-10 pb-10 sm:pt-32">
         <div className="Block1">
-        <div className="SvgIcon flex justify-end mr-10 rtl:ml-10 pb-10 rtl:pb-14 ">
+        <div className="SvgIcon flex justify-end mr-14 rtl:ml-10 pb-10 rtl:pb-14 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="70"
@@ -71,7 +71,7 @@ const SubscribeSection = ({ isRTL }) => {
           </h1>
         </div>
         <div className="InputAndButton flex lg:flex-row flex-col justify-center items-center gap-5 pt-20">
-            <div className="BorderContainer flex flex-row justify-start items-center text-center gap-4 py-5 px-12">
+            <div className="BorderContainer flex flex-row xs:justify-start justify-center items-center text-center gap-2  m-3 py-4 px-3  xs:py-5 xs:pl-8 xs:pr-12">
                 <span className=" ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,24 +96,24 @@ const SubscribeSection = ({ isRTL }) => {
                   />
                 </svg>
                 </span>
-               <span className=""> <input 
+               <span className="border-0"> <input 
                   type="text"
                   id="inputField"
                   name="inputField"
-                  className="  "
+                  className=" "
                   placeholder="Your email"
                 /></span>
                
              
           </div>
-          <button class="SubscribeButton w-44 h-16 flex-shrink-0 rounded-lg " >
+          <button class="SubscribeButton px-12 py-5 flex-shrink-0 rounded-lg " >
             <h1 className="text-white text-center font-[open-sans] text-[17px] font-semibold">
               Subscribe
             </h1>
           </button>
         </div>
         </div>
-       <div className="Block2 rtl:hidden hidden sm:flex sm:justify-end sm:items-end ">
+       <div className="Block2 rtl:hidden hidden sm:flex sm:justify-end sm:items-end pb-14 ">
   <img src="/assets/Group 43.jpg" alt="" className="" />
 </div>
 <div className="Block2 ltr:hidden hidden sm:flex sm:justify-end sm:items-end ">

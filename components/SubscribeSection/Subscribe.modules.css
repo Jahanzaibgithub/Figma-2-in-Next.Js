@@ -11,8 +11,7 @@
 }
 
 #inputField::placeholder {
-    color: var(--TEXT-COLOR, #39425D);
-    font-family: Montserrat;
+    border: none;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -48,7 +47,5 @@
 @media (max-width: 640px) {
     .BorderContainer {
         width: 100%;
-        /* Adjust the width for smaller screens */
-        /* You can add more styles specific to smaller screens here */
     }
 }

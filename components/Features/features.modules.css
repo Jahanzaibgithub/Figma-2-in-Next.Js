@@ -14,6 +14,12 @@
      font-size: 28px;
      letter-spacing: 0.2px;
  }
+ 
+ .Video-Player[poster] {
+     /* width: 100%;
+     height: 100%; */
+     object-fit: cover;
+ }
  /*  
  
  .Features-Right-Box,

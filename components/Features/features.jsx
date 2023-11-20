@@ -32,12 +32,12 @@ const handlePlayClick = (e) => {
        <h1 className="FeaturesHeading  font-normal leading-13 text-center ">
   Features
 </h1>
-<p className="FeaturesParagraph text-second-text text-center font-actor text-2xl font-normal leading-7 mx-20 md:mx-40 lg:mx-80 xl:mx-96 md:font-actor md:text-2xl md:font-Light md:leading-10  ">
+<p className="FeaturesParagraph text-second-text text-center font-actor text-2xl font-normal leading-7 px-0 xs:px-20 md:px-40 lg:px-80 xl:px-96 md:font-actor md:text-2xl md:font-Light md:leading-10  ">
   Most calendars are designed for teams.Slate is designed for freelancers.
 </p>
       </div>
-      <div className="FeaturesContainer flex flex-col p-4 items-start gap-12 text-center lg:flex lg:flex-row  lg:gap-14 order-2 lg:order-1 " >
-        <div className="FeaturesBox1 flex flex-col w-64 items-center gap-5">
+      <div className="FeaturesContainer flex flex-col  items-start gap-12 text-center lg:flex lg:flex-row  lg:gap-14 order-2 lg:order-1 " >
+        <div className="FeaturesBox1 flex flex-col px-2 xs:w-64 items-center gap-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="61"
@@ -58,7 +58,7 @@ const handlePlayClick = (e) => {
             your financial goal.
           </p>
         </div>
-        <div className="FeaturesBox2 flex flex-col w-64 items-center gap-5">
+        <div className="FeaturesBox2 flex flex-col px-2 xs:w-64 items-center gap-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="57"
@@ -77,7 +77,7 @@ const handlePlayClick = (e) => {
             your financial goal.
           </p>
         </div>
-        <div className="FeaturesBox3 flex flex-col w-64 items-center gap-5">
+        <div className="FeaturesBox3 flex flex-col px-2 xs:w-64 items-center gap-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="61"
@@ -133,8 +133,9 @@ const handlePlayClick = (e) => {
             </svg>
           </div>
         </div>
-       <div  className="Video-Container flex justify-center items-center ">
-      <video  className="Video-Player w-9/12  rounded-2xl" 
+       <div  className="Video-Main-Container flex justify-center items-center ">
+    
+    <video  className=" Video-Player px-2 lg:px-0 sm:w-9/12 rounded-2xl" 
             src="/assets/features.mp4 " 
           poster="/assets/features.jpg" 
           ref={videoRef}
@@ -142,6 +143,7 @@ const handlePlayClick = (e) => {
            onEnded={handleVideoEnded}
             
           />
+        
           </div>
       </div>
     </div>

@@ -1,7 +1,15 @@
 .herosectionMainContainer {
     height: 800px;
     width: 100%;
-    font-family: Actor;
+    font-family: 'Actor';
+}
+
+@media screen and (max-width: 500px) {
+    .herosectionMainContainer {
+        height: 1000px;
+        width: 100%;
+        font-family: 'Actor';
+    }
 }
 
 .herosectionHeading {
@@ -66,6 +74,8 @@
 
 .HerosectionToggelBtn1 input:checked+.slider:before {
     transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(22px);
 }
 
 .HerosectionToggelBtn1 .slider.round {
@@ -109,7 +119,7 @@
     content: "";
     height: 16px;
     width: 16px;
-    left: 8px;
+    left: 4px;
     bottom: 4px;
     background-color: white;
     -webkit-transition: .4s;
@@ -125,9 +135,9 @@
 }
 
 .HerosectionToggelBtn2 input:checked+.slider:before {
-    -webkit-transform: translateX(16px);
-    -ms-transform: translateX(16px);
-    transform: translateX(16px);
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(22px);
 }
 
 .HerosectionToggelBtn2 .slider.round {

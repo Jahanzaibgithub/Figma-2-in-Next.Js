@@ -14,7 +14,7 @@ const HeroSection = (props) => {
   return (
     <div className="herosectionMainContainer  flex flex-col justify-center items-center bg-black bg-opacity-80 text-white text-center gap-14 lg:gap-10">
       <div className="herosectionHeadingContainer flex flex-col items-center gap-2.5 pt-20">
-        <h1 className="herosectionHeading text-center text-4xl font-normal text-var-Light-text  lg:text-6xl md:leading-20 whitespace-pre-line">
+        <h1 className="herosectionHeading text-center text-4xl font-normal text-var-Light-text  sm:text-6xl md:leading-20 whitespace-pre-line">
           The Best Product{"\n"}Starts With Figma
         </h1>
         <p className="herosectionParagraph text-var-Light-text text-center font-normal leading-10 pt-5">
@@ -22,10 +22,10 @@ const HeroSection = (props) => {
         </p>
       </div>
       <div className="herosection-btn-container flex flex-col items-center gap-2.5 pt-5">
-        <button className="herosection-btn text-var-Light-text text-center text-xl font-normal leading-5 rounded-full bg-primary w-60 py-4">
+        <button className="herosection-btn text-var-Light-text text-center text-xl font-normal leading-5 rounded-full bg-primary py-2 px-4 xs:px-9 xs:py-4">
           Show/Hide Features
         </button>
-        <button className="herosection-btn text-var-Light-text text-center font-[actor] text-xl font-normal leading-5 rounded-full bg-primary w-60 py-4">
+        <button className="herosection-btn text-var-Light-text text-center font-[actor] text-xl font-normal leading-5 rounded-full bg-primary py-2 px-4 xs:px-9 xs:py-4">
           Show/Hide Partners
         </button>
         <div className="herosectionToggelHeading flex items-center gap-2 ">
@@ -36,7 +36,7 @@ const HeroSection = (props) => {
             </label>
           </div>
  
-  <h2 className=" text-white  text-base font-normal leading-6">
+  <h2 className=" text-white ext-base font-normal leading-6">
     RTL
   </h2>
         </div>
