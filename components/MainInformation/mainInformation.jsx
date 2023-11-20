@@ -116,12 +116,12 @@ const MainInformation =({ isRTL }) => {
         </div>
       </div>
     <div className="MainButtonContainer flex flex-col pt-5 items-start gap-2.5 justify-center self-stretch md:pt-14 md:items-center ">
-        <div className="ArrowButtonContainer bg-[rgba(8,76,97,0.15)]  flex p-6 justify-center items-center gap-6 md:items-center">
-          <a className="ArrowButtonName text-[#084C61] tracking-[0.48px] font-Gotham text-base font-normal leading-6 inline-block" href="#">
+        <a className="ArrowButtonContainer bg-[rgba(8,76,97,0.15)]  flex p-6 justify-center items-center gap-6 md:items-center" href="#">
+          <div className="ArrowButtonName text-[#084C61] tracking-[0.48px] font-Gotham text-base font-normal leading-6 inline-block" >
             Overview Document: AKDN Afghanistan
-          </a>
+          </div>
          {isRTL ? (
-        <a className="RightArrowButton flex-shrink-0 inline-block" href="#">
+        <div className="RightArrowButton flex-shrink-0 inline-block">
           
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -145,9 +145,9 @@ const MainInformation =({ isRTL }) => {
               stroke-linejoin="round"
             />
           </svg>
-        </a>
+        </div>
       ) : (
-        <a className="LeftArrowButton flex-shrink-0 inline-block" href="#">
+        <div className="LeftArrowButton flex-shrink-0 inline-block">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="21"
@@ -170,9 +170,9 @@ const MainInformation =({ isRTL }) => {
               stroke-linejoin="round"
             />
           </svg>
-        </a>
-      )}
         </div>
+      )}
+        </a>
       </div>
     </div>
   );

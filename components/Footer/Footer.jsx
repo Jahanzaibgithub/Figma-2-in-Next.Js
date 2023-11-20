@@ -11,30 +11,33 @@ export const Footer = ({ isRTL }) => {
     setIsTextVisibleArray(updatedArray);
   };
   return (
-    <div className="FooterMainContainer ">
+    <div className="FooterMainContainer">
       <div className="FooterHeaderContainer flex flex-col  xl:items-center lg:flex-row lg:justify-between">
         <div className="FooterHeaderBlock1 lg:w-9/12 ml-6 rtl:mr-6 pt-10 lg:ml-12 rtl:lg:mr-10 pb-5 lg:pb-0 ">
           <div className="FooterHeaderLogoContainer flex flex-row items-center gap-4 sm:gap-5">
             <div className="FooterHeaderLogo1 flex flex-row lg:w-40 h-11 justify-start items-center shrink-0">
-              <img
-                src="/assets/FooterLogo 1.png"
-                alt=""
-                className="w-9 sm:w-auto "
-                href="#"
-              />
-              <img
-                src="/assets/FooterLogo 2.png"
-                alt=""
-                className="w-16 sm:w-auto "
-                href="#"
-              />
+              <a href="#">
+                {" "}
+                <img
+                  src="/assets/FooterLogo 1.png"
+                  alt=""
+                  className="w-7 xs:w-9 sm:w-auto "
+                />{" "}
+              </a>
+              <a href="#">
+                <img
+                  src="/assets/FooterLogo 2.png"
+                  alt=""
+                  className="w-8 xs:w-16 sm:w-auto "
+                />
+              </a>
             </div>
             <div className="FooterHeaderLogo2 flex h-8 shrink-0 gap-3">
               <div className="FooterLogoBorder2"></div>
               <img
                 src="/assets/FooterLogo 3.png"
                 alt=""
-                className="w-24 xs:w-36 sm-auto"
+                className="w-14 xs:w-36 sm-auto"
               />
             </div>
           </div>
@@ -49,7 +52,7 @@ export const Footer = ({ isRTL }) => {
         <div className="FooterHeaderBlockBorderCenter lg:hidden"></div>
         <div className="FooterHeaderBlock2 lg:w-[22%] xl:w-3/12 2xl:w-[28%] gap-6 flex flex-col lg:items-start pt-10  justify-center text-center items-center">
           <div className="FooterHeaderSocialIconContainer flex flex-row gap-4 items-center">
-            <div className="SocialIcon1" href="#">
+            <a className="SocialIcon1" href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -62,8 +65,8 @@ export const Footer = ({ isRTL }) => {
                   fill="white"
                 />
               </svg>
-            </div>
-            <div className="SocialIcon2" href="#">
+            </a>
+            <a className="SocialIcon2" href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -76,8 +79,8 @@ export const Footer = ({ isRTL }) => {
                   fill="white"
                 />
               </svg>
-            </div>
-            <div className="SocialIcon3" href="#">
+            </a>
+            <a className="SocialIcon3" href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -90,8 +93,8 @@ export const Footer = ({ isRTL }) => {
                   fill="white"
                 />
               </svg>
-            </div>
-            <div className="SocialIcon4" href="#">
+            </a>
+            <a className="SocialIcon4" href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -104,16 +107,16 @@ export const Footer = ({ isRTL }) => {
                   fill="white"
                 />
               </svg>
-            </div>
+            </a>
           </div>
           <div
-            className="FooterHeaderSignUpContainer flex flex-col justify-center items-center  text-start lg:items-start"  href="#"
-           
+            className="FooterHeaderSignUpContainer flex flex-col justify-center items-center  text-start lg:items-start"
+            
           >
             <h1 className="FooterHeaderSignUpHeading1 font-[Gotham] text-sm font-normal  text-white leading-5">
               Subscribe to our newsletter
             </h1>
-            <span className="FooterHeaderSignUpButton flex flex-row h-8 mt-2  pt-2 pr-2 pb-2 pl-3 justify-center items-center gap-1">
+            <a className="FooterHeaderSignUpButton flex flex-row h-8 mt-2  pt-2 pr-2 pb-2 pl-3 justify-center items-center gap-1" href="#">
               <h2 className="FooterHeaderSignUpHeading1 w-20 h-4 font-[Gotham] text-xs font-normal text-white leading-4 tracking-tighter capitalize">
                 Sign up
               </h2>
@@ -152,10 +155,10 @@ export const Footer = ({ isRTL }) => {
                   />
                 </svg>
               </div>
-            </span>
+            </a>
           </div>
-          <div className="FooterHeaderContactUsContainer " href="#">
-            <span className="FooterHeaderContactUsButton flex flex-row h-8  pt-2 pr-2 pb-2 pl-3 justify-center items-center  text-start gap-1">
+          <div className="FooterHeaderContactUsContainer">
+            <a className="FooterHeaderContactUsButton flex flex-row h-8  pt-2 pr-2 pb-2 pl-3 justify-center items-center  text-start gap-1" href="#">
               <h2 className="FooterHeaderContactUsHeading1 w-20 h-4 font-[Gotham] text-xs font-normal text-white leading-4 tracking-tighter  capitalize">
                 Contact Us
               </h2>
@@ -194,7 +197,7 @@ export const Footer = ({ isRTL }) => {
                   />
                 </svg>
               </div>
-            </span>
+            </a>
           </div>
         </div>
       </div>
@@ -205,36 +208,64 @@ export const Footer = ({ isRTL }) => {
             Quick Links
           </h1>
           <ul className="">
-            <li className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal" href="#">
+            <li
+              className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal"
+             
+            > <a href="#">
               Careers at AKDN
+              </a>
             </li>
-            <li className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
+            <li
+              className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+             
+            >
+              <a  href="#">
               Partner with Us
+              </a>
             </li>
-            <li className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
+            <li
+              className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+              
+            >
+              <a  href="#">
               Donate
+              </a>
             </li>
-            <li className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
+            <li
+              className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+              
+            >
+              <a  href="#">
               Frequently Asked Questions
+              </a>
             </li>
-            <li className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
+            <li
+              className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                        >
+                          <a  href="#">
               COVID-19 Resources Library
+              </a>
             </li>
-            <li className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
+            <li
+              className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+            
+            >
+              <a  href="#">
               International Scholarship Programme
+              </a>
             </li>
           </ul>
         </div>
         <div className="FooterFeaturesBlock2 w-12/12 lg:w-2/12 lg:flex lg:flex-col lg:items-start">
           <h1 className="FooterFeaturesBlock2Heading hidden lg:block font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
             who we are
-          </h1> 
+          </h1>
           <div className="lg:hidden ">
             {isTextVisibleArray[1] ? null : (
               <div className=" flex flex-row p-6 rtl:p-6 lg:p-0 rtl:lg-p-0">
-                 <h1 className="FooterFeaturesBlock2Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase" >
-            who we are
-          </h1> 
+                <h1 className="FooterFeaturesBlock2Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+                  who we are
+                </h1>
                 <div
                   className="SeeMoreLinkArrow flex justify-center gap-4"
                   onClick={() => toggleTextVisibility(1)}
@@ -262,87 +293,154 @@ export const Footer = ({ isRTL }) => {
               <div className="SeeLessLink2 flex flex-col gap-2 bg-neutral-700  p-6 rtl:p-6 lg:p-0 rtl:lg-p-0">
                 <div className="flex flex-row gap-2 ">
                   <h1 className="FooterFeaturesBlock2Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
-            who we are
-          </h1> 
-              
-                <div
-                  className="SeeMoreLinkArrow flex justify-center gap-4"
-                  onClick={() => toggleTextVisibility(1)}
-                >
-                  <div className="FooterFeaturesBlock5Border lg:hidden"></div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
+                    who we are
+                  </h1>
+
+                  <div
+                    className="SeeMoreLinkArrow flex justify-center gap-4"
+                    onClick={() => toggleTextVisibility(1)}
                   >
-                    <path
-                      d="M4 10L8 6L12 10"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="rou/nd"
-                    />
-                  </svg>
+                    <div className="FooterFeaturesBlock5Border lg:hidden"></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M4 10L8 6L12 10"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="rou/nd"
+                      />
+                    </svg>
+                  </div>
                 </div>
-                </div>
-      
-            <ul className="flex flex-col items-start ">
-            <li className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal" href="#">
-              Founder & Chairman
-            </li>
-            <li className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Leadership
-            </li>
-            <li className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Awards Received by AKDN
-            </li>
-            <li className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Our Partners
-            </li>
-            <li className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Fact Sheet
-            </li>
-            <li className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Frequently Asked Questions
-            </li>
-            <li className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Contact Us
-            </li>
-          </ul>
-                
+
+                <ul className="flex flex-col items-start ">
+                  <li
+                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal"
+                   
+                  >
+                    <a  href="#">
+                    Founder & Chairman
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                   
+                  >
+                    <a  href="#">
+                    Leadership
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    
+                  >
+                    <a  href="#">
+                    Awards Received by AKDN
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    
+                  >
+                    <a  href="#">
+                    Our Partners
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                   
+                  >
+                    <a  href="#">
+                    Fact Sheet
+                       </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    
+                  >
+                    <a  href="#">
+                    Frequently Asked Questions
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                   
+                  >
+                    <a  href="#">
+                    Contact Us
+                    </a>
+                  </li>
+                </ul>
               </div>
             )}
           </div>
           <ul className="hidden lg:block">
-            <li className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal" href="#">
-              Founder & Chairman
-            </li>
-            <li className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Leadership
-            </li>
-            <li className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Awards Received by AKDN
-            </li>
-            <li className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Our Partners
-            </li>
-            <li className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Fact Sheet
-            </li>
-            <li className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Frequently Asked Questions
-            </li>
-            <li className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Contact Us
-            </li>
+            <li
+                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal"
+                   
+                  >
+                    <a  href="#">
+                    Founder & Chairman
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                   
+                  >
+                    <a  href="#">
+                    Leadership
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    
+                  >
+                    <a  href="#">
+                    Awards Received by AKDN
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    
+                  >
+                    <a  href="#">
+                    Our Partners
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                   
+                  >
+                    <a  href="#">
+                    Fact Sheet
+                       </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    
+                  >
+                    <a  href="#">
+                    Frequently Asked Questions
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                   
+                  >
+                    <a  href="#">
+                    Contact Us
+                    </a>
+                  </li>
           </ul>
         </div>
         <div className="FooterFeaturesBlock3 w-12/12 lg:w-2/12 lg:flex lg:flex-col lg:items-start">
-          <h1
-            className="FooterFeaturesBlock3Heading hidden lg:block w-4/5 font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase"
-          >
+          <h1 className="FooterFeaturesBlock3Heading hidden lg:block w-4/5 font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
             What we do
           </h1>
           <div className="lg:hidden ">
@@ -377,218 +475,310 @@ export const Footer = ({ isRTL }) => {
             {isTextVisibleArray[2] && (
               <div className="SeeLessLink2 flex flex-col bg-neutral-700 p-6 rtl:p-6 lg:p-0 rtl:lg-p-0 gap-2">
                 <div className="flex flex-row">
-                <h1 className="FooterFeaturesBlock3Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
-                  What we do
-                </h1>
-              
-                <div
-                  className="SeeMoreLinkArrow flex justify-center gap-4"
-                  onClick={() => toggleTextVisibility(2)}
-                >
-                  <div className="FooterFeaturesBlock5Border lg:hidden"></div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
+                  <h1 className="FooterFeaturesBlock3Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+                    What we do
+                  </h1>
+
+                  <div
+                    className="SeeMoreLinkArrow flex justify-center gap-4"
+                    onClick={() => toggleTextVisibility(2)}
                   >
-                    <path
-                      d="M4 10L8 6L12 10"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="rou/nd"
-                    />
-                  </svg>
-                </div>
+                    <div className="FooterFeaturesBlock5Border lg:hidden"></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M4 10L8 6L12 10"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="rou/nd"
+                      />
+                    </svg>
+                  </div>
                 </div>
                 <ul className="flex flex-col items-start">
-                  <li className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal" href="#">
+                  <li
+                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal"
+                   
+                  >
+                    <a href="#">
                     Education
+                    </a>
                   </li>
-                  <li className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-                    Health
+                  <li
+                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    
+                  >
+                     <a href="#">Health</a>
                   </li>
-                  <li className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
+                  <li
+                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                   
+                  >
+                      <a href="#">
                     Architecture
+                    </a>
                   </li>
-                  <li className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
+                  <li
+                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    
+                  >
+                      <a href="#">
                     Culture
+                    </a>
                   </li>
-                  <li className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
+                  <li
+                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    
+                  >
+                      <a href="#">
                     Climate & Environment
+                    </a>
                   </li>
-                  <li className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
+                  <li
+                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                   
+                  >
+                      <a href="#">
                     Civil Society
+                    </a>
                   </li>
-                  <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <div className=" ">
-                {isTextVisibleArray[4] ? null : (
-                  <div className="flex flex-row gap-2">
-                    {" "}
-                    <h3>See More</h3>
-                    <div
-                      className="SeeMoreLinkArrow flex justify-center items-center gap-2"
-                      onClick={() => toggleTextVisibility(4)}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 6L8 10L12 6"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
+                  <li
+                    className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    
+                  >
+                    <div className=" ">
+                      {isTextVisibleArray[4] ? null : (
+                        <div className="flex flex-row gap-2">
+                          {" "}
+                          <h3> See More</h3>
+                          <div
+                            className="SeeMoreLinkArrow flex justify-center items-center gap-2"
+                            onClick={() => toggleTextVisibility(4)}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 6L8 10L12 6"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      )}
+                      {isTextVisibleArray[4] && (
+                        <div className="SeeLessLink2 flex flex-col items-center gap-2">
+                          <div
+                            className="SeeMoreLinkArrow flex flex-row items-center gap-2"
+                            onClick={() => toggleTextVisibility(4)}
+                          >
+                            <h3>See More</h3>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 10L8 6L12 10"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Eastern Africa</h3>
+                              </a>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              
+                            >
+                                <a href="#">
+                              <h3 className="">West Africa</h3>{" "}
+                              </a>
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Middle East</h3>{" "}
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      )}
                     </div>
-                  </div>
-                )}
-                {isTextVisibleArray[4] && (
-                  <div className="SeeLessLink2 flex flex-col items-center gap-2">
-                    <div
-                      className="SeeMoreLinkArrow flex flex-row items-center gap-2"
-                      onClick={() => toggleTextVisibility(4)}
-                    >
-                      <h3>See More</h3>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 10L8 6L12 10"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </li>
+                  </li>
                 </ul>
               </div>
             )}
           </div>
           <ul className="hidden lg:block">
-            <li className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal" href="#">
-              Education
-            </li>
-            <li className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Health
-            </li>
-            <li className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Architecture
-            </li>
-            <li className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Culture
-            </li>
-            <li className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Climate & Environment
-            </li>
-            <li className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3" href="#">
-              Civil Society
-            </li>
-            <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <div className="hidden lg:block  ">
-                {isTextVisibleArray[4] ? null : (
-                  <div className="flex flex-row gap-2">
-                    {" "}
-                    <h3>See More</h3>
-                    <div
-                      className="SeeMoreLinkArrow flex justify-center items-center gap-2"
-                      onClick={() => toggleTextVisibility(4)}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 6L8 10L12 6"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
+             <li
+                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal"
+                   
+                  >
+                    <a href="#">
+                    Education
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    
+                  >
+                     <a href="#">Health</a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                   
+                  >
+                      <a href="#">
+                    Architecture
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    
+                  >
+                      <a href="#">
+                    Culture
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    
+                  >
+                      <a href="#">
+                    Climate & Environment
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                   
+                  >
+                      <a href="#">
+                    Civil Society
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    
+                  >
+                    <div className=" ">
+                      {isTextVisibleArray[4] ? null : (
+                        <div className="flex flex-row gap-2">
+                          {" "}
+                          <h3> See More</h3>
+                          <div
+                            className="SeeMoreLinkArrow flex justify-center items-center gap-2"
+                            onClick={() => toggleTextVisibility(4)}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 6L8 10L12 6"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      )}
+                      {isTextVisibleArray[4] && (
+                        <div className="SeeLessLink2 flex flex-col items-center gap-2">
+                          <div
+                            className="SeeMoreLinkArrow flex flex-row items-center gap-2"
+                            onClick={() => toggleTextVisibility(4)}
+                          >
+                            <h3>See More</h3>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 10L8 6L12 10"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Eastern Africa</h3>
+                              </a>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              
+                            >
+                                <a href="#">
+                              <h3 className="">West Africa</h3>{" "}
+                              </a>
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Middle East</h3>{" "}
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      )}
                     </div>
-                  </div>
-                )}
-                {isTextVisibleArray[4] && (
-                  <div className="SeeLessLink2 flex flex-col items-center gap-2">
-                    <div
-                      className="SeeMoreLinkArrow flex flex-row items-center gap-2"
-                      onClick={() => toggleTextVisibility(4)}
-                    >
-                      <h3>See More</h3>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 10L8 6L12 10"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </li>
+                  </li>
           </ul>
         </div>
         <div className="FooterFeaturesBlock4 w-12/12 lg:w-2/12 lg:flex lg:flex-col items-start">
           <h1 className="FooterFeaturesBlock4Heading hidden lg:block font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
             OUR AGENCIES
           </h1>
-         <div className="lg:hidden ">
+          <div className="lg:hidden ">
             {isTextVisibleArray[3] ? null : (
               <div className=" flex flex-row p-6 rtl:p-6 lg:p-0 rtl:lg-p-0 ">
-                 <h1 className="FooterFeaturesBlock4Heading w-full font-[Gotham] font-sm text-white text-base uppercase">
-            OUR AGENCIES
-          </h1>
+                <h1 className="FooterFeaturesBlock4Heading w-full font-[Gotham] font-sm text-white text-base uppercase">
+                  OUR AGENCIES
+                </h1>
                 <div
                   className="SeeMoreLinkArrow flex justify-center gap-4"
                   onClick={() => toggleTextVisibility(3)}
@@ -616,123 +806,208 @@ export const Footer = ({ isRTL }) => {
               <div className="SeeLessLink2 flex flex-col bg-neutral-700 p-6 rtl:p-6 lg:p-0 rtl:lg-p-0 gap-2">
                 <div className="flex flex-row">
                   <h1 className="FooterFeaturesBlock4Heading w-full font-[Gotham] font-sm text-white text-base uppercase">
-            OUR AGENCIES
-          </h1>
-              
-                <div
-                  className="SeeMoreLinkArrow flex justify-center gap-4"
-                  onClick={() => toggleTextVisibility(3)}
-                >
-                  <div className="FooterFeaturesBlock5Border lg:hidden"></div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
+                    OUR AGENCIES
+                  </h1>
+
+                  <div
+                    className="SeeMoreLinkArrow flex justify-center gap-4"
+                    onClick={() => toggleTextVisibility(3)}
                   >
-                    <path
-                      d="M4 10L8 6L12 10"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="rou/nd"
-                    />
-                  </svg>
+                    <div className="FooterFeaturesBlock5Border lg:hidden"></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M4 10L8 6L12 10"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="rou/nd"
+                      />
+                    </svg>
+                  </div>
                 </div>
-                </div>
-              
-            <ul className="flex flex-col items-start">
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-              <h2 className=" uppercase">AKAH</h2>{" "}
-              <h2 className="">Aga Khan Agency for Habitat</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <h2 className=" uppercase">AKAM</h2>{" "}
-              <h2 className="">Aga Khan Agency for Microfinance</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <h2 className=" uppercase">AKF</h2>{" "}
-              <h2 className="">Aga Khan Foundation</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <h2 className=" uppercase">AKFED</h2>{" "}
-              <h2 className="">Aga Khan Fund for Economic Development</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2 " href="#">
-              <h2 className=" uppercase">AKHS</h2>{" "}
-              <h2 className="">Aga Khan Health Services</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <h2 className=" uppercase">AKS</h2>{" "}
-              <h2 className="">Aga Khan Schools</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <h2 className=" uppercase">AKTC</h2>{" "}
-              <h2 className="">Aga Khan Trust for Culture</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <h2 className=" uppercase">AKU</h2>{" "}
-              <h2 className="">Aga Khan University</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <h2 className=" uppercase">UCA</h2>{" "}
-              <h2 className="">University of Central Asia</h2>
-            </li>
-          </ul>
-                
+
+                <ul className="flex flex-col items-start">
+                   <li
+                    className="FooterFeaturesBlock4List  text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                  
+                  >
+                    <a  className="flex flex-row" href="#">
+                    <h2 className=" uppercase  w-14">AKAH</h2>{" "}
+                    <h2 className="">Aga Khan Agency for Habitat</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List  text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    >
+                   <a  className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-14">AKAM</h2>{" "}
+                    <h2 className="">Aga Khan Agency for Microfinance</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    >
+                   <a className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-14">AKF</h2>{" "}
+                    <h2 className="">Aga Khan Foundation</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    >
+                   <a className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-14">AKFED</h2>{" "}
+                    <h2 className="">Aga Khan Fund for Economic Development</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2 "
+                    
+                  >
+                    <a className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-14">AKHS</h2>{" "}
+                    <h2 className="">Aga Khan Health Services</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                  
+                  >
+                    <a className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-14">AKS</h2>{" "}
+                    <h2 className="">Aga Khan Schools</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    
+                  >
+                    <a className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-14">AKTC</h2>{" "}
+                    <h2 className="">Aga Khan Trust for Culture</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    
+                  >
+                    <a className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-14">AKU</h2>{" "}
+                    <h2 className="">Aga Khan University</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                   
+                  >
+                    <a className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-14">UCA</h2>{" "}
+                    <h2 className="">University of Central Asia</h2>
+                    </a>
+                  </li>
+                </ul>
               </div>
             )}
           </div>
           <ul className="hidden lg:block">
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal  gap-2" href="#">
-              <h2 className=" uppercase w-1/5">AKAH</h2>{" "}
-              <h2 className="w-4/5">Aga Khan Agency for Habitat</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <h2 className=" uppercase w-1/5 ">AKAM</h2>{" "}
-              <h2 className="w-4/5">Aga Khan Agency for Microfinance</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <h2 className=" uppercase w-1/5">AKF</h2>{" "}
-              <h2 className="w-4/5">Aga Khan Foundation</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <h2 className=" uppercase w-1/5">AKFED</h2>{" "}
-              <h2 className="w-4/5">Aga Khan Fund for Economic Development</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2 " href="#">
-              <h2 className=" uppercase w-1/5">AKHS</h2>{" "}
-              <h2 className="w-4/5">Aga Khan Health Services</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <h2 className=" uppercase w-1/5">AKS</h2>{" "}
-              <h2 className="w-4/5">Aga Khan Schools</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <h2 className=" uppercase w-1/5">AKTC</h2>{" "}
-              <h2 className="w-4/5">Aga Khan Trust for Culture</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <h2 className=" uppercase w-1/5">AKU</h2>{" "}
-              <h2 className="w-4/5">Aga Khan University</h2>
-            </li>
-            <li className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-              <h2 className=" uppercase w-1/5">UCA</h2>{" "}
-              <h2 className="w-4/5">University of Central Asia</h2>
-            </li>
+                <li
+                    className="FooterFeaturesBlock4List  text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                  
+                  >
+                    <a  className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-1/4">AKAH</h2>{" "}
+                    <h2 className="w-3/4">Aga Khan Agency for Habitat</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List  text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    >
+                   <a  className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-1/4">AKAM</h2>{" "}
+                    <h2 className="w-3/4">Aga Khan Agency for Microfinance</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List  text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    >
+                   <a className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-1/4">AKF</h2>
+                    <h2 className=" w-3/4">Aga Khan Foundation</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    >
+                   <a className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-1/4">AKFED</h2>{" "}
+                    <h2 className="w-3/4">Aga Khan Fund for Economic Development</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2 "
+                    
+                  >
+                    <a className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-1/4">AKHS</h2>{" "}
+                    <h2 className="w-3/4">Aga Khan Health Services</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                  
+                  >
+                    <a className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-1/4">AKS</h2>{" "}
+                    <h2 className="w-3/4">Aga Khan Schools</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    
+                  >
+                    <a className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-1/4">AKTC</h2>{" "}
+                    <h2 className="w-3/4">Aga Khan Trust for Culture</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    
+                  >
+                    <a className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-1/4">AKU</h2>{" "}
+                    <h2 className="w-3/4">Aga Khan University</h2>
+                    </a>
+                  </li>
+                  <li
+                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                   
+                  >
+                    <a className="flex flex-row" href="#">
+                    <h2 className=" uppercase w-1/4">UCA</h2>{" "}
+                    <h2 className="w-3/4">University of Central Asia</h2>
+                    </a>
+                  </li>
           </ul>
         </div>
-        <div className="FooterFeaturesBlock5 w-12/12 lg:w-1/6 lg:flex lg:flex-col items-start lg:pl-6 rtl:lg:pr-6 " href="#">
+        <div className="FooterFeaturesBlock5 w-12/12 lg:w-1/6 lg:flex lg:flex-col items-start lg:pl-6 rtl:lg:pr-6 "
+          
+        >
           <h1 className="FooterFeaturesBlock5Heading hidden lg:block  font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
             Where we work
           </h1>
-         <div className="lg:hidden ">
+          <div className="lg:hidden ">
             {isTextVisibleArray[4] ? null : (
-              <div className=" flex flex-row p-6 rtl:p-6" >
-                 <h1 className="FooterFeaturesBlock5Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
-            Where we work
-          </h1>
+              <div className=" flex flex-row p-6 rtl:p-6">
+                <h1 className="FooterFeaturesBlock5Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+                  Where we work
+                </h1>
                 <div
                   className="SeeMoreLinkArrow flex justify-center gap-4"
                   onClick={() => toggleTextVisibility(4)}
@@ -759,504 +1034,597 @@ export const Footer = ({ isRTL }) => {
             {isTextVisibleArray[4] && (
               <div className="SeeLessLink2 flex flex-col bg-neutral-700 p-6 rtl:p-6 gap-2">
                 <div className="flex flex-row ">
-                <h1 className="FooterFeaturesBlock5Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
-            Where we work
-          </h1>
-                <div
-                  className="SeeMoreLinkArrow flex justify-center gap-4"
-                  onClick={() => toggleTextVisibility(4)}
-                >
-                  <div className="FooterFeaturesBlock5Border "></div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
+                  <h1 className="FooterFeaturesBlock5Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+                    Where we work
+                  </h1>
+                  <div
+                    className="SeeMoreLinkArrow flex justify-center gap-4"
+                    onClick={() => toggleTextVisibility(4)}
                   >
-                    <path
-                      d="M4 10L8 6L12 10"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="rou/nd"
-                    />
-                  </svg>
-                </div>
+                    <div className="FooterFeaturesBlock5Border "></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M4 10L8 6L12 10"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="rou/nd"
+                      />
+                    </svg>
+                  </div>
                 </div>
                 <ul className=" ">
-            
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal  gap-2">
-             <div className=" ">
-                {isTextVisibleArray[5] ? null : (
-                  <div className="flex flex-row gap-2">
+                  <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal  gap-2">
+                    <div className=" ">
+                      {isTextVisibleArray[5] ? null : (
+                        <div className="flex flex-row gap-2">
+                          {" "}
+                          <h3 className="w-36" >
+                            <a href="#"> Eastern Africa </a>
+                          </h3>
+                          <div
+                            className="SeeMoreLinkArrow flex justify-center items-center gap-2"
+                            onClick={() => toggleTextVisibility(5)}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 6L8 10L12 6"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      )}
+                      {isTextVisibleArray[5] && (
+                        <div className="SeeLessLink2 flex flex-col gap-2">
+                          <div
+                            className="SeeMoreLinkArrow flex flex-row items-center gap-2"
+                            onClick={() => toggleTextVisibility(5)}
+                          >
+                            <a className="w-36" href="#">
+                              Eastern Africa </a>
+                          
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 10L8 6L12 10"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Eastern Africa</h3>
+                              </a>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              
+                            >
+                                <a href="#">
+                              <h3 className="">West Africa</h3>{" "}
+                              </a>
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Middle East</h3>{" "}
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  </li>
+                  <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                    <div className="  ">
+                      {isTextVisibleArray[7] ? null : (
+                        <div className="flex flex-row gap-2">
+                          <h3 className="w-36" >
+                            <a href="#">Middle East </a>
+                          </h3>
+                          <div
+                            className="SeeMoreLinkArrow flex justify-center items-center gap-2"
+                            onClick={() => toggleTextVisibility(7)}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 6L8 10L12 6"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      )}
+                      {isTextVisibleArray[7] && (
+                        <div className="SeeLessLink2 flex flex-col gap-2">
+                          <div
+                            className="SeeMoreLinkArrow flex flex-row items-center gap-2"
+                            onClick={() => toggleTextVisibility(7)}
+                          >
+                            <h3 className="w-36" href="#">
+                              West Africa
+                            </h3>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 10L8 6L12 10"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <ul className="">
+                            <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2">
+                              <h3 className="" href="#">
+                                <a href="#">Eastern Africa </a>
+                              </h3>{" "}
+                            </li>
+                            <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                              <h3 className="" href="#">
+                                <a href="#"> West Africa </a>
+                              </h3>{" "}
+                            </li>
+                            <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                              <h3 className="" href="#">
+                                <a href="#"> Middle East </a>
+                              </h3>{" "}
+                            </li>
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  </li>
+                  <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                    <div className="  ">
+                      {isTextVisibleArray[8] ? null : (
+                        <div className="flex flex-row gap-2">
+                          <h3 className="w-36" href="#">
+                            Central Asia
+                          </h3>
+                          <div
+                            className="SeeMoreLinkArrow flex justify-center items-center gap-2"
+                            onClick={() => toggleTextVisibility(8)}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 6L8 10L12 6"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      )}
+                      {isTextVisibleArray[8] && (
+                        <div className="SeeLessLink2 flex flex-col gap-2">
+                          <div
+                            className="SeeMoreLinkArrow flex flex-row items-center gap-2"
+                            onClick={() => toggleTextVisibility(8)}
+                          >
+                            <h3 className="w-36" href="#">
+                              Central Asia
+                            </h3>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 10L8 6L12 10"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              href="#"
+                            >
+                              <h3 className="">Eastern Africa</h3>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              href="#"
+                            >
+                              <h3 className="">West Africa</h3>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              href="#"
+                            >
+                              <h3 className="">Middle East</h3>{" "}
+                            </li>
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  </li>
+                  <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
                     {" "}
-                     <h3 className="w-36" href="#">Eastern Africa</h3>
-                    <div
-                      className="SeeMoreLinkArrow flex justify-center items-center gap-2"
-                      onClick={() => toggleTextVisibility(5)}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 6L8 10L12 6"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
+                    <div className=" ">
+                      {isTextVisibleArray[9] ? null : (
+                        <div className="flex flex-row gap-2">
+                          <h3 className="w-36" href="#">
+                            South Asia
+                          </h3>
+                          <div
+                            className="SeeMoreLinkArrow flex justify-center items-center gap-2"
+                            onClick={() => toggleTextVisibility(9)}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 6L8 10L12 6"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      )}
+                      {isTextVisibleArray[9] && (
+                        <div className="SeeLessLink2 flex flex-col gap-2">
+                          <div
+                            className="SeeMoreLinkArrow flex flex-row items-center gap-2"
+                            onClick={() => toggleTextVisibility(9)}
+                          >
+                            <h3 className="w-36" href="#">
+                              South Asia
+                            </h3>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 10L8 6L12 10"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              href="#"
+                            >
+                              <h3 className="">Eastern Africa</h3>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              href="#"
+                            >
+                              <h3 className="">West Africa</h3>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              href="#"
+                            >
+                              <h3 className="">Middle East</h3>{" "}
+                            </li>
+                          </ul>
+                        </div>
+                      )}
                     </div>
-                  </div>
-                )}
-                {isTextVisibleArray[5] && (
-                  <div className="SeeLessLink2 flex flex-col gap-2">
-                    <div
-                      className="SeeMoreLinkArrow flex flex-row items-center gap-2"
-                      onClick={() => toggleTextVisibility(5)}
-                    >
-                        <h3 className="w-36" href="#">Eastern Africa</h3>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 10L8 6L12 10"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
+                  </li>
+                  <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                    <div className=" ">
+                      {isTextVisibleArray[10] ? null : (
+                        <div className="flex flex-row gap-2">
+                          <h3 className="w-36" href="#">
+                            Asia-Pacific
+                          </h3>
+                          <div
+                            className="SeeMoreLinkArrow flex justify-center items-center gap-2"
+                            onClick={() => toggleTextVisibility(10)}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 6L8 10L12 6"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      )}
+                      {isTextVisibleArray[10] && (
+                        <div className="SeeLessLink2 flex flex-col gap-2">
+                          <div
+                            className="SeeMoreLinkArrow flex flex-row items-center gap-2"
+                            onClick={() => toggleTextVisibility(10)}
+                          >
+                            <h3 className="w-36" href="#">
+                              Asia-Pacific
+                            </h3>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 10L8 6L12 10"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              href="#"
+                            >
+                              <h3 className="">Eastern Africa</h3>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              href="#"
+                            >
+                              <h3 className="">West Africa</h3>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              href="#"
+                            >
+                              <h3 className="">Middle East</h3>{" "}
+                            </li>
+                          </ul>
+                        </div>
+                      )}
                     </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2">
-                        <h3 className="" href="#">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
-                        <h3 className="" href="#">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
-                        <h3 className="" href="#">Middle East</h3>{" "}
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </li>
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
-              <div className="  ">
-                {isTextVisibleArray[7] ? null : (
-                  <div className="flex flex-row gap-2">
-                    <h3 className="w-36" href="#">Middle East</h3>
-                    <div
-                      className="SeeMoreLinkArrow flex justify-center items-center gap-2"
-                      onClick={() => toggleTextVisibility(7)}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 6L8 10L12 6"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
+                  </li>
+                  <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                    <div className=" ">
+                      {isTextVisibleArray[11] ? null : (
+                        <div className="flex flex-row gap-2">
+                          <h3 className="w-36" href="#">
+                            North America
+                          </h3>
+                          <div
+                            className="SeeMoreLinkArrow flex justify-center items-center gap-2"
+                            onClick={() => toggleTextVisibility(11)}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 6L8 10L12 6"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      )}
+                      {isTextVisibleArray[11] && (
+                        <div className="SeeLessLink2 flex flex-col gap-2">
+                          <div
+                            className="SeeMoreLinkArrow flex flex-row items-center gap-2"
+                            onClick={() => toggleTextVisibility(11)}
+                          >
+                            <h3 className="w-36" href="#">
+                              North America
+                            </h3>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 10L8 6L12 10"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              href="#"
+                            >
+                              <h3 className="">Eastern Africa</h3>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              href="#"
+                            >
+                              <h3 className="">West Africa</h3>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              href="#"
+                            >
+                              <h3 className="">Middle East</h3>{" "}
+                            </li>
+                          </ul>
+                        </div>
+                      )}
                     </div>
-                  </div>
-                )}
-                {isTextVisibleArray[7] && (
-                  <div className="SeeLessLink2 flex flex-col gap-2">
-                    <div
-                      className="SeeMoreLinkArrow flex flex-row items-center gap-2"
-                      onClick={() => toggleTextVisibility(7)}
-                    >
-                         <h3 className="w-36" href="#">West Africa</h3>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 10L8 6L12 10"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
+                  </li>
+                  <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                    {" "}
+                    <div className=" ">
+                      {isTextVisibleArray[12] ? null : (
+                        <div className="flex flex-row gap-2">
+                          <h3 className="w-36" href="#">
+                            Europe
+                          </h3>
+                          <div
+                            className="SeeMoreLinkArrow flex justify-center items-center gap-2"
+                            onClick={() => toggleTextVisibility(12)}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 6L8 10L12 6"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      )}
+                      {isTextVisibleArray[12] && (
+                        <div className="SeeLessLink2 flex flex-col gap-2">
+                          <div
+                            className="SeeMoreLinkArrow flex flex-row items-center gap-2"
+                            onClick={() => toggleTextVisibility(12)}
+                          >
+                            <h3 className="w-36" href="#">
+                              Europe
+                            </h3>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M4 10L8 6L12 10"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              href="#"
+                            >
+                              <h3 className="">Eastern Africa</h3>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              href="#"
+                            >
+                              <h3 className="">West Africa</h3>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              href="#"
+                            >
+                              <h3 className="">Middle East</h3>{" "}
+                            </li>
+                          </ul>
+                        </div>
+                      )}
                     </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </li>
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
-              <div className="  ">
-                {isTextVisibleArray[8] ? null : (
-                  <div className="flex flex-row gap-2">
-                    <h3 className="w-36" href="#">Central Asia</h3>
-                    <div
-                      className="SeeMoreLinkArrow flex justify-center items-center gap-2"
-                      onClick={() => toggleTextVisibility(8)}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 6L8 10L12 6"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                )}
-                {isTextVisibleArray[8] && (
-                  <div className="SeeLessLink2 flex flex-col gap-2">
-                    <div
-                      className="SeeMoreLinkArrow flex flex-row items-center gap-2"
-                      onClick={() => toggleTextVisibility(8)}
-                    >
-                         <h3 className="w-36" href="#">Central Asia</h3>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 10L8 6L12 10"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </li>
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
-             {" "}
-            <div className=" ">
-                {isTextVisibleArray[9] ? null : (
-                  <div className="flex flex-row gap-2">
-                         <h3 className="w-36" href="#">South Asia</h3>
-                    <div
-                      className="SeeMoreLinkArrow flex justify-center items-center gap-2"
-                      onClick={() => toggleTextVisibility(9)}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 6L8 10L12 6"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                )}
-                {isTextVisibleArray[9] && (
-                  <div className="SeeLessLink2 flex flex-col gap-2">
-                    <div
-                      className="SeeMoreLinkArrow flex flex-row items-center gap-2"
-                      onClick={() => toggleTextVisibility(9)}
-                    >
-                       <h3 className="w-36" href="#">South Asia</h3>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 10L8 6L12 10"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </li>
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
-    
-               <div className=" ">
-                {isTextVisibleArray[10] ? null : (
-                  <div className="flex flex-row gap-2">
-                        <h3 className="w-36" href="#">Asia-Pacific</h3>
-                    <div
-                      className="SeeMoreLinkArrow flex justify-center items-center gap-2"
-                      onClick={() => toggleTextVisibility(10)}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 6L8 10L12 6"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                )}
-                {isTextVisibleArray[10] && (
-                  <div className="SeeLessLink2 flex flex-col gap-2">
-                    <div
-                      className="SeeMoreLinkArrow flex flex-row items-center gap-2"
-                      onClick={() => toggleTextVisibility(10)}
-                    >
-                             <h3 className="w-36" href="#">Asia-Pacific</h3>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 10L8 6L12 10"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </li>
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
-   
-             <div className=" ">
-                {isTextVisibleArray[11] ? null : (
-                  <div className="flex flex-row gap-2">
-                        <h3 className="w-36" href="#">North America</h3>
-                    <div
-                      className="SeeMoreLinkArrow flex justify-center items-center gap-2"
-                      onClick={() => toggleTextVisibility(11)}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 6L8 10L12 6"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                )}
-                {isTextVisibleArray[11] && (
-                  <div className="SeeLessLink2 flex flex-col gap-2">
-                    <div
-                      className="SeeMoreLinkArrow flex flex-row items-center gap-2"
-                      onClick={() => toggleTextVisibility(11)}
-                    >
-                             <h3 className="w-36" href="#">North America</h3>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 10L8 6L12 10"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </li>
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
-              {" "}
-              <div className=" ">
-                {isTextVisibleArray[12] ? null : (
-                  <div className="flex flex-row gap-2">
-                        <h3 className="w-36" href="#">Europe</h3>
-                    <div
-                      className="SeeMoreLinkArrow flex justify-center items-center gap-2"
-                      onClick={() => toggleTextVisibility(12)}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 6L8 10L12 6"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                )}
-                {isTextVisibleArray[12] && (
-                  <div className="SeeLessLink2 flex flex-col gap-2">
-                    <div
-                      className="SeeMoreLinkArrow flex flex-row items-center gap-2"
-                      onClick={() => toggleTextVisibility(12)}
-                    >
-                      <h3 className="w-36" href="#">Europe</h3>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M4 10L8 6L12 10"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </li>
-          </ul>
+                  </li>
+                </ul>
               </div>
             )}
           </div>
           <ul className="hidden lg:block">
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal  gap-2">
-             <div className="hidden lg:block  ">
+               <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal  gap-2">
+              <div className=" ">
                 {isTextVisibleArray[5] ? null : (
                   <div className="flex flex-row gap-2">
                     {" "}
-                     <h3 className="w-36" href="#">Eastern Africa</h3>
+                    <h3 className="w-36" >
+                     <a href="#"> Eastern Africa </a>
+                    </h3>
                     <div
                       className="SeeMoreLinkArrow flex justify-center items-center gap-2"
                       onClick={() => toggleTextVisibility(5)}
@@ -1285,7 +1653,9 @@ export const Footer = ({ isRTL }) => {
                       className="SeeMoreLinkArrow flex flex-row items-center gap-2"
                       onClick={() => toggleTextVisibility(5)}
                     >
-                        <h3 className="w-36" href="#">Eastern Africa</h3>
+                      <h3 className="w-36" >
+                        <a href="#"> Eastern Africa </a>
+                      </h3>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -1302,27 +1672,44 @@ export const Footer = ({ isRTL }) => {
                         />
                       </svg>
                     </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
+                     <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Eastern Africa</h3>
+                              </a>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              
+                            >
+                                <a href="#">
+                              <h3 className="">West Africa</h3>{" "}
+                              </a>
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Middle East</h3>{" "}
+                              </a>
+                            </li>
+                          </ul>
                   </div>
                 )}
               </div>
             </li>
             <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
-             <div className="hidden lg:block  ">
+              <div className="">
                 {isTextVisibleArray[6] ? null : (
                   <div className="flex flex-row gap-2">
                     {" "}
-                     <h3 className="w-36" href="#">West Africa</h3>
+                    <h3 className="w-36" >
+                      <a href="#"> West Africa </a>
+                    </h3>
                     <div
                       className="SeeMoreLinkArrow flex justify-center items-center gap-2"
                       onClick={() => toggleTextVisibility(6)}
@@ -1351,7 +1738,9 @@ export const Footer = ({ isRTL }) => {
                       className="SeeMoreLinkArrow flex flex-row items-center gap-2"
                       onClick={() => toggleTextVisibility(6)}
                     >
-                         <h3 className="w-36" href="#">West Africa</h3>
+                      <h3 className="w-36" >
+                       <a href="#"> West Africa </a>
+                      </h3>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -1368,26 +1757,43 @@ export const Footer = ({ isRTL }) => {
                         />
                       </svg>
                     </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
+                     <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Eastern Africa</h3>
+                              </a>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              
+                            >
+                                <a href="#">
+                              <h3 className="">West Africa</h3>{" "}
+                              </a>
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Middle East</h3>{" "}
+                              </a>
+                            </li>
+                          </ul>
                   </div>
                 )}
               </div>
             </li>
             <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
-              <div className="hidden lg:block  ">
+              <div className="">
                 {isTextVisibleArray[7] ? null : (
                   <div className="flex flex-row gap-2">
-                    <h3 className="w-36" href="#">Middle East</h3>
+                    <h3 className="w-36">
+                     <a href="#">Middle East </a>
+                    </h3>
                     <div
                       className="SeeMoreLinkArrow flex justify-center items-center gap-2"
                       onClick={() => toggleTextVisibility(7)}
@@ -1416,7 +1822,9 @@ export const Footer = ({ isRTL }) => {
                       className="SeeMoreLinkArrow flex flex-row items-center gap-2"
                       onClick={() => toggleTextVisibility(7)}
                     >
-                         <h3 className="w-36" href="#">West Africa</h3>
+                      <h3 className="w-36" >
+                       <a href="#"> West Africa </a>
+                      </h3>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -1433,26 +1841,43 @@ export const Footer = ({ isRTL }) => {
                         />
                       </svg>
                     </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
+                     <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Eastern Africa</h3>
+                              </a>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              
+                            >
+                                <a href="#">
+                              <h3 className="">West Africa</h3>{" "}
+                              </a>
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Middle East</h3>{" "}
+                              </a>
+                            </li>
+                          </ul>
                   </div>
                 )}
               </div>
             </li>
             <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
-              <div className="hidden lg:block  ">
+              <div className=" ">
                 {isTextVisibleArray[8] ? null : (
                   <div className="flex flex-row gap-2">
-                    <h3 className="w-36" href="#">Central Asia</h3>
+                    <h3 className="w-36" >
+                     <a href="#"> Central Asia </a>
+                    </h3>
                     <div
                       className="SeeMoreLinkArrow flex justify-center items-center gap-2"
                       onClick={() => toggleTextVisibility(8)}
@@ -1481,7 +1906,9 @@ export const Footer = ({ isRTL }) => {
                       className="SeeMoreLinkArrow flex flex-row items-center gap-2"
                       onClick={() => toggleTextVisibility(8)}
                     >
-                         <h3 className="w-36" href="#">Central Asia</h3>
+                      <h3 className="w-36" >
+                       <a href="#">  Central Asia </a>
+                      </h3>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -1498,27 +1925,44 @@ export const Footer = ({ isRTL }) => {
                         />
                       </svg>
                     </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
+                      <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Eastern Africa</h3>
+                              </a>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              
+                            >
+                                <a href="#">
+                              <h3 className="">West Africa</h3>{" "}
+                              </a>
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Middle East</h3>{" "}
+                              </a>
+                            </li>
+                          </ul>
                   </div>
                 )}
               </div>
             </li>
             <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
-             {" "}
-            <div className="hidden lg:block  ">
+              {" "}
+              <div className="">
                 {isTextVisibleArray[9] ? null : (
                   <div className="flex flex-row gap-2">
-                         <h3 className="w-36" href="#">South Asia</h3>
+                    <h3 className="w-36" >
+                    <a href="#"> South Asia  </a>
+                    </h3>
                     <div
                       className="SeeMoreLinkArrow flex justify-center items-center gap-2"
                       onClick={() => toggleTextVisibility(9)}
@@ -1547,7 +1991,9 @@ export const Footer = ({ isRTL }) => {
                       className="SeeMoreLinkArrow flex flex-row items-center gap-2"
                       onClick={() => toggleTextVisibility(9)}
                     >
-                       <h3 className="w-36" href="#">South Asia</h3>
+                      <h3 className="w-36" >
+                       <a href="#"> South Asia </a>
+                      </h3>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -1565,26 +2011,42 @@ export const Footer = ({ isRTL }) => {
                       </svg>
                     </div>
                     <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Eastern Africa</h3>
+                              </a>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              
+                            >
+                                <a href="#">
+                              <h3 className="">West Africa</h3>{" "}
+                              </a>
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Middle East</h3>{" "}
+                              </a>
+                            </li>
+                          </ul>
                   </div>
                 )}
               </div>
             </li>
             <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
-    
-               <div className="hidden lg:block  ">
+              <div className="  ">
                 {isTextVisibleArray[10] ? null : (
                   <div className="flex flex-row gap-2">
-                        <h3 className="w-36" href="#">Asia-Pacific</h3>
+                    <h3 className="w-36">
+                     <a href="#">Asia-Pacific </a>
+                    </h3>
                     <div
                       className="SeeMoreLinkArrow flex justify-center items-center gap-2"
                       onClick={() => toggleTextVisibility(10)}
@@ -1613,7 +2075,9 @@ export const Footer = ({ isRTL }) => {
                       className="SeeMoreLinkArrow flex flex-row items-center gap-2"
                       onClick={() => toggleTextVisibility(10)}
                     >
-                             <h3 className="w-36" href="#">Asia-Pacific</h3>
+                      <h3 className="w-36" >
+                       <a href="#">Asia-Pacific </a>
+                      </h3>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -1630,27 +2094,43 @@ export const Footer = ({ isRTL }) => {
                         />
                       </svg>
                     </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
+                     <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Eastern Africa</h3>
+                              </a>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              
+                            >
+                                <a href="#">
+                              <h3 className="">West Africa</h3>{" "}
+                              </a>
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Middle East</h3>{" "}
+                              </a>
+                            </li>
+                          </ul>
                   </div>
                 )}
               </div>
             </li>
             <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
-   
-             <div className="hidden lg:block  ">
+              <div className="  ">
                 {isTextVisibleArray[11] ? null : (
                   <div className="flex flex-row gap-2">
-                        <h3 className="w-36" href="#">North America</h3>
+                    <h3 className="w-36" >
+                     <a href="#"> North America </a>
+                    </h3>
                     <div
                       className="SeeMoreLinkArrow flex justify-center items-center gap-2"
                       onClick={() => toggleTextVisibility(11)}
@@ -1679,7 +2159,9 @@ export const Footer = ({ isRTL }) => {
                       className="SeeMoreLinkArrow flex flex-row items-center gap-2"
                       onClick={() => toggleTextVisibility(11)}
                     >
-                             <h3 className="w-36" href="#">North America</h3>
+                      <h3 className="w-36" >
+                       <a href="#"> North America</a>
+                      </h3>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -1696,27 +2178,44 @@ export const Footer = ({ isRTL }) => {
                         />
                       </svg>
                     </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
+                      <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Eastern Africa</h3>
+                              </a>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              
+                            >
+                                <a href="#">
+                              <h3 className="">West Africa</h3>{" "}
+                              </a>
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Middle East</h3>{" "}
+                              </a>
+                            </li>
+                          </ul>
                   </div>
                 )}
               </div>
             </li>
             <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
               {" "}
-              <div className="hidden lg:block  ">
+              <div className=" ">
                 {isTextVisibleArray[12] ? null : (
                   <div className="flex flex-row gap-2">
-                        <h3 className="w-36" href="#">Europe</h3>
+                    <h3 className="w-36" >
+                     <a href="#"> Europe </a>
+                    </h3>
                     <div
                       className="SeeMoreLinkArrow flex justify-center items-center gap-2"
                       onClick={() => toggleTextVisibility(12)}
@@ -1745,7 +2244,9 @@ export const Footer = ({ isRTL }) => {
                       className="SeeMoreLinkArrow flex flex-row items-center gap-2"
                       onClick={() => toggleTextVisibility(12)}
                     >
-                      <h3 className="w-36" href="#">Europe</h3>
+                      <h3 className="w-36" >
+                        <a href="#"> Europe </a>
+                      </h3>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -1762,17 +2263,32 @@ export const Footer = ({ isRTL }) => {
                         />
                       </svg>
                     </div>
-                    <ul className="">
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2" href="#">
-                        <h3 className="">Eastern Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"> href="#"
-                        <h3 className="">West Africa</h3>{" "}
-                      </li>
-                      <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2" href="#">
-                        <h3 className="">Middle East</h3>{" "}
-                      </li>
-                    </ul>
+                      <ul className="">
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Eastern Africa</h3>
+                              </a>{" "}
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              
+                            >
+                                <a href="#">
+                              <h3 className="">West Africa</h3>{" "}
+                              </a>
+                            </li>
+                            <li
+                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                             
+                            >
+                                <a href="#">
+                              <h3 className="">Middle East</h3>{" "}
+                              </a>
+                            </li>
+                          </ul>
                   </div>
                 )}
               </div>
@@ -1789,7 +2305,10 @@ export const Footer = ({ isRTL }) => {
           </p>
         </div>
         <div className="FooterBlock2 flex flex-row justify-center items-center gap-3 pt-2">
-          <h2 className="FooterBlock2Link1 text-white font-Gotham text-sm font-normal leading-5" href="#">
+          <h2
+            className="FooterBlock2Link1 text-white font-Gotham text-sm font-normal leading-5"
+            href="#"
+          >
             Terms & Conditions
           </h2>
           <div className="FooterRadioIcon">
@@ -1803,7 +2322,10 @@ export const Footer = ({ isRTL }) => {
               <circle cx="1.5" cy="2" r="1.5" fill="white" />
             </svg>
           </div>
-          <h2 className="FooterBlock2Link1 text-white font-Gotham text-sm font-normal leading-5" href="#">
+          <h2
+            className="FooterBlock2Link1 text-white font-Gotham text-sm font-normal leading-5"
+            href="#"
+          >
             Privacy Policy
           </h2>
         </div>

@@ -36,9 +36,9 @@ const Navbar = ({ isRTL }) => {
             </li>
           </ul>
             <div className="MainHeader hidden lg:flex lg:justify-between lg:items-center lg:self-stretch lg:p-5 Lg:pb-5">
-        <div className="LogoImage items-center justify-center">
+        <a className="LogoImage items-center justify-center" href="#">
       <Image src="/assets/Rectangle 4.png" alt="" width={186} height={58} />
-        </div>
+        </a>
       </div>
         </div>
         <div className="  hidden lg:inline-flex lg:items-center lg:gap-7 lg:pt-2 ">

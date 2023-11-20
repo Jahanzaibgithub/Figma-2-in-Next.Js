@@ -1,17 +1,17 @@
 "use client";
 import React, { useState } from "react";
-import HeroSection from "../components/HeroSection/herosection";
+ import HeroSection from "../components/HeroSection/herosection";
 import Navbar from "../components/Navbar/Navbar";
-import Features from "../components/Features/features";
+import DropDown from "../components/Navbar/Dropdown";
+ import Features from "../components/Features/features";
 import Partners from "../components/Partners/partners";
 import MainInformation from "../components/MainInformation/mainInformation";
 import Agency from "../components/ Agency/agency";
 import InfoBlock from "../components/Info-Block/infoblock";
-import DropDown from "../components/Navbar/Dropdown";
 import PartnershipProjects from "../components/PartnershipProjects/PartnershipProject";
 import SubscribeSection from "../components/SubscribeSection/SubscribeSection";
 import SubscribeHeroSection from "../components/SubscribeHeroSection/SubscribeHeroSection";
-import Footer from "../components/Footer/Footer";
+  import Footer from "../components/Footer/Footer";
 
 
 import "./globals.css";
@@ -33,7 +33,7 @@ export default function Home() {
         <HeroSection toggleDirection={toggleDirection} />
       </div>
       <Features  isRTL={isRTL}/>
-      <Partners  isRTL={isRTL} />
+     <Partners  isRTL={isRTL} /> 
        <SubscribeSection  isRTL={isRTL}/>
        <SubscribeHeroSection  isRTL={isRTL}/>
       <MainInformation  isRTL={isRTL} />

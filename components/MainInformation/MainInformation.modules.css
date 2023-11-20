@@ -1,4 +1,3 @@
 .MainInformation-Container {
-    /* background: #E6EDEF; */
-    background: var(--Light-Blue, rgba(8, 76, 97, 0.05));
+    background: rgba(8, 76, 97, 0.05)
 }
