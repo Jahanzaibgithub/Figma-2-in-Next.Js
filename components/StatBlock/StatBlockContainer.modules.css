@@ -1,0 +1,23 @@
+.StatBlockMainContainer {
+    background: rgba(8, 76, 97, 0.05);
+    font-family: Gotham;
+}
+
+.StatBlockMainContainerHeading {
+    color: #535052;
+    letter-spacing: 0.72px;
+}
+
+.StateBlockContainerBlock1Title {
+    color: #323031;
+    letter-spacing: 0.72px;
+}
+
+.StateBlockContainerBlock2Description {
+    color: #535052;
+    letter-spacing: 0.48px;
+}
+
+.border-r {
+    border-right: 1pxrgba(8, 76, 97, 0.15);
+}
