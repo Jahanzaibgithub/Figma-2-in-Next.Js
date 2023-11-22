@@ -9,8 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.6.0",
-    "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
     "eslint": "8.49.0",
@@ -25,7 +23,11 @@
     "swiper": "^10.3.1",
     "tailwindcss": "^3.3.3",
     "tailwindcss-rtl": "^0.9.0",
-    "tw-elements": "^1.0.0",
-    "typescript": "5.2.2"
+    "tw-elements": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.9.4",
+    "@types/react": "18.2.38",
+    "typescript": "5.3.2"
   }
 }
