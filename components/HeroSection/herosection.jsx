@@ -2,11 +2,14 @@
 import React, { useState } from "react";
 import styles from "./hero.modules.css";
 
-const HeroSection = (props) => {
-  // Initialize the toggle state
-  const [isRTL, setIsRTL] = useState(false);
 
-  // Function to toggle RTL
+const HeroSection = (props ) => {
+  console.log("jjjjjjjj------",typeof props.onFeaturesButtonClick);
+   console.log("kkkkk------",typeof props.onPartnersButtonClick);
+      console.log("llllll------",typeof props.onToggleButton2Click);
+ const [isRTL, setIsRTL] = useState(false);
+ 
+
   const toggleRTL = () => {
     setIsRTL(!isRTL);
   };
@@ -22,10 +25,11 @@ const HeroSection = (props) => {
         </p>
       </div>
       <div className="herosection-btn-container flex flex-col items-center gap-2.5 pt-5">
-        <button className="herosection-btn text-var-Light-text text-center text-xl font-normal leading-5 rounded-full bg-primary py-2 px-4 xs:px-9 xs:py-4">
-          Show/Hide Features
+        <button className="herosection-btn text-var-Light-text text-center text-xl font-normal leading-5 rounded-full bg-primary py-2 px-4 xs:px-9 xs:py-4"  onClick={() => props.onFeaturesButtonClick()} >
+       Show/Hide Features 
+         
         </button>
-        <button className="herosection-btn text-var-Light-text text-center font-[actor] text-xl font-normal leading-5 rounded-full bg-primary py-2 px-4 xs:px-9 xs:py-4">
+        <button className="herosection-btn text-var-Light-text text-center font-[actor] text-xl font-normal leading-5 rounded-full bg-primary py-2 px-4 xs:px-9 xs:py-4" onClick={() => props.onPartnersButtonClick()}>
           Show/Hide Partners
         </button>
         <div className="herosectionToggelHeading flex items-center gap-2 ">
@@ -41,18 +45,21 @@ const HeroSection = (props) => {
   </h2>
         </div>
         <div className="herosectionToggelHeading flex items-center gap-2">
-          <div className="HerosectionToggelBtn2 ">
+          <div className="HerosectionToggelBtn2"  >
           <label className="switch"  >
-              <input type="checkbox" />
+              <input type="checkbox"  onClick={props. onToggleButton2Click} />
               <span className="slider round"></span>
             </label> 
-          </div>
+    </div>
           <h2 className="text-white text-base font-normal leading-6">
             Show Both
           </h2>
+          </div>
         </div>
+        
+      
       </div>
-    </div>
+   
   );
 };
 

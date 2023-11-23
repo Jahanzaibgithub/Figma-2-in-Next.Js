@@ -27,7 +27,7 @@ const handlePlayClick = (e) => {
  
   
   return (
-    <div className="FeaturesMainContainer flex flex-col items-center gap-20 self-stretch px-0 pt-40 pb-20  md:text-center gap-50 md:py-40 ">
+    <div className="FeaturesMainContainer  flex flex-col items-center gap-20 self-stretch px-0 pt-40 pb-20  md:text-center gap-50 md:py-40 ">
       <div className="FeaturesMainHeaderContainer flex flex-col items-center gap-7   ">
        <h1 className="FeaturesHeading  font-normal leading-13 text-center ">
   Features

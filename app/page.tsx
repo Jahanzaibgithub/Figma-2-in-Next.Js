@@ -19,10 +19,54 @@ import "./globals.css";
 
 export default function Home() {
   const [isRTL, setIsRTL] = useState(false);
+    const [isFeaturesVisible, setIsFeaturesVisible] = useState(true);
+     const [isPartnersVisible, setIsPartnersVisible] = useState(true);
+     const [isToggleButton2On, setIsToggleButton2On] = useState(true);
+      
+
+  const hidePartners = () => {
+    setIsPartnersVisible(false);
+  };
+
+  const showPartners = () => {
+    setIsPartnersVisible(true);
+  };
+
+  const hideFeatures = () => {
+    setIsFeaturesVisible(false);
+  };
+
+  const showFeatures = () => {
+    setIsFeaturesVisible(true);
+  };
 
   const toggleDirection = () => {
     setIsRTL(!isRTL);
   };
+
+  const handleToggleButton2 = () => {
+    setIsToggleButton2On(!isToggleButton2On);
+
+    if (isToggleButton2On) {
+      // If ToggelButton2 is on/true
+      showFeatures();
+      showPartners();
+    } else {
+      // If ToggelButton2 is off/false
+      if (isPartnersVisible && !isFeaturesVisible) {
+        // If partners are visible and features are hidden, hide partners and show features
+        hidePartners();
+        showFeatures();
+      } else if (!isPartnersVisible && !isFeaturesVisible) {
+        // If both partners and features are hidden, show features
+        showFeatures();
+      } else if (isFeaturesVisible && !isPartnersVisible) {
+        // If features are visible and partners are hidden, hide features
+        hideFeatures();
+      }
+    }
+  };
+
  const fourBlockArray = [
                     
                     {
@@ -96,10 +140,15 @@ export default function Home() {
         <div className="w-full absolute z-10">
           <DropDown isRTL={isRTL} />
         </div>
-        <HeroSection toggleDirection={toggleDirection} />
+      <HeroSection
+        toggleDirection={toggleDirection}
+        onFeaturesButtonClick={isFeaturesVisible ? hideFeatures : showFeatures}
+        onPartnersButtonClick={isPartnersVisible ? hidePartners : showPartners}
+            onToggleButton2Click={handleToggleButton2}
+      />
       </div>
-      <Features  isRTL={isRTL}/>
-      <Partners  isRTL={isRTL} />
+         {isFeaturesVisible && <Features isRTL={isRTL} />}
+       {isPartnersVisible && <Partners isRTL={isRTL} />}
        <SubscribeSection  isRTL={isRTL}/>
        <SubscribeHeroSection  isRTL={isRTL}/>
       <MainInformation  isRTL={isRTL} />

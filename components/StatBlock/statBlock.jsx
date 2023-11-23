@@ -4,9 +4,10 @@ import "./StatBlockContainer.modules.css";
   console.log("kkkkkkkk---", props.statsArray);
   
   return (
-    <div className="StatBlockMainContainer flex flex-col pt-10 md:p-12 items-center gap-3 self-stretch ">
+    <div className="StatBlockMainContainer  flex flex-col pt-10 md:p-12 items-center gap-3 self-stretch ">
       <div className="StatBlockMainContainerHeader text-2xl flex justify-center px-12 pb-12"><h1 className="StatBlockMainContainerHeading text-center font-bold leading-8 uppercase self-stretch">IMPACT OF AKDN</h1></div>
-    <div className="StatBlockContainer4Block flex flex-col md:flex-row justify-center items-center  self-stretch ">
+     <div className="">
+    <div className="StatBlockContainer4Block max-w-xl flex flex-col md:flex-row justify-center items-center  self-stretch gap-6 md:gap-0 ">
       {props.statsArray.map((block, index) => (
      <div
       key={index} 
@@ -17,11 +18,12 @@ import "./StatBlockContainer.modules.css";
       ))}
     </div>
     </div>
-  
+    </div>
+          
   );
 };
  const SingleStatBlock = ({ title, image, description }) => (
-  <div className="StatBlockContainer px-5 xs:px-20 sm:px-64  md:px-6 md:w-40 flex flex-col justify-center items-center self-stretch "> 
+  <div className="StatBlockContainer px-5 xs:px-20 md:px-6  max-w-xs flex flex-col justify-center items-center self-stretch "> 
     <div className="StateBlockContainerBlock1 flex flex-col justify-center items-center gpa-2 self-stretch">
     <img src={image} alt={title} className="StateBlockContainerBlock1Image w-9 h-9" />
       <div className="StateBlockContainerBlock1Title text-center text-2xl font-medium leading-9 self-stretch" >{title}</div>
