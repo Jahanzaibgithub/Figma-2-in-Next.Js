@@ -21,3 +21,7 @@
 .border-r {
     border-right: 1pxrgba(8, 76, 97, 0.15);
 }
+
+.StatBlockContainer4Block {
+    height: auto;
+}
