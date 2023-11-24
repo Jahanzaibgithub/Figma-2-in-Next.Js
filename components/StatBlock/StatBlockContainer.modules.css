@@ -17,11 +17,3 @@
     color: #535052;
     letter-spacing: 0.48px;
 }
-
-.border-r {
-    border-right: 1pxrgba(8, 76, 97, 0.15);
-}
-
-.StatBlockContainer4Block {
-    height: auto;
-}
