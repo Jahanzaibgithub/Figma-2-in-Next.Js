@@ -46,13 +46,13 @@ const HeroSection = (props) => {
           Show/Hide Partners
         </button>
         <div className="herosectionToggelHeading flex items-center gap-2 ">
-          <div className="HerosectionToggelBtn1 text-white">
-            <label className="switch rtl:left rtl:bg-primary rtl:rounded-3xl">
+          <div className="HerosectionToggelBtn1 ">
+            <label className="switch">
               <input
                 type="checkbox rtl:left"
                 onClick={props.toggleDirection}
               />
-              <span className="slider round rtl:left rtl:bg-primary"></span>
+              <span className="slider round  rtl:bg-primary"></span>
             </label>
           </div>
 

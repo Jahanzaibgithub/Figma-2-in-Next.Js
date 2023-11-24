@@ -84,7 +84,8 @@ const PartnershipProject = ({ isRTL }) => {
           modules={[Navigation, Pagination, A11y]}
           spaceBetween={100}
           slidesPerView={1}
-          navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
+          navigation={{    nextEl: isRTL ? ".arrow-right" : ".arrow-left",
+            prevEl: isRTL ? ".arrow-left" : ".arrow-right", }}
            pagination={{
        clickable: true,
       //  el: `swiper-pagination swiper-container-testClass`,
