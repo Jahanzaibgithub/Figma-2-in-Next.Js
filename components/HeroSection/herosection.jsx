@@ -8,7 +8,15 @@ const HeroSection = (props ) => {
    console.log("kkkkk------",typeof props.onPartnersButtonClick);
       console.log("llllll------",typeof props.onToggleButton2Click);
  const [isRTL, setIsRTL] = useState(false);
- 
+  const [isSwitchOn, setIsSwitchOn] = useState(true);
+
+  const handleToggle = () => {
+    // Toggle the state
+    setIsSwitchOn(!isSwitchOn);
+
+    // Call the function from props to handle the toggle
+    props.onToggleButton2Click();
+  };
 
   const toggleRTL = () => {
     setIsRTL(!isRTL);
@@ -17,7 +25,7 @@ const HeroSection = (props ) => {
   return (
     <div className="herosectionMainContainer  flex flex-col justify-center items-center bg-black bg-opacity-80 text-white text-center gap-14 lg:gap-10">
       <div className="herosectionHeadingContainer flex flex-col items-center gap-2.5 pt-20">
-        <h1 className="herosectionHeading text-center text-4xl font-normal text-var-Light-text  sm:text-6xl md:leading-20 whitespace-pre-line">
+        <h1 className="herosectionHeading text-center text-4xl xs:text-5xl font-normal text-var-Light-text  sm:text-7xl md:leading-20 whitespace-pre-line">
           The Best Product{"\n"}Starts With Figma
         </h1>
         <p className="herosectionParagraph text-var-Light-text text-center font-normal leading-10 pt-5">
@@ -46,10 +54,14 @@ const HeroSection = (props ) => {
         </div>
         <div className="herosectionToggelHeading flex items-center gap-2">
           <div className="HerosectionToggelBtn2"  >
-          <label className="switch"  >
-              <input type="checkbox"  onClick={props. onToggleButton2Click} />
-              <span className="slider round"></span>
-            </label> 
+         <label className="switch">
+            <input
+              type="checkbox"
+              onClick={handleToggle}
+              checked={isSwitchOn}
+            />
+            <span className="slider round"></span>
+          </label>
     </div>
           <h2 className="text-white text-base font-normal leading-6">
             Show Both

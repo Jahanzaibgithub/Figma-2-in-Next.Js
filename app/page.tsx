@@ -21,7 +21,8 @@ export default function Home() {
   const [isRTL, setIsRTL] = useState(false);
     const [isFeaturesVisible, setIsFeaturesVisible] = useState(true);
      const [isPartnersVisible, setIsPartnersVisible] = useState(true);
-     const [isToggleButton2On, setIsToggleButton2On] = useState(true);
+     const [isToggleButton2On, setIsToggleButton2On] = useState(false);
+     
       
 
   const hidePartners = () => {
@@ -44,6 +45,7 @@ export default function Home() {
     setIsRTL(!isRTL);
   };
 
+
   const handleToggleButton2 = () => {
     setIsToggleButton2On(!isToggleButton2On);
 
@@ -51,21 +53,24 @@ export default function Home() {
       // If ToggelButton2 is on/true
       showFeatures();
       showPartners();
-    } else {
-      // If ToggelButton2 is off/false
-      if (isPartnersVisible && !isFeaturesVisible) {
-        // If partners are visible and features are hidden, hide partners and show features
-        hidePartners();
-        showFeatures();
-      } else if (!isPartnersVisible && !isFeaturesVisible) {
-        // If both partners and features are hidden, show features
-        showFeatures();
-      } else if (isFeaturesVisible && !isPartnersVisible) {
-        // If features are visible and partners are hidden, hide features
-        hideFeatures();
-      }
     }
-  };
+     // If ToggelButton2 is off/false 
+     else if (isPartnersVisible && isFeaturesVisible) {
+      showFeatures();
+      hidePartners();
+    } else if (isPartnersVisible && !isFeaturesVisible) {
+      showFeatures();
+      hidePartners();
+    } else if (!isPartnersVisible && !isFeaturesVisible) {
+      showFeatures();
+      hidePartners();
+    } else if (isFeaturesVisible && !isPartnersVisible) {
+      showPartners();
+      hideFeatures();
+    }
+  }
+
+
 
  const fourBlockArray = [
                     
