@@ -1242,18 +1242,6 @@ video {
 .h-auto {
   height: auto;
 }
-.h-80 {
-  height: 20rem;
-}
-.h-64 {
-  height: 16rem;
-}
-.h-60 {
-  height: 15rem;
-}
-.h-56 {
-  height: 14rem;
-}
 .w-1\/4 {
   width: 25%;
 }
@@ -2014,14 +2002,17 @@ video {
     padding-top: 16rem;
   }
 
-  .xs\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   .xs\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .xs\:text-\[28px\] {
+    font-size: 28px;
+  }
+
+  .xs\:leading-\[55px\] {
+    line-height: 55px;
   }
 }
 
@@ -2148,14 +2139,14 @@ video {
     line-height: 1;
   }
 
-  .sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .sm\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -2223,10 +2214,6 @@ video {
 
   .md\:w-\[300px\] {
     width: 300px;
-  }
-
-  .md\:max-w-2xl {
-    max-width: 42rem;
   }
 
   .md\:max-w-3xl {
@@ -2308,10 +2295,6 @@ video {
     align-self: stretch;
   }
 
-  .md\:border-r {
-    border-right-width: 1px;
-  }
-
   .md\:fill-current {
     fill: currentColor;
   }
@@ -2330,6 +2313,11 @@ video {
 
   .md\:p-6 {
     padding: 1.5rem;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:px-20 {
@@ -2357,11 +2345,6 @@ video {
     padding-bottom: 10rem;
   }
 
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .md\:pb-12 {
     padding-bottom: 3rem;
   }
@@ -2374,16 +2357,8 @@ video {
     padding-left: 3rem;
   }
 
-  .md\:pl-4 {
-    padding-left: 1rem;
-  }
-
   .md\:pl-\[335px\] {
     padding-left: 335px;
-  }
-
-  .md\:pr-10 {
-    padding-right: 2.5rem;
   }
 
   .md\:pr-12 {
@@ -2441,8 +2416,16 @@ video {
     line-height: 1.5rem;
   }
 
+  .md\:leading-8 {
+    line-height: 2rem;
+  }
+
   .md\:leading-9 {
     line-height: 2.25rem;
+  }
+
+  .md\:leading-\[84px\] {
+    line-height: 84px;
   }
 
   .md\:tracking-\[0\.48px\] {
@@ -2507,16 +2490,16 @@ video {
     border-left-width: 1px;
   }
 
-  :is([dir="rtl"] .rtl\:md\:pr-\[335px\]) {
-    padding-right: 335px;
-  }
-
   :is([dir="rtl"] .rtl\:md\:pl-10) {
     padding-left: 2.5rem;
   }
 
   :is([dir="rtl"] .rtl\:md\:pr-4) {
     padding-right: 1rem;
+  }
+
+  :is([dir="rtl"] .rtl\:md\:pr-\[335px\]) {
+    padding-right: 335px;
   }
 }
 
