@@ -52,7 +52,7 @@ const HeroSection = (props) => {
                 type="checkbox rtl:left"
                 onClick={props.toggleDirection}
               />
-              <span className="slider round  rtl:bg-primary"></span>
+              <span className="slider round ltr:bg-gray-300 rtl:bg-primary"></span>
             </label>
           </div>
 

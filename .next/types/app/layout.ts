@@ -1,4 +1,4 @@
-// File: /home/jahanzaib/gitproject/Figma-2-in-Next.Js-1/app/layout.tsx
+// File: /home/jahanzaib/Figma-2-in-Next.Js/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
