@@ -42,7 +42,7 @@ export const Footer = ({ isRTL }) => {
             </div>
           </div>
           <div className="FooterHeaderParagraph mr-4 lg:w-72 pt-9">
-            <p className="font-[Gotham] text-sm font-normal text-white leading-5 tracking-tight">
+            <p className="text-sm font-normal text-white leading-5 tracking-tight">
               We work with communities to address the inter-related dimensions
               of poverty in order to improve quality of life, promote pluralism,
               and enhance self-reliance.
@@ -113,11 +113,11 @@ export const Footer = ({ isRTL }) => {
             className="FooterHeaderSignUpContainer flex flex-col justify-center items-center  text-start lg:items-start"
             
           >
-            <h1 className="FooterHeaderSignUpHeading1 font-[Gotham] text-sm font-normal  text-white leading-5">
+            <h1 className="FooterHeaderSignUpHeading1 text-sm font-normal  text-white leading-5">
               Subscribe to our newsletter
             </h1>
             <a className="FooterHeaderSignUpButton flex flex-row h-8 mt-2  pt-2 pr-2 pb-2 pl-3 justify-center items-center gap-1" href="#">
-              <h2 className="FooterHeaderSignUpHeading1 w-20 h-4 font-[Gotham] text-xs font-normal text-white leading-4 tracking-tighter capitalize">
+              <h2 className="FooterHeaderSignUpHeading1 w-20 h-4 text-xs font-normal text-white leading-4 tracking-tighter capitalize">
                 Sign up
               </h2>
               <div className="FooterHeaderSignUpArrow">
@@ -159,7 +159,7 @@ export const Footer = ({ isRTL }) => {
           </div>
           <div className="FooterHeaderContactUsContainer">
             <a className="FooterHeaderContactUsButton flex flex-row h-8  pt-2 pr-2 pb-2 pl-3 justify-center items-center  text-start gap-1" href="#">
-              <h2 className="FooterHeaderContactUsHeading1 w-20 h-4 font-[Gotham] text-xs font-normal text-white leading-4 tracking-tighter  capitalize">
+              <h2 className="FooterHeaderContactUsHeading1 w-20 h-4 text-xs font-normal text-white leading-4 tracking-tighter  capitalize">
                 Contact Us
               </h2>
               <div className="FooterHeaderContactUsArrow">
@@ -204,19 +204,19 @@ export const Footer = ({ isRTL }) => {
       <div className="FooterHeaderBlockBorderBottom mt-10 mb-10 mr-6 ml-6 "></div>
       <div className="FooterFeaturesContainer flex flex-col lg:flex-row gap-3 ">
         <div className="FooterFeaturesBlock1 lg:w-2/12 flex flex-col items-start ml-6 rtl:mr-6 lg:ml-12 lg:rtl:mr-12">
-          <h1 className="FooterFeaturesBlock1Heading font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+          <h1 className="FooterFeaturesBlock1Heading font-sm text-white text-base leading-6 tracking-wider uppercase">
             Quick Links
           </h1>
           <ul className="">
             <li
-              className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal"
+              className="FooterFeaturesBlock1List text-white text-xs font-normal leading-5 tracking-normal"
              
             > <a href="#">
               Careers at AKDN
               </a>
             </li>
             <li
-              className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+              className="FooterFeaturesBlock1List text-white text-xs font-normal leading-5 tracking-normal pt-3"
              
             >
               <a  href="#">
@@ -224,7 +224,7 @@ export const Footer = ({ isRTL }) => {
               </a>
             </li>
             <li
-              className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+              className="FooterFeaturesBlock1List text-white text-xs font-normal leading-5 tracking-normal pt-3"
               
             >
               <a  href="#">
@@ -240,14 +240,14 @@ export const Footer = ({ isRTL }) => {
               </a>
             </li>
             <li
-              className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+              className="FooterFeaturesBlock1List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                         >
                           <a  href="#">
               COVID-19 Resources Library
               </a>
             </li>
             <li
-              className="FooterFeaturesBlock1List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+              className="FooterFeaturesBlock1List text-white text-xs font-normal leading-5 tracking-normal pt-3"
             
             >
               <a  href="#">
@@ -257,13 +257,13 @@ export const Footer = ({ isRTL }) => {
           </ul>
         </div>
         <div className="FooterFeaturesBlock2 w-12/12 lg:w-2/12 lg:flex lg:flex-col lg:items-start">
-          <h1 className="FooterFeaturesBlock2Heading hidden lg:block font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+          <h1 className="FooterFeaturesBlock2Heading hidden lg:block  font-sm text-white text-base leading-6 tracking-wider uppercase">
             who we are
           </h1>
           <div className="lg:hidden ">
             {isTextVisibleArray[1] ? null : (
               <div className=" flex flex-row p-6 rtl:p-6 lg:p-0 rtl:lg-p-0">
-                <h1 className="FooterFeaturesBlock2Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+                <h1 className="FooterFeaturesBlock2Heading w-full font-sm text-white text-base leading-6 tracking-wider uppercase">
                   who we are
                 </h1>
                 <div
@@ -292,7 +292,7 @@ export const Footer = ({ isRTL }) => {
             {isTextVisibleArray[1] && (
               <div className="SeeLessLink2 flex flex-col gap-2 bg-neutral-700  p-6 rtl:p-6 lg:p-0 rtl:lg-p-0">
                 <div className="flex flex-row gap-2 ">
-                  <h1 className="FooterFeaturesBlock2Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+                  <h1 className="FooterFeaturesBlock2Heading w-full font-sm text-white text-base leading-6 tracking-wider uppercase">
                     who we are
                   </h1>
 
@@ -321,7 +321,7 @@ export const Footer = ({ isRTL }) => {
 
                 <ul className="flex flex-col items-start ">
                   <li
-                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal"
+                    className="FooterFeaturesBlock2List text-white text-xs font-normal leading-5 tracking-normal"
                    
                   >
                     <a  href="#">
@@ -329,7 +329,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock2List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                    
                   >
                     <a  href="#">
@@ -337,7 +337,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock2List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                     
                   >
                     <a  href="#">
@@ -345,7 +345,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock2List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                     
                   >
                     <a  href="#">
@@ -353,7 +353,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock2List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                    
                   >
                     <a  href="#">
@@ -361,7 +361,7 @@ export const Footer = ({ isRTL }) => {
                        </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock2List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                     
                   >
                     <a  href="#">
@@ -369,7 +369,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock2List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                    
                   >
                     <a  href="#">
@@ -382,7 +382,7 @@ export const Footer = ({ isRTL }) => {
           </div>
           <ul className="hidden lg:block">
             <li
-                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal"
+                    className="FooterFeaturesBlock2List text-white text-xs font-normal leading-5 tracking-normal"
                    
                   >
                     <a  href="#">
@@ -390,7 +390,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock2List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                    
                   >
                     <a  href="#">
@@ -398,7 +398,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock2List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                     
                   >
                     <a  href="#">
@@ -406,7 +406,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock2List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                     
                   >
                     <a  href="#">
@@ -414,7 +414,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock2List text-white before:text-xs font-normal leading-5 tracking-normal pt-3"
                    
                   >
                     <a  href="#">
@@ -422,7 +422,7 @@ export const Footer = ({ isRTL }) => {
                        </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock2List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                     
                   >
                     <a  href="#">
@@ -430,7 +430,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock2List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock2List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                    
                   >
                     <a  href="#">
@@ -440,13 +440,13 @@ export const Footer = ({ isRTL }) => {
           </ul>
         </div>
         <div className="FooterFeaturesBlock3 w-12/12 lg:w-2/12 lg:flex lg:flex-col lg:items-start">
-          <h1 className="FooterFeaturesBlock3Heading hidden lg:block w-4/5 font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+          <h1 className="FooterFeaturesBlock3Heading hidden lg:block w-4/5 font-sm text-white text-base leading-6 tracking-wider uppercase">
             What we do
           </h1>
           <div className="lg:hidden ">
             {isTextVisibleArray[2] ? null : (
               <div className=" flex flex-row p-6 rtl:p-6 lg:p-0 rtl:lg-p-0">
-                <h1 className="FooterFeaturesBlock3Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+                <h1 className="FooterFeaturesBlock3Heading w-full font-sm text-white text-base leading-6 tracking-wider uppercase">
                   What we do
                 </h1>
                 <div
@@ -475,7 +475,7 @@ export const Footer = ({ isRTL }) => {
             {isTextVisibleArray[2] && (
               <div className="SeeLessLink2 flex flex-col bg-neutral-700 p-6 rtl:p-6 lg:p-0 rtl:lg-p-0 gap-2">
                 <div className="flex flex-row">
-                  <h1 className="FooterFeaturesBlock3Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+                  <h1 className="FooterFeaturesBlock3Heading w-full  font-sm text-white text-base leading-6 tracking-wider uppercase">
                     What we do
                   </h1>
 
@@ -503,7 +503,7 @@ export const Footer = ({ isRTL }) => {
                 </div>
                 <ul className="flex flex-col items-start">
                   <li
-                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal"
+                    className="FooterFeaturesBlock3List text-white text-xs font-normal leading-5 tracking-normal"
                    
                   >
                     <a href="#">
@@ -511,13 +511,13 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock3List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                     
                   >
                      <a href="#">Health</a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock3List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                    
                   >
                       <a href="#">
@@ -525,7 +525,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock3List text-white  text-xs font-normal leading-5 tracking-normal pt-3"
                     
                   >
                       <a href="#">
@@ -533,7 +533,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock3List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                     
                   >
                       <a href="#">
@@ -541,7 +541,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock3List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                    
                   >
                       <a href="#">
@@ -549,7 +549,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                     
                   >
                     <div className=" ">
@@ -604,7 +604,7 @@ export const Footer = ({ isRTL }) => {
                           </div>
                           <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal gap-2"
                              
                             >
                                 <a href="#">
@@ -612,7 +612,7 @@ export const Footer = ({ isRTL }) => {
                               </a>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               
                             >
                                 <a href="#">
@@ -620,7 +620,7 @@ export const Footer = ({ isRTL }) => {
                               </a>
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                              
                             >
                                 <a href="#">
@@ -638,7 +638,7 @@ export const Footer = ({ isRTL }) => {
           </div>
           <ul className="hidden lg:block">
              <li
-                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal"
+                    className="FooterFeaturesBlock3List text-white text-xs font-normal leading-5 tracking-normal"
                    
                   >
                     <a href="#">
@@ -646,13 +646,13 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock3List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                     
                   >
                      <a href="#">Health</a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock3List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                    
                   >
                       <a href="#">
@@ -660,7 +660,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock3List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                     
                   >
                       <a href="#">
@@ -668,7 +668,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock3List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                     
                   >
                       <a href="#">
@@ -676,7 +676,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock3List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3"
+                    className="FooterFeaturesBlock3List text-white text-xs font-normal leading-5 tracking-normal pt-3"
                    
                   >
                       <a href="#">
@@ -684,7 +684,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                     
                   >
                     <div className=" ">
@@ -739,7 +739,7 @@ export const Footer = ({ isRTL }) => {
                           </div>
                           <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal gap-2"
                              
                             >
                                 <a href="#">
@@ -747,7 +747,7 @@ export const Footer = ({ isRTL }) => {
                               </a>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               
                             >
                                 <a href="#">
@@ -755,7 +755,7 @@ export const Footer = ({ isRTL }) => {
                               </a>
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                              
                             >
                                 <a href="#">
@@ -770,13 +770,13 @@ export const Footer = ({ isRTL }) => {
           </ul>
         </div>
         <div className="FooterFeaturesBlock4 w-12/12 lg:w-2/12 lg:flex lg:flex-col items-start">
-          <h1 className="FooterFeaturesBlock4Heading hidden lg:block font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+          <h1 className="FooterFeaturesBlock4Heading hidden lg:block font-sm text-white text-base leading-6 tracking-wider uppercase">
             OUR AGENCIES
           </h1>
           <div className="lg:hidden ">
             {isTextVisibleArray[3] ? null : (
               <div className=" flex flex-row p-6 rtl:p-6 lg:p-0 rtl:lg-p-0 ">
-                <h1 className="FooterFeaturesBlock4Heading w-full font-[Gotham] font-sm text-white text-base uppercase">
+                <h1 className="FooterFeaturesBlock4Heading w-full font-sm text-white text-base uppercase">
                   OUR AGENCIES
                 </h1>
                 <div
@@ -805,7 +805,7 @@ export const Footer = ({ isRTL }) => {
             {isTextVisibleArray[3] && (
               <div className="SeeLessLink2 flex flex-col bg-neutral-700 p-6 rtl:p-6 lg:p-0 rtl:lg-p-0 gap-2">
                 <div className="flex flex-row">
-                  <h1 className="FooterFeaturesBlock4Heading w-full font-[Gotham] font-sm text-white text-base uppercase">
+                  <h1 className="FooterFeaturesBlock4Heading w-full font-sm text-white text-base uppercase">
                     OUR AGENCIES
                   </h1>
 
@@ -834,7 +834,7 @@ export const Footer = ({ isRTL }) => {
 
                 <ul className="flex flex-col items-start">
                    <li
-                    className="FooterFeaturesBlock4List  text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                    className="FooterFeaturesBlock4List  text-white text-xs font-normal leading-5 tracking-normal gap-2"
                   
                   >
                     <a  className="flex flex-row" href="#">
@@ -843,7 +843,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List  text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock4List  text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                     >
                    <a  className="flex flex-row" href="#">
                     <h2 className=" uppercase w-14">AKAM</h2>{" "}
@@ -851,7 +851,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock4List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                     >
                    <a className="flex flex-row" href="#">
                     <h2 className=" uppercase w-14">AKF</h2>{" "}
@@ -859,7 +859,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock4List text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                     >
                    <a className="flex flex-row" href="#">
                     <h2 className=" uppercase w-14">AKFED</h2>{" "}
@@ -867,7 +867,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2 "
+                    className="FooterFeaturesBlock4List text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2 "
                     
                   >
                     <a className="flex flex-row" href="#">
@@ -876,7 +876,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock4List text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                   
                   >
                     <a className="flex flex-row" href="#">
@@ -885,7 +885,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock4List text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                     
                   >
                     <a className="flex flex-row" href="#">
@@ -894,7 +894,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock4List text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                     
                   >
                     <a className="flex flex-row" href="#">
@@ -903,7 +903,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock4List text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                    
                   >
                     <a className="flex flex-row" href="#">
@@ -917,7 +917,7 @@ export const Footer = ({ isRTL }) => {
           </div>
           <ul className="hidden lg:block">
                 <li
-                    className="FooterFeaturesBlock4List  text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                    className="FooterFeaturesBlock4List  text-white text-xs font-normal leading-5 tracking-normal gap-2"
                   
                   >
                     <a  className="flex flex-row" href="#">
@@ -926,7 +926,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List  text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock4List  text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                     >
                    <a  className="flex flex-row" href="#">
                     <h2 className=" uppercase w-1/4">AKAM</h2>{" "}
@@ -934,7 +934,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List  text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock4List  text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                     >
                    <a className="flex flex-row" href="#">
                     <h2 className=" uppercase w-1/4">AKF</h2>
@@ -942,7 +942,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock4List text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                     >
                    <a className="flex flex-row" href="#">
                     <h2 className=" uppercase w-1/4">AKFED</h2>{" "}
@@ -950,7 +950,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2 "
+                    className="FooterFeaturesBlock4List text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2 "
                     
                   >
                     <a className="flex flex-row" href="#">
@@ -959,7 +959,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock4List text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                   
                   >
                     <a className="flex flex-row" href="#">
@@ -968,7 +968,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock4List text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                     
                   >
                     <a className="flex flex-row" href="#">
@@ -977,7 +977,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock4List text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                     
                   >
                     <a className="flex flex-row" href="#">
@@ -986,7 +986,7 @@ export const Footer = ({ isRTL }) => {
                     </a>
                   </li>
                   <li
-                    className="FooterFeaturesBlock4List text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                    className="FooterFeaturesBlock4List text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                    
                   >
                     <a className="flex flex-row" href="#">
@@ -999,13 +999,13 @@ export const Footer = ({ isRTL }) => {
         <div className="FooterFeaturesBlock5 w-12/12 lg:w-1/6 lg:flex lg:flex-col items-start lg:pl-6 rtl:lg:pr-6 "
           
         >
-          <h1 className="FooterFeaturesBlock5Heading hidden lg:block  font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+          <h1 className="FooterFeaturesBlock5Heading hidden lg:block  font-sm text-white text-base leading-6 tracking-wider uppercase">
             Where we work
           </h1>
           <div className="lg:hidden ">
             {isTextVisibleArray[4] ? null : (
               <div className=" flex flex-row p-6 rtl:p-6">
-                <h1 className="FooterFeaturesBlock5Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+                <h1 className="FooterFeaturesBlock5Heading w-full font-sm text-white text-base leading-6 tracking-wider uppercase">
                   Where we work
                 </h1>
                 <div
@@ -1034,7 +1034,7 @@ export const Footer = ({ isRTL }) => {
             {isTextVisibleArray[4] && (
               <div className="SeeLessLink2 flex flex-col bg-neutral-700 p-6 rtl:p-6 gap-2">
                 <div className="flex flex-row ">
-                  <h1 className="FooterFeaturesBlock5Heading w-full font-[Gotham] font-sm text-white text-base leading-6 tracking-wider uppercase">
+                  <h1 className="FooterFeaturesBlock5Heading w-full font-sm text-white text-base leading-6 tracking-wider uppercase">
                     Where we work
                   </h1>
                   <div
@@ -1060,7 +1060,7 @@ export const Footer = ({ isRTL }) => {
                   </div>
                 </div>
                 <ul className=" ">
-                  <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal  gap-2">
+                  <li className="FooterFeaturesBlock5List flex flex-row text-white text-xs font-normal leading-5 tracking-normal  gap-2">
                     <div className=" ">
                       {isTextVisibleArray[5] ? null : (
                         <div className="flex flex-row gap-2">
@@ -1117,7 +1117,7 @@ export const Footer = ({ isRTL }) => {
                           </div>
                           <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal gap-2"
                              
                             >
                                 <a href="#">
@@ -1125,7 +1125,7 @@ export const Footer = ({ isRTL }) => {
                               </a>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               
                             >
                                 <a href="#">
@@ -1133,7 +1133,7 @@ export const Footer = ({ isRTL }) => {
                               </a>
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                              
                             >
                                 <a href="#">
@@ -1145,7 +1145,7 @@ export const Footer = ({ isRTL }) => {
                       )}
                     </div>
                   </li>
-                  <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                  <li className="FooterFeaturesBlock5List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
                     <div className="  ">
                       {isTextVisibleArray[7] ? null : (
                         <div className="flex flex-row gap-2">
@@ -1200,17 +1200,17 @@ export const Footer = ({ isRTL }) => {
                             </svg>
                           </div>
                           <ul className="">
-                            <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2">
+                            <li className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal gap-2">
                               <h3 className="" href="#">
                                 <a href="#">Eastern Africa </a>
                               </h3>{" "}
                             </li>
-                            <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                            <li className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
                               <h3 className="" href="#">
                                 <a href="#"> West Africa </a>
                               </h3>{" "}
                             </li>
-                            <li className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                            <li className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
                               <h3 className="" href="#">
                                 <a href="#"> Middle East </a>
                               </h3>{" "}
@@ -1220,7 +1220,7 @@ export const Footer = ({ isRTL }) => {
                       )}
                     </div>
                   </li>
-                  <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                  <li className="FooterFeaturesBlock5List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
                     <div className="  ">
                       {isTextVisibleArray[8] ? null : (
                         <div className="flex flex-row gap-2">
@@ -1276,19 +1276,19 @@ export const Footer = ({ isRTL }) => {
                           </div>
                           <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal gap-2"
                               href="#"
                             >
                               <h3 className="">Eastern Africa</h3>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               href="#"
                             >
                               <h3 className="">West Africa</h3>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               href="#"
                             >
                               <h3 className="">Middle East</h3>{" "}
@@ -1298,7 +1298,7 @@ export const Footer = ({ isRTL }) => {
                       )}
                     </div>
                   </li>
-                  <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                  <li className="FooterFeaturesBlock5List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
                     {" "}
                     <div className=" ">
                       {isTextVisibleArray[9] ? null : (
@@ -1355,19 +1355,19 @@ export const Footer = ({ isRTL }) => {
                           </div>
                           <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal gap-2"
                               href="#"
                             >
                               <h3 className="">Eastern Africa</h3>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               href="#"
                             >
                               <h3 className="">West Africa</h3>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               href="#"
                             >
                               <h3 className="">Middle East</h3>{" "}
@@ -1377,7 +1377,7 @@ export const Footer = ({ isRTL }) => {
                       )}
                     </div>
                   </li>
-                  <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                  <li className="FooterFeaturesBlock5List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
                     <div className=" ">
                       {isTextVisibleArray[10] ? null : (
                         <div className="flex flex-row gap-2">
@@ -1433,19 +1433,19 @@ export const Footer = ({ isRTL }) => {
                           </div>
                           <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal gap-2"
                               href="#"
                             >
                               <h3 className="">Eastern Africa</h3>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               href="#"
                             >
                               <h3 className="">West Africa</h3>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               href="#"
                             >
                               <h3 className="">Middle East</h3>{" "}
@@ -1455,7 +1455,7 @@ export const Footer = ({ isRTL }) => {
                       )}
                     </div>
                   </li>
-                  <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                  <li className="FooterFeaturesBlock5List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
                     <div className=" ">
                       {isTextVisibleArray[11] ? null : (
                         <div className="flex flex-row gap-2">
@@ -1511,19 +1511,19 @@ export const Footer = ({ isRTL }) => {
                           </div>
                           <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal gap-2"
                               href="#"
                             >
                               <h3 className="">Eastern Africa</h3>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               href="#"
                             >
                               <h3 className="">West Africa</h3>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               href="#"
                             >
                               <h3 className="">Middle East</h3>{" "}
@@ -1533,7 +1533,7 @@ export const Footer = ({ isRTL }) => {
                       )}
                     </div>
                   </li>
-                  <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+                  <li className="FooterFeaturesBlock5List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
                     {" "}
                     <div className=" ">
                       {isTextVisibleArray[12] ? null : (
@@ -1590,19 +1590,19 @@ export const Footer = ({ isRTL }) => {
                           </div>
                           <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal gap-2"
                               href="#"
                             >
                               <h3 className="">Eastern Africa</h3>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               href="#"
                             >
                               <h3 className="">West Africa</h3>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               href="#"
                             >
                               <h3 className="">Middle East</h3>{" "}
@@ -1617,7 +1617,7 @@ export const Footer = ({ isRTL }) => {
             )}
           </div>
           <ul className="hidden lg:block">
-               <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal  gap-2">
+               <li className="FooterFeaturesBlock5List flex flex-row text-white text-xs font-normal leading-5 tracking-normal  gap-2">
               <div className=" ">
                 {isTextVisibleArray[5] ? null : (
                   <div className="flex flex-row gap-2">
@@ -1674,7 +1674,7 @@ export const Footer = ({ isRTL }) => {
                     </div>
                      <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal gap-2"
                              
                             >
                                 <a href="#">
@@ -1682,7 +1682,7 @@ export const Footer = ({ isRTL }) => {
                               </a>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               
                             >
                                 <a href="#">
@@ -1690,7 +1690,7 @@ export const Footer = ({ isRTL }) => {
                               </a>
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                              
                             >
                                 <a href="#">
@@ -1702,7 +1702,7 @@ export const Footer = ({ isRTL }) => {
                 )}
               </div>
             </li>
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+            <li className="FooterFeaturesBlock5List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
               <div className="">
                 {isTextVisibleArray[6] ? null : (
                   <div className="flex flex-row gap-2">
@@ -1759,7 +1759,7 @@ export const Footer = ({ isRTL }) => {
                     </div>
                      <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal gap-2"
                              
                             >
                                 <a href="#">
@@ -1767,7 +1767,7 @@ export const Footer = ({ isRTL }) => {
                               </a>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               
                             >
                                 <a href="#">
@@ -1775,7 +1775,7 @@ export const Footer = ({ isRTL }) => {
                               </a>
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                              
                             >
                                 <a href="#">
@@ -1787,7 +1787,7 @@ export const Footer = ({ isRTL }) => {
                 )}
               </div>
             </li>
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+            <li className="FooterFeaturesBlock5List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
               <div className="">
                 {isTextVisibleArray[7] ? null : (
                   <div className="flex flex-row gap-2">
@@ -1843,7 +1843,7 @@ export const Footer = ({ isRTL }) => {
                     </div>
                      <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal gap-2"
                              
                             >
                                 <a href="#">
@@ -1851,7 +1851,7 @@ export const Footer = ({ isRTL }) => {
                               </a>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               
                             >
                                 <a href="#">
@@ -1859,7 +1859,7 @@ export const Footer = ({ isRTL }) => {
                               </a>
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                              
                             >
                                 <a href="#">
@@ -1871,7 +1871,7 @@ export const Footer = ({ isRTL }) => {
                 )}
               </div>
             </li>
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+            <li className="FooterFeaturesBlock5List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
               <div className=" ">
                 {isTextVisibleArray[8] ? null : (
                   <div className="flex flex-row gap-2">
@@ -1927,7 +1927,7 @@ export const Footer = ({ isRTL }) => {
                     </div>
                       <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal gap-2"
                              
                             >
                                 <a href="#">
@@ -1935,7 +1935,7 @@ export const Footer = ({ isRTL }) => {
                               </a>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               
                             >
                                 <a href="#">
@@ -1943,7 +1943,7 @@ export const Footer = ({ isRTL }) => {
                               </a>
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                              
                             >
                                 <a href="#">
@@ -1955,7 +1955,7 @@ export const Footer = ({ isRTL }) => {
                 )}
               </div>
             </li>
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+            <li className="FooterFeaturesBlock5List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
               {" "}
               <div className="">
                 {isTextVisibleArray[9] ? null : (
@@ -2012,7 +2012,7 @@ export const Footer = ({ isRTL }) => {
                     </div>
                     <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal gap-2"
                              
                             >
                                 <a href="#">
@@ -2020,7 +2020,7 @@ export const Footer = ({ isRTL }) => {
                               </a>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               
                             >
                                 <a href="#">
@@ -2028,7 +2028,7 @@ export const Footer = ({ isRTL }) => {
                               </a>
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                              
                             >
                                 <a href="#">
@@ -2040,7 +2040,7 @@ export const Footer = ({ isRTL }) => {
                 )}
               </div>
             </li>
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+            <li className="FooterFeaturesBlock5List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
               <div className="  ">
                 {isTextVisibleArray[10] ? null : (
                   <div className="flex flex-row gap-2">
@@ -2096,7 +2096,7 @@ export const Footer = ({ isRTL }) => {
                     </div>
                      <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal gap-2"
                              
                             >
                                 <a href="#">
@@ -2104,7 +2104,7 @@ export const Footer = ({ isRTL }) => {
                               </a>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               
                             >
                                 <a href="#">
@@ -2112,7 +2112,7 @@ export const Footer = ({ isRTL }) => {
                               </a>
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                              
                             >
                                 <a href="#">
@@ -2124,7 +2124,7 @@ export const Footer = ({ isRTL }) => {
                 )}
               </div>
             </li>
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+            <li className="FooterFeaturesBlock5List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
               <div className="  ">
                 {isTextVisibleArray[11] ? null : (
                   <div className="flex flex-row gap-2">
@@ -2180,7 +2180,7 @@ export const Footer = ({ isRTL }) => {
                     </div>
                       <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal gap-2"
                              
                             >
                                 <a href="#">
@@ -2188,7 +2188,7 @@ export const Footer = ({ isRTL }) => {
                               </a>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               
                             >
                                 <a href="#">
@@ -2196,7 +2196,7 @@ export const Footer = ({ isRTL }) => {
                               </a>
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                              
                             >
                                 <a href="#">
@@ -2208,7 +2208,7 @@ export const Footer = ({ isRTL }) => {
                 )}
               </div>
             </li>
-            <li className="FooterFeaturesBlock5List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
+            <li className="FooterFeaturesBlock5List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2">
               {" "}
               <div className=" ">
                 {isTextVisibleArray[12] ? null : (
@@ -2265,7 +2265,7 @@ export const Footer = ({ isRTL }) => {
                     </div>
                       <ul className="">
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal gap-2"
                              
                             >
                                 <a href="#">
@@ -2273,7 +2273,7 @@ export const Footer = ({ isRTL }) => {
                               </a>{" "}
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white  text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                               
                             >
                                 <a href="#">
@@ -2281,7 +2281,7 @@ export const Footer = ({ isRTL }) => {
                               </a>
                             </li>
                             <li
-                              className="FooterFeaturesBlock3List flex flex-row text-white font-[Gotham] text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
+                              className="FooterFeaturesBlock3List flex flex-row text-white text-xs font-normal leading-5 tracking-normal pt-3 gap-2"
                              
                             >
                                 <a href="#">
@@ -2298,7 +2298,7 @@ export const Footer = ({ isRTL }) => {
       </div>
       <div className="FooterFeaturesBlockBorderBottom mt-2.5 lg:mt-10 mb-4 lg:mb-10 mr-6 ml-6 "></div>
       <div className="FooterContainer h-40 lg:h-24 xl:mr-10 rtl:xl:ml-10 ">
-        <div className="FooterBlock1 text-white text-center font-Gotham text-sm font-normal leading-5 mr-5 ml-5 ">
+        <div className="FooterBlock1 text-white text-center  text-sm font-normal leading-5 mr-5 ml-5 ">
           <p>
             © 2021 Aga Khan Foundation, an agency of the Aga Khan Development
             Network. All rights reserved.
@@ -2306,7 +2306,7 @@ export const Footer = ({ isRTL }) => {
         </div>
         <div className="FooterBlock2 flex flex-row justify-center items-center gap-3 pt-2">
           <h2
-            className="FooterBlock2Link1 text-white font-Gotham text-sm font-normal leading-5"
+            className="FooterBlock2Link1 text-white  text-sm font-normal leading-5"
             href="#"
           >
             Terms & Conditions
@@ -2323,7 +2323,7 @@ export const Footer = ({ isRTL }) => {
             </svg>
           </div>
           <h2
-            className="FooterBlock2Link1 text-white font-Gotham text-sm font-normal leading-5"
+            className="FooterBlock2Link1 text-white text-sm font-normal leading-5"
             href="#"
           >
             Privacy Policy
