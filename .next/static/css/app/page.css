@@ -540,6 +540,185 @@
     color: #535052;
     letter-spacing: 0.48px;
 }
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./components/Header/header.modules.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+/* List One */
+
+.HeaderMainContainerNavigationList1 {
+    color: #111A2E;
+    position: relative;
+}
+
+.HeaderMainContainerNavigationList1:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    padding: 10px;
+    z-index: 1000;
+    direction: ltr;
+    /* Default direction is LTR */
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    padding: 8px;
+    cursor: pointer;
+    color: #111A2E;
+}
+
+.dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+
+/* For RTL */
+
+[dir="rtl"] .dropdown-menu {
+    right: 0;
+    left: auto;
+    /* Reset left for RTL */
+    direction: rtl;
+}
+
+[dir="rtl"] .dropdown-menu::before {
+    left: auto;
+    /* Reset left for RTL */
+    right: 50%;
+    margin-left: 0;
+    /* Reset margin-left for RTL */
+    margin-right: -10px;
+    border-color: transparent transparent white transparent;
+}
+
+[dir="rtl"] .dropdown-menu li {
+    text-align: right;
+}
+
+
+/* List Two */
+
+.HeaderMainContainerNavigationList2 {
+    color: #111A2E;
+}
+
+
+/* List Three */
+
+.HeaderMainContainerNavigationList3 {
+    color: #111A2E;
+    position: relative;
+}
+
+.HeaderMainContainerNavigationList3:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* List Four */
+
+.HeaderMainContainerNavigationList4 {
+    color: #111A2E;
+    position: relative;
+}
+
+.HeaderMainContainerNavigationList4:hover .dropdown-menu4 {
+    display: block;
+}
+
+.dropdown-menu4 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-58%);
+    /* Adjust to move it back by half of its own width */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.dropdown-menu4 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu4 li {
+    padding: 8px;
+    cursor: pointer;
+    color: #111A2E;
+}
+
+.dropdown-menu4::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    /* Center horizontally for the arrow */
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+
+/* List Five */
+
+.HeaderMainContainerNavigationList5 {
+    color: #111A2E;
+    position: relative;
+}
+
+.HeaderMainContainerNavigationList5:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* List Six */
+
+.HeaderMainContainerNavigationList6 {
+    color: #111A2E;
+}
+
+.HeaderMainContainerButton1 {
+    border: 1px solid #E5E5F0;
+    border-radius: 13px;
+    color: #3a37eb;
+    background: #fff;
+}
+
+.HeaderMainContainerButton2 {
+    border: 1px solid #E5E5F0;
+    border-radius: 13px;
+    fill: #3a37eb;
+    background: #F3F3FB;
+    transition: 0.3s ease;
+}
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./node_modules/swiper/swiper.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************/
@@ -1631,6 +1810,9 @@ video {
 .m-0 {
   margin: 0px;
 }
+.m-1 {
+  margin: 0.25rem;
+}
 .m-2 {
   margin: 0.5rem;
 }
@@ -1994,6 +2176,9 @@ video {
 .p-2 {
   padding: 0.5rem;
 }
+.p-3 {
+  padding: 0.75rem;
+}
 .p-4 {
   padding: 1rem;
 }
@@ -2054,6 +2239,10 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 .pb-10 {
   padding-bottom: 2.5rem;
@@ -2301,6 +2490,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-primary2 {
+  --tw-text-opacity: 1;
+  color: rgb(58 55 235 / var(--tw-text-opacity));
+}
 [dir="rtl"] .text-start {
   text-align: right;
 }
@@ -2328,33 +2521,42 @@ video {
   line-height: 1rem;
 }
 
+.hover\:text-primary2:hover {
+  --tw-text-opacity: 1;
+  color: rgb(58 55 235 / var(--tw-text-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+:is([dir="ltr"] .ltr\:mr-20) {
+  margin-right: 5rem;
+}
+
+:is([dir="ltr"] .ltr\:mr-24) {
+  margin-right: 6rem;
+}
+
+:is([dir="ltr"] .ltr\:mr-3) {
+  margin-right: 0.75rem;
+}
+
+:is([dir="ltr"] .ltr\:mr-36) {
+  margin-right: 9rem;
+}
+
+:is([dir="ltr"] .ltr\:mr-9) {
+  margin-right: 2.25rem;
 }
 
 :is([dir="ltr"] .ltr\:hidden) {
   display: none;
 }
 
-:is([dir="ltr"] .ltr\:bg-gray-600) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
-:is([dir="ltr"] .ltr\:bg-gray-400) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-:is([dir="ltr"] .ltr\:bg-gray-200) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-:is([dir="ltr"] .ltr\:bg-gray-100) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+:is([dir="ltr"] .ltr\:border-r) {
+  border-right-width: 1px;
 }
 
 :is([dir="ltr"] .ltr\:bg-gray-300) {
@@ -2364,6 +2566,26 @@ video {
 
 :is([dir="rtl"] .rtl\:ml-10) {
   margin-left: 2.5rem;
+}
+
+:is([dir="rtl"] .rtl\:ml-20) {
+  margin-left: 5rem;
+}
+
+:is([dir="rtl"] .rtl\:ml-24) {
+  margin-left: 6rem;
+}
+
+:is([dir="rtl"] .rtl\:ml-3) {
+  margin-left: 0.75rem;
+}
+
+:is([dir="rtl"] .rtl\:ml-36) {
+  margin-left: 9rem;
+}
+
+:is([dir="rtl"] .rtl\:ml-9) {
+  margin-left: 2.25rem;
 }
 
 :is([dir="rtl"] .rtl\:mr-6) {
@@ -2422,6 +2644,10 @@ video {
   border-top-right-radius: 48px;
 }
 
+:is([dir="rtl"] .rtl\:border-l) {
+  border-left-width: 1px;
+}
+
 :is([dir="rtl"] .rtl\:bg-primary) {
   background-color: var(--Primary, #2091F9);
 }
@@ -2435,6 +2661,10 @@ video {
 }
 
 @media (min-width: 320px) {
+
+  .xs\:m-5 {
+    margin: 1.25rem;
+  }
 
   .xs\:mt-36 {
     margin-top: 9rem;
@@ -2478,6 +2708,15 @@ video {
 
   .xs\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .xs\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .xs\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .xs\:px-20 {
@@ -2527,6 +2766,16 @@ video {
 
   .xs\:text-\[28px\] {
     font-size: 28px;
+  }
+
+  .xs\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .xs\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .xs\:leading-\[55px\] {
@@ -2600,6 +2849,21 @@ video {
     gap: 1.25rem;
   }
 
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .sm\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .sm\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
   .sm\:pb-28 {
     padding-bottom: 7rem;
   }
@@ -2660,6 +2924,11 @@ video {
   .sm\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .sm\:text-xl {
@@ -3039,6 +3308,11 @@ video {
     margin: 5rem;
   }
 
+  .lg\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -3292,6 +3566,10 @@ video {
     gap: 3.5rem;
   }
 
+  .lg\:gap-3 {
+    gap: 0.75rem;
+  }
+
   .lg\:gap-5 {
     gap: 1.25rem;
   }
@@ -3346,6 +3624,11 @@ video {
     padding-right: 0px;
   }
 
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -3354,6 +3637,16 @@ video {
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .lg\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .lg\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .lg\:px-80 {
@@ -3371,6 +3664,16 @@ video {
     padding-bottom: 5rem;
   }
 
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .lg\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -3378,6 +3681,10 @@ video {
 
   .lg\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .lg\:pl-5 {
+    padding-left: 1.25rem;
   }
 
   .lg\:pl-6 {
@@ -3522,6 +3829,15 @@ video {
 
 @media (min-width: 1280px) {
 
+  .xl\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .xl\:ml-16 {
+    margin-left: 4rem;
+  }
+
   .xl\:mr-10 {
     margin-right: 2.5rem;
   }
@@ -3594,6 +3910,14 @@ video {
     gap: 2.5rem;
   }
 
+  .xl\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .xl\:gap-8 {
+    gap: 2rem;
+  }
+
   .xl\:whitespace-nowrap {
     white-space: nowrap;
   }
@@ -3601,6 +3925,10 @@ video {
   .xl\:px-96 {
     padding-left: 24rem;
     padding-right: 24rem;
+  }
+
+  .xl\:pl-10 {
+    padding-left: 2.5rem;
   }
 
   .xl\:pl-\[500px\] {
