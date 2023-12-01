@@ -1,0 +1,176 @@
+/* List One */
+
+.HeaderMainContainerNavigationList1 {
+    color: #111A2E;
+    position: relative;
+}
+
+.HeaderMainContainerNavigationList1:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    padding: 10px;
+    z-index: 1000;
+    direction: ltr;
+    /* Default direction is LTR */
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    padding: 8px;
+    cursor: pointer;
+    color: #111A2E;
+}
+
+.dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+
+/* For RTL */
+
+[dir="rtl"] .dropdown-menu {
+    right: 0;
+    left: auto;
+    /* Reset left for RTL */
+    direction: rtl;
+}
+
+[dir="rtl"] .dropdown-menu::before {
+    left: auto;
+    /* Reset left for RTL */
+    right: 50%;
+    margin-left: 0;
+    /* Reset margin-left for RTL */
+    margin-right: -10px;
+    border-color: transparent transparent white transparent;
+}
+
+[dir="rtl"] .dropdown-menu li {
+    text-align: right;
+}
+
+
+/* List Two */
+
+.HeaderMainContainerNavigationList2 {
+    color: #111A2E;
+}
+
+
+/* List Three */
+
+.HeaderMainContainerNavigationList3 {
+    color: #111A2E;
+    position: relative;
+}
+
+.HeaderMainContainerNavigationList3:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* List Four */
+
+.HeaderMainContainerNavigationList4 {
+    color: #111A2E;
+    position: relative;
+}
+
+.HeaderMainContainerNavigationList4:hover .dropdown-menu4 {
+    display: block;
+}
+
+.dropdown-menu4 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-58%);
+    /* Adjust to move it back by half of its own width */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.dropdown-menu4 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu4 li {
+    padding: 8px;
+    cursor: pointer;
+    color: #111A2E;
+}
+
+.dropdown-menu4::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    /* Center horizontally for the arrow */
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+
+/* List Five */
+
+.HeaderMainContainerNavigationList5 {
+    color: #111A2E;
+    position: relative;
+}
+
+.HeaderMainContainerNavigationList5:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* List Six */
+
+.HeaderMainContainerNavigationList6 {
+    color: #111A2E;
+}
+
+.HeaderMainContainerButton1 {
+    border: 1px solid #E5E5F0;
+    border-radius: 13px;
+    color: #3a37eb;
+    background: #fff;
+}
+
+.HeaderMainContainerButton2 {
+    border: 1px solid #E5E5F0;
+    border-radius: 13px;
+    fill: #3a37eb;
+    background: #F3F3FB;
+    transition: 0.3s ease;
+}

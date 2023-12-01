@@ -13,7 +13,7 @@ import SubscribeSection from "../components/SubscribeSection/SubscribeSection";
 import SubscribeHeroSection from "../components/SubscribeHeroSection/SubscribeHeroSection";
 import Footer from "../components/Footer/Footer";
 import StatBlock from "../components/StatBlock/statBlock";
-
+import Header from "../components/Header/header";
 
 import "./globals.css";
 
@@ -154,18 +154,19 @@ export default function Home() {
       </div>
          {isFeaturesVisible && <Features isRTL={isRTL} />}
        {isPartnersVisible && <Partners isRTL={isRTL} />}
-       <SubscribeSection  isRTL={isRTL}/>
-       <SubscribeHeroSection  isRTL={isRTL}/>
+        < Header  isRTL={isRTL}/>
       <MainInformation  isRTL={isRTL} />
-      <Agency  isRTL={isRTL} />
       <InfoBlock   isRTL={isRTL}/>
-      < PartnershipProjects  isRTL={true}/>
-    < PartnershipProjects  isRTL={false}/> 
-     <Footer   isRTL={isRTL}/>
      < StatBlock isRTL={isRTL} statsArray={fourBlockArray}/>
      < StatBlock isRTL={isRTL} statsArray={threeBlockArray}/>
      < StatBlock isRTL={isRTL} statsArray={twoBlockArray}/>
      < StatBlock isRTL={isRTL} statsArray={oneBlockArray}/>
+      <Agency  isRTL={isRTL} />
+       <SubscribeSection  isRTL={isRTL}/>
+       <SubscribeHeroSection  isRTL={isRTL}/>
+      < PartnershipProjects  isRTL={true}/>
+    < PartnershipProjects  isRTL={false}/> 
+     <Footer   isRTL={isRTL}/> 
     </main>
   );
 }
